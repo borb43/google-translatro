@@ -2,131 +2,129 @@ return {
     descriptions={
         Back={
             b_abandoned={
-                name="Abandoned Deck",
+                name="This deck looks deserted",
                 text={
-                    "Start run with",
-                    "no {C:attention}Face Cards",
-                    "in your deck",
+                    "Start without",
+                    "a {C:attention}free card.",
                 },
             },
             b_anaglyph={
-                name="Anaglyph Deck",
+                name="the surface of the area",
                 text={
-                    "After defeating each",
-                    "{C:attention}Boss Blind{}, gain a",
-                    "{C:attention,T:tag_double}#1#",
+                    "Defeat each {C:attention}blind boss",
+                    "will earn you {C:attention,T:tag_double}two tokens."
                 },
             },
             b_black={
-                name="Black Deck",
+                name="Surface appears black",
                 text={
-                    "{C:attention}+#1#{} Joker slot",
+                    "Jester slot {C:attention}+#1#{} per turn",
                     "",
-                    "{C:blue}-#2#{} hand",
-                    "every round",
+                    "hand {C:blue}-#2#{}",
                 },
             },
             b_blue={
-                name="Blue Deck",
+                name="This blue penis",
                 text={
-                    "{C:blue}+#1#{} hand",
-                    "every round",
+                    "{C:blue}+#1#{} to hand",
+                    "each round",
                 },
             },
             b_challenge={
-                name="Challenge Deck",
+                name="This aspect is also difficult",
                 text={
                     "",
                 },
             },
             b_checkered={
-                name="Checkered Deck",
+                name="it is like a grid surface",
                 text={
-                    "Start run with",
-                    "{C:attention}26{C:spades} Spades{} and",
-                    "{C:attention}26{C:hearts} Hearts{} in deck",
+                    "When you start the game,",
+                    "you will have {C:attention}26 {C:spades}barrels",
+                    "and {C:attention}26 {C:hearts}hearts{} in your collection"
                 },
             },
             b_erratic={
-                name="Erratic Deck",
+                name="This sign is also wrong",
                 text={
-                    "All {C:attention}Ranks{} and",
-                    "{C:attention}Suits{} in deck",
-                    "are randomized",
+                    "All {C:attention}jackets{} and",
+                    "{C:attention}suits{} in this set",
+                    "will be randomly",
+                    "assigned as follows:",
                 },
             },
             b_ghost={
-                name="Ghost Deck",
+                name="Like this dream deck",
                 text={
-                    "{C:spectral}Spectral{} cards may",
-                    "appear in the shop,",
-                    "start with a {C:spectral,T:c_hex}Hex{} card",
+                    "Start with the {C:spectral,T:c_hex}hexagram{},",
+                    "as the {C:spectral}spectrogram",
+                    "may appear in the shop"
                 },
             },
             b_green={
-                name="Green Deck",
+                name="Green boat",
                 text={
                     "At end of each Round:",
-                    "{C:money}$#1#{s:0.85} per remaining {C:blue}Hand",
-                    "{C:money}$#2#{s:0.85} per remaining {C:red}Discard",
-                    "Earn no {C:attention}Interest",
+                    "{C:money}$#1#{s:0.85} left per {C:blue}hand",
+                    "{C:money}$#2#{s:0.85} per {C:red}roll",
+                    "no {C:attention}interest",
                 },
             },
             b_magic={
-                name="Magic Deck",
+                name="This is an amazing group",
                 text={
-                    "Start run with the",
-                    "{C:tarot,T:v_crystal_ball}#1#{} voucher",
-                    "and {C:attention}2{} copies",
-                    "of {C:tarot,T:c_fool}#2#",
+                    "Start with the",
+                    "{C:tarot,T:v_crystal_ball}crystal ball{}",
+                    "and {C:tarot,T:c_fool}the fool",
+                    "part {C:attention}2{}.",
                 },
             },
             b_nebula={
-                name="Nebula Deck",
+                name="What does the surface of the nebula look like?",
                 text={
-                    "Start run with the",
-                    "{C:planet,T:v_telescope}#1#{} voucher",
+                    "Starts by checking",
+                    "the {C:planet,T:v_telescope}telescope{}",
                     "",
-                    "{C:red}#2#{} consumable slot",
+                    "{C:red}#2#{} slots wears out, e.g.",
                 },
             },
             b_painted={
-                name="Painted Deck",
+                name="This is how the deck is drawn",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "{C:red}#2#{} Joker slot",
+                    "Hand size {C:attention}+#1#{},",
+                    "Joker slot {C:red}#2#{}",
                 },
             },
             b_plasma={
-                name="Plasma Deck",
+                name="Such as thin plasma",
                 text={
-                    "Balance {C:blue}Chips{} and",
-                    "{C:red}Mult{} when calculating",
-                    "score for played hand",
-                    "{C:red}X#1#{} base Blind size",
+                    "To balance {C:blue}chips{} and",
+                    "{C:red}doubles{} when calculating",
+                    "cards played",
+                    "the base bet size {C:red}x#1#{} is:",
                 },
             },
             b_red={
-                name="Red Deck",
+                name="The surface looks red",
                 text={
-                    "{C:red}+#1#{} discard",
-                    "every round",
+                    "This {C:red}+#1#{} will",
+                    "appear every round.",
                 },
             },
             b_yellow={
-                name="Yellow Deck",
+                name="This is what the yellow surface looks like",
                 text={
-                    "Start with",
-                    "extra {C:money}$#1#",
+                    "Additional fees",
+                    "start at{C:money}$#1#.00{}.",
                 },
             },
             b_zodiac={
-                name="Zodiac Deck",
+                name="Similar to the zodiac signs",
                 text={
-                    "Start run with",
-                    "{C:tarot,T:v_tarot_merchant}#1#{},",
-                    "{C:planet,T:v_planet_merchant}#2#{},",
-                    "and {C:attention,T:v_overstock_norm}#3#",
+                    "Get started with",
+                    "{C:tarot,T:v_tarot_merchant}Tarot Trader{},",
+                    "{C:planet,T:v_planet_merchant}Planet Trader{},",
+                    "and {C:attention,T:v_overstock_norm}Overstock",
                 },
             },
         },
