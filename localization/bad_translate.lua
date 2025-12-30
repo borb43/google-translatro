@@ -372,6 +372,18 @@ return {
                     "Click on {X:mult,C:white} X#1# {}",
                 },
             },
+            e_negative_playing_card = {
+                name = "these are negative numbers",
+                text = {
+                    "{C:dark_edition}+#1#{} hand size"
+                },
+            },
+            e_negative_generic = {
+                name = "these are negative numbers",
+                text = {
+                    "The opening area is also {C:dark_edition}+#1#{}."
+                },
+            }
         },
         Enhanced={
             m_bonus={
