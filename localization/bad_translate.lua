@@ -602,7 +602,7 @@ return {
                 name="Like this thief",
                 text={
                     "If you choose to {C:attention}blind{} bet,",
-                    "you will recieve {C:blue}+#1#{} Hands and",
+                    "you will receive {C:blue}+#1#{} Hands and",
                     "{C:attention}lose all results",
                 },
             },
@@ -628,15 +628,15 @@ return {
                 },
             },
             j_caino={
-                name="Canio",
+                name="I love this store",
                 text={
-                    "This Joker gains {X:mult,C:white} X#1# {} Mult",
-                    "when a {C:attention}face{} card",
-                    "is destroyed",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "When the {C:attention}previous{} card is",
+                    "destroyed, the Joker receives",
+                    "an {X:mult,C:white}X#1#{} Multiplier",
+                    "{C:inactive}(now an {X:mult,C:white} X#2# {C:inactive} multiplier){}.",
                 },
                 unlock={
-                    "{E:1,s:1.3}?????",
+                    "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_campfire={
@@ -724,7 +724,7 @@ return {
                     "every {C:attention}Boss Blind",
                 },
                 unlock={
-                    "{E:1,s:1.3}?????",
+                    "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_clever={
@@ -1348,7 +1348,7 @@ return {
                     "at the end of the {C:attention}shop",
                 },
                 unlock={
-                    "{E:1,s:1.3}?????",
+                    "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_photograph={
@@ -1758,7 +1758,7 @@ return {
                     "{X:mult,C:white} X#1# {} Mult when scored",
                 },
                 unlock={
-                    "{E:1,s:1.3}?????",
+                    "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_trio={
@@ -1866,7 +1866,7 @@ return {
                     "{C:inactive}(Currently {X:mult,C:white} X#4# {C:inactive} Mult)",
                 },
                 unlock={
-                    "{E:1,s:1.3}?????",
+                    "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_zany={
@@ -3663,7 +3663,7 @@ return {
             k_trophy="Trophy",
             k_uncommon="Uncommon",
             k_undisovered="Undiscovered",
-            k_unknown="?????",
+            k_unknown="What? ? ? ? ? How",
             k_unlocked_ex="Unlocked!",
             k_upgrade_ex="Upgrade!",
             k_val_up="Value Up!",
