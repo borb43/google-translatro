@@ -1,0 +1,12 @@
+{
+	"id": "Badlatro",
+	"name": "Badlatro",
+	"display_name": "Badlatro",
+	"author": ["Eris"],
+	"description": "Adds language where everything is badly google translated",
+	"prefix": "bad",
+	"main_file": "main.lua",
+	"priority": 0,
+	"version": "0.1.0",
+	"dependencies": []
+}
