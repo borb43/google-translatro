@@ -337,39 +337,39 @@ return {
         },
         Edition={
             e_base={
-                name="Base",
+                name="It's like a foundation",
                 text={
-                    "No extra effects",
+                    "Absence of side effects",
                 },
             },
             e_foil={
-                name="Foil",
+                name="Immediately",
                 text={
-                    "{C:chips}+#1#{} chips",
+                    "{C:chips}+#1#{} equivalent symbol",
                 },
             },
             e_holo={
-                name="Holographic",
+                name="It's very three-dimensional",
                 text={
-                    "{C:mult}+#1#{} Mult",
+                    "That's 2x {C:mult}+#1#{}",
                 },
             },
             e_negative={
-                name="Negative",
+                name="these are negative numbers",
                 text={
-                    "{C:dark_edition}+#1#{} Joker slot",
+                    "{C:dark_edition}#1#+{} Joker Slots",
                 },
             },
             e_negative_consumable={
-                name="Negative",
+                name="these are negative numbers",
                 text={
                     "{C:dark_edition}+#1#{} consumable slot",
                 },
             },
             e_polychrome={
-                name="Polychrome",
+                name="How about colorful?",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult",
+                    "Click on {X:mult,C:white} X#1# {}",
                 },
             },
         },
@@ -3819,17 +3819,17 @@ return {
             blue_seal="Blue Seal",
             common="Common",
             eternal="Eternal",
-            foil="Foil",
+            foil="Immediately",
             gold_seal="Gold Seal",
-            holographic="Holographic",
+            holographic="It's very three-dimensional",
             legendary="Legendary",
             locked="Locked",
-            negative="Negative",
+            negative="these are negative numbers",
             perishable="Perishable",
             pinned_left="Pinned",
             planet="Planet",
             pluto_planet="Dwarf Planet",
-            polychrome="Polychrome",
+            polychrome="How about colorful?",
             purple_seal="Purple Seal",
             rare="Rare",
             red_seal="Red Seal",
@@ -4217,25 +4217,25 @@ return {
             interest="#1# interest per $#2# (#3# max)",
             loyalty_active="Active!",
             loyalty_inactive="#1# remaining",
-            ml_foil_desc={
-                "Foil",
-                "+#1# Chips",
+            ml_foil_desc={ --EDITIONS ARE ALREADY CHANGED, COPIED FROM EDITIONS ABOVE
+                "Immediately",
+                "+#1# equivalent symbol",
             },
             ml_holo_desc={
-                "Holographic",
-                "+#1# Mult",
+                "It's very three-dimensional",
+                "That's 2x +#1#",
             },
             ml_negative_consumable_desc={
-                "Negative",
+                "these are negative numbers",
                 "+#1# consumable Slot",
             },
             ml_negative_desc={
-                "Negative",
-                "+#1# Joker Slot",
+                "these are negative numbers",
+                "#1#+ Joker Slots",
             },
             ml_polychrome_desc={
-                "Polychrome",
-                "X#1# Mult",
+                "How about colorful?",
+                "Click on X#1#",
             },
             remaining_discard_money="Remaining Discards ($#1# each)",
             remaining_hand_money="Remaining Hands ($#1# each)",
