@@ -387,61 +387,59 @@ return {
         },
         Enhanced={
             m_bonus={
-                name="Bonus Card",
+                name="this is a score card",
                 text={
                 },
             },
             m_glass={
-                name="Glass Card",
+                name="It looks like a glass card",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult",
-                    "{C:green}#2# in #3#{} chance to",
-                    "destroy card",
+                    "this is a{X:mult,C:white}#1#x{} multiplier",
+                    "and a {C:green}#2# in #3#{} chance of",
+                    "destroying the card",
                 },
             },
             m_gold={
-                name="Gold Card",
+                name="like a golden ticket",
                 text={
-                    "{C:money}$#1#{} if this",
-                    "card is held in hand",
-                    "at end of round",
+                    "Q-{C:money}#1#{} if you keep",
+                    "this card at end of turn",
                 },
             },
             m_lucky={
-                name="Lucky Card",
+                name="Lucky cards etc.",
                 text={
-                    "{C:green}#1# in #3#{} chance",
-                    "for {C:mult}+#2#{} Mult",
-                    "{C:green}#1# in #5#{} chance",
-                    "to win {C:money}$#4#",
+                    "The odds of winning {C:mult}+#2#",
+                    "are {C:green}#1# in #3#{}, and the odds",
+                    "of winning {C:money}$#4#{} are {C:green}#6# in #5#"
                 },
             },
             m_mult={
-                name="Mult Card",
+                name="tight",
                 text={
-                    "{C:mult}+#1#{} Mult",
+                    "This is a {C:mult}#1#{} comic",
                 },
             },
             m_steel={
-                name="Steel Card",
+                name="This steel card",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult",
-                    "while this card",
-                    "stays in hand",
+                    "While this card is in",
+                    "your hand, this card",
+                    "will be multiplied by {X:mult,C:white}#1#x{}."
                 },
             },
             m_stone={
-                name="Stone Card",
+                name="like a stuck stone",
                 text={
-                    "{C:chips}+#1#{} Chips",
-                    "no rank or suit",
+                    "{C:chips}#1#{} slides",
+                    "no levels or costumes",
                 },
             },
             m_wild={
-                name="Wild Card",
+                name="wildcard character",
                 text={
-                    "Can be used",
-                    "as any suit",
+                    "Available in",
+                    "every set",
                 },
             },
         },
