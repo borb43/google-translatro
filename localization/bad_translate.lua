@@ -130,204 +130,208 @@ return {
         },
         Blind={
             bl_arm={
-                name="The Arm",
+                name="rhis hand",
                 text={
-                    "Decrease level of",
-                    "played poker hand",
+                    "Lower your poker level."
                 },
             },
             bl_big={
-                name="Big Blind",
+                name="Such big curtains",
                 text={
                 },
             },
             bl_club={
-                name="The Club",
+                name="it's like a club",
                 text={
-                    "All Club cards",
-                    "are debuffed",
+                    "All club cards",
+                    "are designed",
+                    "like this"
                 },
             },
             bl_eye={
-                name="The Eye",
+                name="i like eyes",
                 text={
-                    "No repeat hand",
-                    "types this round",
+                    "No other type of hand",
+                    "appears as frequently",
+                    "as this time of year"
                 },
             },
             bl_final_acorn={
-                name="Amber Acorn",
+                name="Chamber blower approx.",
                 text={
-                    "Flips and shuffles",
-                    "all Joker cards",
+                    "Shuffle all the bar",
+                    "cards face down",
                 },
             },
             bl_final_bell={
-                name="Cerulean Bell",
+                name="Looks like a blue bell",
                 text={
-                    "Forces 1 card to",
-                    "always be selected",
+                    "This ensures that",
+                    "one card is always",
+                    "drawn every turn."
                 },
             },
             bl_final_heart={
-                name="Crimson Heart",
+                name="Like that bright red heart",
                 text={
-                    "One random Joker",
-                    "disabled every hand",
+                    "Random clown throws",
+                    "away all cards",
                 },
             },
             bl_final_leaf={
-                name="Verdant Leaf",
+                name="This green leaf too",
                 text={
-                    "All cards debuffed",
-                    "until 1 Joker sold",
+                    "All cards will be blocked",
+                    "until the joker is sold.",
                 },
             },
             bl_final_vessel={
-                name="Violet Vessel",
+                name="This purple tool looks",
                 text={
-                    "Very large blind",
+                    "like blind",
                 },
             },
             bl_fish={
-                name="The Fish",
+                name="And this fish",
                 text={
-                    "Cards drawn face down",
-                    "after each hand played",
+                    "After each deal, the cards",
+                    "are dealt face down",
                 },
             },
             bl_flint={
-                name="The Flint",
+                name="looks like flint",
                 text={
-                    "Base Chips and",
-                    "Mult are halved",
+                    "Cut the net and some",
+                    "potatoes in half.",
                 },
             },
             bl_goad={
-                name="The Goad",
+                name="According to Gore",
                 text={
-                    "All Spade cards",
-                    "are debuffed",
+                    "Remove all",
+                    "zeros like this",
                 },
             },
             bl_head={
-                name="The Head",
+                name="The situation is as follows",
                 text={
-                    "All Heart cards",
-                    "are debuffed",
+                    "All heart cards lead to",
+                    "cancellation. example:",
                 },
             },
             bl_hook={
-                name="The Hook",
+                name="like a hook",
                 text={
-                    "Discards 2 random",
-                    "cards per hand played",
+                    "Each time a card is played,",
+                    "two cards are randomly discarded",
                 },
             },
             bl_house={
-                name="The House",
+                name="like this house",
                 text={
-                    "First hand is",
-                    "drawn face down",
+                    "The first hand drawing",
+                    "is as follows.",
                 },
             },
             bl_manacle={
-                name="The Manacle",
+                name="There are also these limitations",
                 text={
-                    "-1 Hand Size",
+                    "Hand size is about -1",
                 },
             },
             bl_mark={
-                name="The Mark",
+                name="Because that's the way Mark is",
                 text={
-                    "All face cards are",
-                    "drawn face down",
+                    "All face up cards are",
+                    "drawn face down.",
                 },
             },
             bl_mouth={
-                name="The Mouth",
+                name="It looks like this",
                 text={
-                    "Play only 1 hand",
-                    "type this round",
+                    "Play with only one",
+                    "hand this round",
                 },
             },
             bl_needle={
-                name="The Needle",
+                name="It's like a needle",
                 text={
-                    "Play only 1 hand",
+                    "Thing that can only",
+                    "be played with one hand"
                 },
             },
             bl_ox={
-                name="The Ox",
+                name="It's a bull",
                 text={
-                    "Playing a #1#",
-                    "sets money to $0",
+                    "If you play a #1#,",
+                    "the pot will be $0.",
                 },
             },
             bl_pillar={
-                name="The Pillar",
+                name="Who is Pilar?",
                 text={
-                    "Cards played previously",
-                    "this Ante are debuffed",
+                    "The previous bet is paid",
+                    "in the same way as the",
+                    "previously played cards."
                 },
             },
             bl_plant={
-                name="The Plant",
+                name="What about this plant?",
                 text={
-                    "All face cards",
-                    "are debuffed",
+                    "all addresses rejected"
                 },
             },
             bl_psychic={
-                name="The Psychic",
+                name="It's a spiritual thing",
                 text={
-                    "Must play 5 cards",
+                    "You must play 5 cards",
                 },
             },
             bl_serpent={
-                name="The Serpent",
+                name="What do snakes like?",
                 text={
-                    "After Play or Discard,",
-                    "always draw 3 cards",
+                    "After playing or discarding Ka,",
+                    "three cards are always",
+                    "drawn as follows:"
                 },
             },
             bl_small={
-                name="Small Blind",
+                name="Young as blind",
                 text={
                 },
             },
             bl_tooth={
-                name="The Tooth",
+                name="Those teeth",
                 text={
-                    "Lose $1 per",
-                    "card played",
+                    "$1 loss per",
+                    "card game",
                 },
             },
             bl_wall={
-                name="The Wall",
+                name="It's like a wall",
                 text={
-                    "Extra large blind",
+                    "This is a super big blind",
                 },
             },
             bl_water={
-                name="The Water",
+                name="what kind of water is this",
                 text={
-                    "Start with",
-                    "0 discards",
+                    "If it starts with 0,",
+                    "it will be deleted.",
                 },
             },
             bl_wheel={
-                name="The Wheel",
+                name="like a wheel",
                 text={
-                    " in 7 cards get",
-                    "drawn face down",
+                    " of the #2# cards", --TODO: change for denominator modification and loc_vars
+                    "must be drawn face down.",
                 },
             },
             bl_window={
-                name="The Window",
+                name="I like this window",
                 text={
-                    "All Diamond cards",
-                    "are debuffed",
+                    "All diamond cards",
+                    "are polished.",
                 },
             },
         },
