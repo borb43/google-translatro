@@ -445,96 +445,97 @@ return {
         },
         Joker={
             j_8_ball={
-                name="8 Ball",
+                name="summer",
                 text={
-                    "{C:green}#1# in #2#{} chance for each",
-                    "played {C:attention}8{} to create a",
-                    "{C:tarot}Tarot{} card when scored",
-                    "{C:inactive}(Must have room)",
+                    "For every {C:attention}8{} cards played",
+                    "and dealt, there is a",
+                    "{C:green}#1# in #2#{} chance of crafting",
+                    "a {C:tarot}Tarot{} card",
+                    "{C:inactive}(requires inventory){}."
                 },
             },
             j_abstract={
-                name="Abstract Joker",
+                name="Like an abstract clown",
                 text={
-                    "{C:mult}+#1#{} Mult for",
-                    "each {C:attention}Joker{} card",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "{C:mult}+#1#{} multiplication",
+                    "with {C:attention}wildcards{}",
+                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} multiplication){}.",
                 },
             },
             j_acrobat={
-                name="Acrobat",
+                name="glass",
                 text={
-                    "{X:red,C:white} X#1# {} Mult on {C:attention}final",
-                    "{C:attention}hand{} of round",
+                    "{X:red,C:white} X#1# {} Mult is the {C:attention}last",
+                    "{C:attention}hand{} of the round",
                 },
                 unlock={
-                    "Play {C:attention,E:1}#1#{} hands",
-                    "{C:inactive}(#2#)",
+                    "{C:attention,E:1}#1#{} Applause {C:inactive}(#2#)",
+                    "Like!",
                 },
             },
             j_ancient={
-                name="Ancient Joker",
+                name="He looks like an old clown",
                 text={
-                    "Each played card with",
-                    "{V:1}#2#{} suit gives",
-                    "{X:mult,C:white} X#1# {} Mult when scored,",
-                    "{s:0.8}suit changes at end of round",
+                    "Each card played by",
+                    "{V:1}#2#{} gets a",
+                    "multiplier of {X:mult,C:white} X#1# {} and",
+                    "{s:0.8}changes color at the end of round.",
                 },
             },
             j_arrowhead={
-                name="Arrowhead",
+                name="I like this promotion",
                 text={
-                    "Played cards with",
-                    "{C:spades}Spade{} suit give",
-                    "{C:chips}+#1#{} Chips when scored",
+                    "Getting the {C:spades}spade{}",
+                    "card will give you",
+                    "{C:chips}+#1#{} tokens.",
                 },
                 unlock={
-                    "Have at least {E:1,C:attention}#1#",
-                    "cards with {E:1,C:attention}#2#",
-                    "suit in your deck",
+                    "This means that there are",
+                    "at least {E:1,C:attention}#1#{} cards in the deck."
                 },
             },
             j_astronomer={
-                name="Astronomer",
+                name="as an astronomer",
                 text={
-                    "All {C:planet}Planet{} cards and",
-                    "{C:planet}Celestial Packs{} in",
-                    "the shop are {C:attention}free",
+                    "All {C:planet}planet{} maps and",
+                    "{C:planet}sky packs{} are also",
+                    "{C:attention}free{} in the store.",
                 },
                 unlock={
-                    "Discover every",
-                    "{E:1,C:planet}Planet{} card",
+                    "Open the map",
+                    "for each {E:1,C:planet}star{}.",
                 },
             },
             j_banner={
-                name="Banner",
+                name="I like this slogan",
                 text={
-                    "{C:chips}+#1#{} Chips for",
+                    "{C:chips}+#1#{} tokens for",
                     "each remaining",
-                    "{C:attention}discard",
+                    "{C:attention}round",
                 },
             },
             j_baron={
-                name="Baron",
+                name="This baron looks like this",
                 text={
-                    "Each {C:attention}King{}",
-                    "held in hand",
-                    "gives {X:mult,C:white} X#1# {} Mult",
+                    "Each {C:attention}king{}",
+                    "in your hand",
+                    "gives you a",
+                    "{X:mult,C:white} X#1# {} multiplier."
                 },
             },
             j_baseball={
-                name="Baseball Card",
+                name="This is a baseball card",
                 text={
-                    "{C:green}Uncommon{} Jokers",
-                    "each give {X:mult,C:white} X#1# {} Mult",
+                    "Each {C:green}unusual{} wild symbol",
+                    "generates a {X:mult,C:white} #1#x {} multiplier.",
                 },
             },
             j_blackboard={
-                name="Blackboard",
+                name="like a board",
                 text={
-                    "{X:red,C:white} X#1# {} Mult if all",
-                    "cards held in hand",
-                    "are {C:spades}#2#{} or {C:clubs}#3#{}",
+                    "If all the cards in your hand",
+                    "are {C:spades}#2#{} or {C:clubs}#3#{},",
+                    "this multiplier is {X:mult,C:white}x#1#{}.",
                 },
             },
             j_bloodstone={
