@@ -1129,50 +1129,51 @@ return {
                 },
             },
             j_jolly={
-                name="Jolly Joker",
+                name="this happy clown",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "If your hand",
+                    "is {C:attention}even{}, the",
+                    "multiplier is {C:red}+#1#{}",
                 },
             },
             j_juggler={
-                name="Juggler",
+                name="This charlatan",
                 text={
-                    "{C:attention}+#1#{} hand size",
+                    "Hand size {C:attention}#1#+{}",
                 },
             },
             j_loyalty_card={
-                name="Loyalty Card",
+                name="as a scorecard",
                 text={
-                    "{X:red,C:white} X#1# {} Mult every",
-                    "{C:attention}#2#{} hands played",
+                    "every {C:attention}#2#{} arms",
+                    "x {X:red,C:white} #1# {} more",
                     "{C:inactive}#3#",
                 },
             },
             j_luchador={
-                name="Luchador",
+                name="He looks like a warrior",
                 text={
-                    "Sell this card to",
-                    "disable the current",
-                    "{C:attention}Boss Blind{}",
+                    "Sell this card and",
+                    "defeat the current",
+                    "{C:attention}blind boss{}.",
                 },
             },
             j_lucky_cat={
-                name="Lucky Cat",
+                name="This is a happy cat",
                 text={
-                    "This Joker gains {X:mult,C:white} X#1# {} Mult",
-                    "every time a {C:attention}Lucky{} card",
-                    "{C:green}successfully{} triggers",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "Each time the {C:attention}lucky{} card",
+                    "is {C:green}successfully{} played,",
+                    "the joker receives a",
+                    "multiplier of {X:mult,C:white} X#1# {}",
+                    "{C:inactive}(currently a multiplier of {X:mult,C:white} X#2# {C:inactive}){}.",
                 },
             },
             j_lusty_joker={
-                name="Lusty Joker",
+                name="active like a clown",
                 text={
-                    "Played cards with",
-                    "{C:hearts}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "Playing a card against",
+                    "a {C:hearts}swarm of worms{} will",
+                    "give you a {C:mult}+#1#{} multiplier.",
                 },
             },
             j_mad={
