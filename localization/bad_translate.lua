@@ -1686,118 +1686,116 @@ return {
                 },
             },
             j_throwback={
-                name="Throwback",
+                name="How to get back to the original state",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult for each",
-                    "{C:attention}Blind{} skipped this run",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "{X:mult,C:white}X#1#{} multiplier for each",
+                    "blind lost that round",
+                    "{C:inactive}(currently {X:mult,C:white} X#2# {C:inactive} multiplier){}.",
                 },
                 unlock={
-                    "Continue a saved run",
-                    "from the main menu",
+                    "Restore a saved playback",
+                    "from the main menu.",
                 },
             },
             j_ticket={
-                name="Golden Ticket",
+                name="This is the golden ticket",
                 text={
-                    "Played {C:attention}Gold{} cards",
-                    "earn {C:money}$#1#{} when scored",
+                    "A {C:attention}gold{} card played",
+                    "is worth {C:money}$#1#{}.",
                 },
                 unlock={
-                    "Play a 5 card hand",
-                    "that contains only",
-                    "{C:attention,E:1}Gold{} cards",
+                    "Play 5 card combinations",
+                    "using only {C:attention,E:1}gold{} coins",
                 },
             },
             j_to_the_moon={
-                name="To the Moon",
+                name="This is the shape of the moon",
                 text={
-                    "Earn an extra {C:money}$#1#{} of",
-                    "{C:attention}interest{} for every {C:money}$5{} you",
-                    "have at end of round",
+                    "At the end of round, you",
+                    "will earn an additional {C:money}#1#%",
+                    "on every {C:money}$5{} you win."
                 },
             },
             j_todo_list={
-                name="To Do List",
-                text={
-                    "Earn {C:money}$#1#{} if {C:attention}poker hand{}",
-                    "is a {C:attention}#2#{},",
-                    "poker hand changes",
-                    "at end of round",
+                name="The to-do list is approximate, then",
+                text={ --you get to guess what hand it is :)
+                    "If this hand is the {C:attention}highest,",
+                    "who will win [C:money}$#1#{}? The poker",
+                    "hand changes at the end",
+                    "of the round",
                 },
             },
             j_trading={
-                name="Trading Card",
+                name="For example, trading cards",
                 text={
-                    "If {C:attention}first discard{} of round",
-                    "has only {C:attention}1{} card, destroy",
-                    "it and earn {C:money}$#1#",
+                    "If you only have {C:attention}one{} card",
+                    "in the {C:attention}first round{}, destroy",
+                    "it and you get {C:money}$#1#{}"
                 },
             },
             j_tribe={
-                name="The Tribe",
+                name="And the tribes?",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "If the card played",
+                    "is a {C:attention}flush{}, then",
+                    "{X:mult,C:white}X#1#{} is a multi."
                 },
                 unlock={
-                    "Win a run",
+                    "Beat the game",
                     "without playing",
-                    "a {E:1,C:attention}#1#",
+                    "as {C:attention,E:1}Flash{}."
                 },
             },
             j_triboulet={
-                name="Triboulet",
+                name="This issue",
                 text={
-                    "Played {C:attention}Kings{} and",
-                    "{C:attention}Queens{} each give",
-                    "{X:mult,C:white} X#1# {} Mult when scored",
+                    "Participating {C:attention}kings{} and",
+                    "{C:attention}queens{} will receive",
+                    "{X:mult,C:white} X#1# {} Multi upon registration.",
                 },
                 unlock={
                     "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_trio={
-                name="The Trio",
+                name="Like new",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "For {C:attention}manual operation{},",
+                    "the {X:mult,C:white}X#1#{} Multi includes:"
                 },
                 unlock={
-                    "Win a run",
+                    "Win a round",
                     "without playing",
-                    "a {E:1,C:attention}#1#",
+                    "as {E:1,C:attention}Trinity{}.",
                 },
             },
             j_troubadour={
-                name="Troubadour",
+                name="he is a bard",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "{C:blue}-#2#{} hand each round",
+                    "Hand size {C:attention}+#1#{},",
+                    "{C:blue}-#2#{} per round.",
                 },
                 unlock={
-                    "Win {C:attention,E:1}#1#{} consecutive",
-                    "rounds by playing",
-                    "only 1 hand",
+                    "Win {C:attention,E:1}#1#{} rounds",
+                    "in a row",
+                    "with one hand.",
                 },
             },
             j_trousers={
-                name="Spare Trousers",
+                name="This is a substitute for pants",
                 text={
-                    "This Joker gains {C:mult}+#1#{} Mult",
-                    "if played hand contains",
-                    "a {C:attention}#2#",
-                    "{C:inactive}(Currently {C:red}+#3#{C:inactive} Mult)",
+                    "If he has {C:attention}two pairs{},",
+                    "the joker gets a",
+                    "{C:mult}+#1#{} multiplier",
+                    "{C:inactive}(currently a {C:red}+#3#{C:inactive} multiplier){}.",
                 },
             },
             j_turtle_bean={
-                name="Turtle Bean",
+                name="looks like turtle beans",
                 text={
-                    "{C:attention}+#1#{} hand size,",
-                    "reduces by",
-                    "{C:red}#2#{} every round",
+                    "Hand size {C:attention}+#1#{}",
+                    "decreases by",
+                    "{C:red}#2#{} every round.",
                 },
             },
             j_vagabond={
