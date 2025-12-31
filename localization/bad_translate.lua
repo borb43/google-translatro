@@ -1366,67 +1366,63 @@ return {
                 },
             },
             j_raised_fist={
-                name="Raised Fist",
+                name="like a raised fist",
                 text={
-                    "Adds {C:attention}double{} the rank",
-                    "of {C:attention}lowest{} ranked card",
-                    "held in hand to Mult",
+                    "This increase the {C:attention}smallest",
+                    "Marto card by {C:attention}2{} levels.",
                 },
             },
             j_ramen={
-                name="Ramen",
+                name="like ramen",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult,",
-                    "loses {X:mult,C:white} X#2# {} Mult",
-                    "per {C:attention}card{} discarded",
+                    "So for every {C:attention}card{} discarded,",
+                    "{X:mult,C:white}X2{} Mult {X:mult,C:white}X#2#{} Mult is lost."
                 },
             },
             j_red_card={
-                name="Red Card",
+                name="This is what a red card looks like",
                 text={
-                    "This Joker gains",
-                    "{C:red}+#1#{} Mult when any",
-                    "{C:attention}Booster Pack{} is skipped",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "This wildcard gives",
+                    "you a {C:red}+#1#{} multiplier",
+                    "{C:inactive}(currently a {C:red}+#2#{C:inactive} multiplier)",
+                    "when you run out of {C:attention}boosts{}."
                 },
             },
             j_reserved_parking={
-                name="Reserved Parking",
+                name="There is also a parking lot.",
                 text={
-                    "Each {C:attention}face{} card",
-                    "held in hand has",
-                    "a {C:green}#2# in #3#{} chance",
-                    "to give {C:money}$#1#{}",
+                    "Each {C:attention}card{} you hold",
+                    "has a {C:green}#2# in #3#{} chance",
+                    "to win{C:money}$#1#{}.",
                 },
             },
             j_ride_the_bus={
-                name="Ride the Bus",
+                name="Travel by bus",
                 text={
-                    "This Joker gains {C:mult}+#1#{} Mult",
-                    "per {C:attention}consecutive{} hand",
-                    "played without a",
-                    "scoring {C:attention}face{} card",
-                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+                    "If there are no {C:attention}cards{},",
+                    "the joker receives a",
+                    "{C:mult}+#1#{} multiplier on each",
+                    "{C:attention}subsequent{} hand",
+                    "{C:inactive}(currently a {C:mult}+#2#{C:inactive} multiplier){}.",
                 },
             },
             j_riff_raff={
-                name="Riff-Raff",
+                name="like a wolf",
                 text={
-                    "When {C:attention}Blind{} is selected,",
-                    "create {C:attention}#1# {C:blue}Common{C:attention} Jokers",
-                    "{C:inactive}(Must have room)",
+                    "If you select the {C:attention}blackout",
+                    "option, create {C:blue}shared{C:attention} blinds",
+                    "{C:inactive}(space required){}."
                 },
             },
             j_ring_master={
-                name="Showman",
+                name="It's like a promotion.",
                 text={
-                    "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
-                    "and {C:spectral}Spectral{} cards may",
-                    "appear multiple times",
+                    "{C:attention}Joker{} cards, {C:tarot}Tarot{} cards,",
+                    "{C:planet}Planet{} cards, and {C:spectral}Spectrum{} cards",
+                    "may appear multiple times."
                 },
                 unlock={
-                    "Reach Ante",
-                    "level {E:1,C:attention}#1#",
+                    "reach level {E:1,C:attention}#1#",
                 },
             },
             j_rocket={
