@@ -779,85 +779,86 @@ return {
                 },
             },
             j_delayed_grat={
-                name="Delayed Gratification",
+                name="What does delayed gratification look like?",
                 text={
-                    "Earn {C:money}$#1#{} per {C:attention}discard{} if",
-                    "no discards are used",
-                    "by end of the round",
+                    "If the {C:attention}discard{} pile is not used",
+                    "before the end of round, the person",
+                    "in the {C:attention}discard{} pile gets {C:money}$#1#{} per round."
                 },
             },
             j_devious={
-                name="Devious Joker",
+                name="David Piero",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} chips if the",
+                    "card played",
+                    "is an {C:attention}ace",
                 },
             },
             j_diet_cola={
-                name="Diet Cola",
+                name="Like Diet Coke",
                 text={
-                    "Sell this card to",
-                    "create a free",
-                    "{C:attention}#1#",
+                    "Sell this card",
+                    "to get free",
+                    "{C:attention}double tokens{}.",
                 },
             },
             j_dna={
-                name="DNA",
+                name="just like DNA",
                 text={
-                    "If {C:attention}first hand{} of round",
-                    "has only {C:attention}1{} card, add a",
-                    "permanent copy to deck",
-                    "and draw it to {C:attention}hand",
+                    "If you {C:attention}start{} your turn",
+                    "with only {C:attention}one{} card in",
+                    "your hand, put that permanent",
+                    "card into your library and",
+                    "put it into your hand.",
                 },
             },
             j_drivers_license={
-                name="Driver's License",
+                name="driver's license, etc.",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if you have",
-                    "at least {C:attention}16{} Enhanced",
-                    "cards in your full deck",
-                    "{C:inactive}(Currently {C:attention}#2#{C:inactive})",
+                    "If the entire {X:mult,C:white} X#1# {} multi",
+                    "set has at least {C:attention}16{} Upgrade cards",
+                    "{C:inactive}(Currently {C:attention}#2#{C:inactive}){}.",
                 },
                 unlock={
-                    "Enhance {E:1,C:attention}#1#{} cards",
-                    "in your deck",
+                    "There were {E:1,C:attention}#1#{} cards",
+                    "made in one deck.",
                 },
             },
             j_droll={
-                name="Droll Joker",
+                name="Classification of clown codorola",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "For example, if the",
+                    "card played is a {C:attention}flush{},",
+                    "the multiplier will be {C:red}+#1#"
                 },
             },
             j_drunkard={
-                name="Drunkard",
+                name="he was drunk",
                 text={
-                    "{C:red}+#1#{} discard",
-                    "each round",
+                    "{C:red}+#1#{} drop",
+                    "per round",
                 },
             },
             j_duo={
-                name="The Duo",
+                name="duet",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "If there are {C:attention}pairs",
+                    "in the game, watch",
+                    "the animation {X:mult,C:white}x#1#"
                 },
                 unlock={
                     "Win a run",
-                    "without playing",
-                    "a {E:1,C:attention}#1#",
+                    "without falling",
+                    "{E:1,C:attention}behind{}.",
                 },
             },
             j_dusk={
-                name="Dusk",
+                name="What do you think of this chair?",
                 text={
-                    "Retrigger all played",
-                    "cards in {C:attention}final",
-                    "{C:attention}hand{} of round",
+                    "In this case, all cards",
+                    "played in the {C:attention}last",
+                    "{C:attention}deal{} of the round",
+                    "will be played."
                 },
             },
             j_egg={
