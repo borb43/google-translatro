@@ -1426,259 +1426,262 @@ return {
                 },
             },
             j_rocket={
-                name="Rocket",
+                name="like a rocket",
                 text={
-                    "Earn {C:money}$#1#{} at end of round",
-                    "Payout increases by {C:money}$#2#{}",
-                    "when {C:attention}Boss Blind{} is defeated",
+                    "Who will win {C:money}$#1#{} at the end",
+                    "of the round? Defeating the",
+                    "first {C:attention}boss{} increases your",
+                    "reward by about {C:money}$#2#{}."
                 },
             },
             j_rough_gem={
-                name="Rough Gem",
+                name="These stones are not cut.",
                 text={
-                    "Played cards with",
-                    "{C:diamonds}Diamond{} suit earn",
-                    "{C:money}$#1#{} when scored",
+                    "If a card of the same",
+                    "suit is drawn, the",
+                    "{C:diamonds}diamond{} wins {C:money}$#1#{}."
                 },
                 unlock={
-                    "Have at least {E:1,C:attention}#1#",
-                    "cards with {E:1,C:attention}#2#",
-                    "suit in your deck",
+                    "There are at least {E:1,C:attention}#1#",
+                    "cards of the {E:1,C:attention}diamond",
+                    "suit in a row.",
                 },
             },
             j_runner={
-                name="Runner",
+                name="This is what this hostility looks like",
                 text={
-                    "Gains {C:chips}+#2#{} Chips",
-                    "if played hand",
-                    "contains a {C:attention}Straight{}",
-                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                    "If your hand consists",
+                    "of a {C:attention}series{} of chips",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} chip){},",
+                    "you will get {C:chips}+#2#{} chips."
                 },
             },
             j_satellite={
-                name="Satellite",
+                name="It is used as a satellite.",
                 text={
-                    "Earn {C:money}$#1#{} at end of",
-                    "round per unique {C:planet}Planet",
-                    "card used this run",
-                    "{C:inactive}(Currently {C:money}$#2#{C:inactive})",
+                    "As shown below, for each",
+                    "unique {C:planet}Star{} Card used in",
+                    "the round, the winner of",
+                    "the round earns {C:money$#1#",
+                    "{C:inactive}(currently {C:money}$#2#{C:inactive}){}."
                 },
                 unlock={
-                    "Have {E:1,C:money}$#1#",
-                    "or more",
+                    "For example, someone has",
+                    "an income of more than {E:1,C:money}$#1#"
                 },
             },
             j_scary_face={
-                name="Scary Face",
+                name="because it looks scary",
                 text={
-                    "Played {C:attention}face{} cards",
-                    "give {C:chips}+#1#{} Chips",
-                    "when scored",
+                    "When calculated, the",
+                    "{C:attention}paid{} card brings {C:chips}+#1#{} tips."
                 },
             },
             j_scholar={
-                name="Scholar",
+                name="In the world",
                 text={
-                    "Played {C:attention}Aces{}",
-                    "give {C:chips}+#2#{} Chips",
-                    "and {C:mult}+#1#{} Mult",
-                    "when scored",
+                    "Getting an {C:attention}ace",
+                    "will give you",
+                    "{C:chips}+#2#{} chips, and",
+                    "{C:mult}+#1#{} chips this way"
                 },
             },
             j_seance={
-                name="Séance",
+                name="this meeting",
                 text={
-                    "If {C:attention}poker hand{} is a",
-                    "{C:attention}#1#{}, create a",
-                    "random {C:spectral}Spectral{} card",
-                    "{C:inactive}(Must have room)",
+                    "If your {C:attention}poker hand{} is a",
+                    "is a {C:attention}Straight{},",
+                    "draw a random card",
+                    "{C:inactive}(must be a house card){}.",
                 },
             },
             j_seeing_double={
-                name="Seeing Double",
+                name="Let's take a look at double action",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand has a scoring",
-                    "{C:clubs}Club{} card and a scoring",
-                    "card of any other {C:attention}suit",
+                    "{X:mult,C:white}X#1#{} Mult is a {C:clubs}club{} score",
+                    "card and other {C:attention}types{} of",
+                    "score cards when played",
+                    "with one hand."
                 },
                 unlock={
-                    "Play a hand",
-                    "that contains",
-                    "{E:1,C:attention}#1#",
+                    "Clap your hands",
+                    "with {E:1,C:attention}#1#",
                 },
             },
             j_selzer={
-                name="Seltzer",
+                name="What about punishment?",
                 text={
-                    "Retrigger all",
-                    "cards played for",
-                    "the next {C:attention}#1#{} hands",
+                    "Reset all",
+                    "cards played in",
+                    "the next {C:attention}#1#{} hands.",
                 },
             },
             j_shoot_the_moon={
-                name="Shoot the Moon",
+                name="How to take a picture on the moon",
                 text={
-                    "Each {C:attention}Queen{}",
-                    "held in hand",
-                    "gives {C:mult}+#1#{} Mult",
+                    "Each {C:attention}queen{}",
+                    "in your hand",
+                    "gives you a",
+                    "{C:mult}+#1#{} multiplier."
                 },
                 unlock={
-                    "Play every {E:1,C:attention}Heart",
-                    "in your deck in",
-                    "a single round",
+                    "Play each {E:1,C:attention}heart{} from",
+                    "the deck individually,",
+                    "as follows:"
                 },
             },
             j_shortcut={
-                name="Shortcut",
+                name="this is an abbreviation",
                 text={
-                    "Allows {C:attention}Straights{} to be",
-                    "made with gaps of {C:attention}1 rank",
-                    "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
+                    "This allows you to",
+                    "create {C:attention}straight{} lines",
+                    "at {C:attention}one-degree{} intervals",
+                    "{C:inactive}(for example, {C:attention}10 8 6 5 3{C:inactive}){}."
                 },
             },
             j_sixth_sense={
-                name="Sixth Sense",
+                name="It's a sixth sense",
                 text={
-                    "If {C:attention}first hand{} of round is",
-                    "a single {C:attention}6{}, destroy it and",
-                    "create a {C:spectral}Spectral{} card",
-                    "{C:inactive}(Must have room)",
+                    "So if your {C:attention}first hand{} shows",
+                    "a single {C:attention}6{} on the turn,",
+                    "destroy it and draw a",
+                    "{C:spectral}spectrum{} card for that turn",
+                    "{C:inactive}(must be blank){}."
                 },
             },
             j_sly={
-                name="Sly Joker",
+                name="This cunning clown",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} tip if there",
+                    "is one {C:attention}suit",
                 },
             },
             j_smeared={
-                name="Smeared Joker",
+                name="He looks like a dirty clown",
                 text={
                     "{C:hearts}Hearts{} and {C:diamonds}Diamonds",
-                    "count as the same suit,",
-                    "{C:spades}Spades{} and {C:clubs}Clubs",
-                    "count as the same suit",
+                    "count as a set,",
+                    "{C:spades}God{} and {C:clubs}Goddess",
+                    "count as a set.",
                 },
                 unlock={
-                    "Have at least {C:attention}#1#",
-                    "{E:1,C:attention}#2#{} in",
-                    "your deck",
+                    "This means that there",
+                    "will be at least {C:attention}three",
+                    "{E:1,C:attention}clowns{} in your group."
                 },
             },
             j_smiley={
-                name="Smiley Face",
+                name="Because I like expressions",
                 text={
-                    "Played {C:attention}face{} cards",
-                    "give {C:mult}+#1#{} Mult",
-                    "when scored",
+                    "If the result is {C:mult}+#1#{},",
+                    "a card with a {C:attention}picture",
+                    "is given."
                 },
             },
             j_sock_and_buskin={
-                name="Sock and Buskin",
+                name="Loves socks and leather",
                 text={
-                    "Retrigger all",
-                    "played {C:attention}face{} cards",
+                    "This will repeat",
+                    "itself in almost",
+                    "every card played."
                 },
                 unlock={
-                    "Play a total of",
-                    "{C:attention,E:1}#1#{} face cards",
-                    "{C:inactive}(#2#)",
+                    "A total of {C:attention,E:1}#1# {C:inactive}(#2#)",
+                    "cards are played."
                 },
             },
             j_space={
-                name="Space Joker",
+                name="Clown of this universe",
                 text={
-                    "{C:green}#1# in #2#{} chance to",
-                    "upgrade level of",
-                    "played {C:attention}poker hand{}",
+                    "Your {C:attention}poker hand{} has a",
+                    "{C:green}#1# in #2#{} chance of",
+                    "being raised."
                 },
             },
             j_splash={
-                name="Splash",
+                name="This is what the water splash looks like",
                 text={
                     "Every {C:attention}played card",
-                    "counts in scoring",
+                    "counts as points.",
                 },
             },
             j_square={
-                name="Square Joker",
+                name="This is what a clown cube looks like",
                 text={
-                    "This Joker gains {C:chips}+#2#{} Chips",
-                    "if played hand has",
-                    "exactly {C:attention}4{} cards",
-                    "{C:inactive}(Currently {C:chips}#1#{C:inactive} Chips)",
+                    "If he has exactly",
+                    "{C:attention}4{} cards in his hand",
+                    "{C:inactive}(the current number of chips is {C:chips}0{C:inactive}){},",
+                    "the jester gets {C:chips}+#2#{} chips."
                 },
             },
             j_steel_joker={
-                name="Steel Joker",
+                name="This iron clown",
                 text={
-                    "Gives {X:mult,C:white} X#1# {} Mult",
-                    "for each {C:attention}Steel Card",
-                    "in your {C:attention}full deck",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "This gives you a multiplier",
+                    "of approximately {X:mult,C:white}X#1#",
+                    "{C:inactive}(currently a multiplier of {X:mult,C:white}X#2#{C:inactive})",
+                    "for each {C:attention}draw card",
+                    "in the {C:attention}entire deck"
                 },
             },
             j_stencil={
-                name="Joker Stencil",
+                name="This is a clown template",
                 text={
-                    "{X:red,C:white} X1 {} Mult for each",
-                    "empty {C:attention}Joker{} slot",
-                    "{s:0.8}Joker Stencil included",
-                    "{C:inactive}(Currently {X:red,C:white} X#1# {C:inactive})",
+                    "Each empty {C:attention}clown{} slot",
+                    "will be cut into a",
+                    "multi-clown balloon",
+                    "with {X:mult,C:white}x1{C:inactive} (currently {X:mult,C:whitex#1#{C:inactive}){}."
                 },
             },
             j_stone={
-                name="Stone Joker",
+                name="Like this stone clown",
                 text={
-                    "Gives {C:chips}+#1#{} Chips for",
-                    "each {C:attention}Stone Card",
-                    "in your {C:attention}full deck",
-                    "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+                    "This gives you {C:chips}+#1#{} tokens",
+                    "{C:inactive}(currently {C:chips}+#2#{C:inactive} tokens)",
+                    "for every {C:attention}stone card",
+                    "in your {C:attention}entire deck{}."
                 },
             },
             j_stuntman={
-                name="Stuntman",
+                name="This is the trick",
                 text={
-                    "{C:chips}+#1#{} Chips,",
-                    "{C:attention}-#2#{} hand size",
+                    "{C:chips}+#1#{} pieces,",
+                    "size {C:attention}-#2#{} lots",
                 },
                 unlock={
-                    "In one hand,",
-                    "earn at least",
+                    "Win at least",
                     "{E:1,C:attention}#1#{} chips",
+                    "per hand"
                 },
             },
             j_supernova={
-                name="Supernova",
+                name="Like this supernova",
                 text={
-                    "Adds the number of times",
-                    "{C:attention}poker hand{} has been",
-                    "played this run to Mult",
+                    "Count the number of times",
+                    "{C:attention}poker{} was played",
+                    "during this race."
                 },
             },
             j_superposition={
-                name="Superposition",
+                name="How to solve this problem?",
                 text={
-                    "Create a {C:tarot}Tarot{} card if",
-                    "poker hand contains an",
-                    "{C:attention}Ace{} and a {C:attention}Straight{}",
-                    "{C:inactive}(Must have room)",
+                    "For example, if your poker",
+                    "hand has an {C:attention}ace{} and a {C:attention}straight",
+                    "{C:inactive}(must be blank){},",
+                    "make a {C:tarot}Tarot{} deck."
                 },
             },
             j_swashbuckler={
-                name="Swashbuckler",
+                name="Very arrogant",
                 text={
-                    "Adds the sell value",
-                    "of all other owned",
-                    "{C:attention}Jokers{} to Mult",
-                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+                    "This will add the selling",
+                    "price of all other {C:attention}Chapters",
+                    "you own to the Mult",
+                    "{C:inactive}(currently {C:mult}+#1#{C:inactive} Mult){}.",
                 },
                 unlock={
-                    "Sell a total of",
-                    "{C:attention,E:1}#1#{} Joker cards",
+                    "A total of {C:attention,E:1}#1#{}",
+                    "Joker tickets were sold.",
                     "{C:inactive}(#2#)",
                 },
             },
@@ -3760,7 +3763,7 @@ return {
                 "Borderless",
             },
             ph_1_level="+1 Level",
-            ph_4_7_of_clubs="four 7 of Clubs",
+            ph_4_7_of_clubs="four 7 clubs",
             ph_alert_debuff_confirm="Press 'Play' again to confirm",
             ph_all_poker_hand="All Poker Hands",
             ph_blind_reward="Reward: ",
