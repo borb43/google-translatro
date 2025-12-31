@@ -862,96 +862,95 @@ return {
                 },
             },
             j_egg={
-                name="Egg",
+                name="It looks like an egg",
                 text={
-                    "Gains {C:money}$#1#{} of",
-                    "{C:attention}sell value{} at",
-                    "end of round",
+                    "At the end of round",
+                    "he gains {C:money}$#1#{} from",
+                    "the {C:attention}sale price"
                 },
             },
             j_erosion={
-                name="Erosion",
+                name="It's a test",
                 text={
-                    "{C:red}+#1#{} Mult for each",
-                    "card below {C:attention}#3#{}",
-                    "in your full deck",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive} Mult)",
+                    "As shown below, all cards",
+                    "with a winning streak below",
+                    "{C:attention}#3#{} receive a {C:mult}+#1#{} Multiplier",
+                    "{C:inactive}(currently a {C:mult}+#2#{C:inactive} multiplier){}."
                 },
             },
             j_even_steven={
-                name="Even Steven",
+                name="Even Stephen",
                 text={
-                    "Played cards with",
-                    "{C:attention}even{} rank give",
-                    "{C:mult}+#1#{} Mult when scored",
-                    "{C:inactive}(10, 8, 6, 4, 2)",
+                    "It still gives you",
+                    "a {C:mult}+#1#{} multiplier when",
+                    "you discard playing cards",
+                    "{C:inactive}(10, 8, 6, 4, 2){}."
                 },
             },
             j_faceless={
-                name="Faceless Joker",
+                name="This clown is anonymous",
                 text={
-                    "Earn {C:money}$#1#{} if {C:attention}#2#{} or",
-                    "more {C:attention}face cards{}",
-                    "are discarded",
-                    "at the same time",
+                    "If you discard {C:attention}#2#{} or",
+                    "more {C:attention}cards{} at",
+                    "the same time, you",
+                    "will receive {C:money}$#1#{}.",
                 },
             },
             j_family={
-                name="The Family",
+                name="This is what this family looks like",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{X:mult,C:white} X#1# {} multi",
+                    "{C:inactive}(if worn arm consists of {C:attention}quads{C:inactive})"
                 },
                 unlock={
-                    "Win a run",
+                    "# Win a round",
                     "without playing",
-                    "a {E:1,C:attention}#1#",
+                    "{E:1,C:attention}4{}.",
                 },
             },
             j_fibonacci={
-                name="Fibonacci",
+                name="this is fibonacci",
                 text={
-                    "Each played {C:attention}Ace{},",
-                    "{C:attention}2{}, {C:attention}3{}, {C:attention}5{}, or {C:attention}8{} gives",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "If the result is: for every",
+                    "{C:attention}2{}, {C:attention}3{}, {C:attention}5{}, or {C:attention}8 Aces{}, you",
+                    "will receive a {C:mult}+#1#{} multiplier:",
                 },
             },
             j_flash={
-                name="Flash Card",
+                name="This is what a flash drive looks like",
                 text={
-                    "This Joker gains {C:mult}+#1#{} Mult",
-                    "per {C:attention}reroll{} in the shop",
-                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+                    "This Joker gets a {C:mult}+#1#{} multiplier",
+                    "{C:inactive}(currently a {C:mult}+#2#{C:inactive} multiplier)",
+                    "in each store {C:attention}iteration{}",
                 },
             },
             j_flower_pot={
-                name="Flower Pot",
+                name="I will win this",
                 text={
-                    "{X:mult,C:white} X#1# {} Mult if poker",
-                    "hand contains a",
-                    "{C:diamonds}Diamond{} card, {C:clubs}Club{} card,",
-                    "{C:hearts}Heart{} card, and {C:spades}Spade{} card",
+                    "Multi Card Poker {X:mult,C:white} X#1# {} includes",
+                    "{C:diamonds}Diamonds{}, {C:clubs}Clubs{},",
+                    "{C:hearts}Hearts{}, and {C:spades}Aces{}",
                 },
                 unlock={
-                    "Reach Ante",
-                    "level {E:1,C:attention}#1#",
+                    "After reaching",
+                    "bet level {E:1,C:attention}#1#",
                 },
             },
             j_fortune_teller={
-                name="Fortune Teller",
+                name="This fortune teller",
                 text={
-                    "{C:red}+#1#{} Mult per {C:purple}Tarot{}",
+                    "{C:red}+#1#{} hit for each {C:purple}tarot{}",
                     "card used this run",
-                    "{C:inactive}(Currently {C:red}+#2#{C:inactive})",
+                    "{C:inactive}(currently {C:red}+#2#{C:inactive}){}.",
                 },
             },
             j_four_fingers={
-                name="Four Fingers",
+                name="I have 4 fingers",
                 text={
-                    "All {C:attention}Flushes{} and",
-                    "{C:attention}Straights{} can be",
-                    "made with {C:attention}4{} cards",
+                    "All {C:attention}eliminations{} and",
+                    "{C:attention}straights{} consist",
+                    "of {C:attention}four{} cards",
+                    "as shown below."
                 },
             },
             j_gift={
