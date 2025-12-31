@@ -1,7 +1,7 @@
 {
-	"id": "Badlatro",
-	"name": "Badlatro",
-	"display_name": "Badlatro",
+	"id": "googletranslatro",
+	"name": "Google Translatro",
+	"display_name": "Google Translatro",
 	"author": ["Eris"],
 	"description": "Adds language where everything is badly google translated",
 	"prefix": "bad",
