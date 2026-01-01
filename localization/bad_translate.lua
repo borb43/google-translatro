@@ -2144,145 +2144,144 @@ return {
                 },
             },
             perishable={
-                name="Perishable",
+                name="fresh food",
                 text={
-                    "Debuffed after",
-                    "{C:attention}#1#{} rounds",
-                    "{C:inactive}({C:attention}#2#{C:inactive} remaining)",
+                    "After {C:attention}#1#{} rounds",
+                    "{C:inactive}({C:attention}#2#{C:inactive} rounds remaining)",
+                    "Who is behind? How?"
                 },
             },
             pinned_left={
-                name="Pinned",
+                name="Change it",
                 text={
-                    "This Joker stays",
-                    "pinned to the",
-                    "leftmost position",
+                    "A clown sits",
+                    "on the far left",
                 },
             },
             playing_card={
                 text={
-                    " {C:light_black}#1# of {V:1}#2# ",
+                    " {C:light_black}#1# of {V:1}#2# ", --unchanged for a good reason (google translate doesnt like keeping text variables)
                 },
             },
             purple_seal={
-                name="Purple Seal",
+                name="Same as purple brand",
                 text={
-                    "Creates a {C:tarot}Tarot{} card",
-                    "when {C:attention}discarded",
-                    "{C:inactive}(Must have room)",
+                    "How to play {C:tarot}Tarot{} cards",
+                    "{C:inactive}(must be blank)",
                 },
             },
             purple_sticker={
-                name="Purple Sticker",
+                name="This is a purple sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Purple",
-                    "{C:attention}Stake{} difficulty",
+                    "I won the {C:attention}purple",
+                    "{C:attention}tournament{} with",
+                    "this Joker."
                 },
             },
             red_seal={
-                name="Red Seal",
+                name="like a red seal",
                 text={
-                    "Retrigger this",
-                    "card {C:attention}1{} time",
+                    "Repeat this",
+                    "card {C:attention}once{}",
                 },
             },
             red_sticker={
-                name="Red Sticker",
+                name="That's what the red stickers are for.",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Red",
-                    "{C:attention}Stake{} difficulty",
+                    "The clown and I",
+                    "won the {C:attention}red bet{}."
                 },
             },
             remove_negative={
                 name="n",
                 text={
-                    "{C:inactive,s:0.9}(Removes {C:dark_edition,s:0.9}Negative{C:inactive,s:0.9} from copy)",
+                    "{C:inactive,s:0.9}(Remove {C:dark_edition,s:0.9}negative numbers{C:inactive,s:0.9} from copy)",
                 },
             },
             rental={
-                name="Rental",
+                name="It's like rent.",
                 text={
-                    "Lose {C:money}$#1#{} at",
-                    "end of round",
+                    "It was down {C:money}$#1#{}",
+                    "at the end",
+                    "of the round.",
                 },
             },
             undiscovered_booster={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Open this pack",
-                    "in an unseeded run",
-                    "to learn what it does",
+                    "Open the unrated",
+                    "course pack and",
+                    "see what's inside.",
                 },
             },
             undiscovered_edition={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Find this edition",
-                    "in an unseeded run",
-                    "to learn what it does",
+                    "Blank search this",
+                    "question to see",
+                    "its content.",
                 },
             },
             undiscovered_joker={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Buy this card or use",
+                    "it as an unrated",
+                    "code and how it",
+                    "benefits you.",
                 },
             },
             undiscovered_planet={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Buy this card or use",
+                    "it as an unrated",
+                    "code and how it",
+                    "benefits you.",
                 },
             },
             undiscovered_spectral={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Buy this card or use",
+                    "it as an unrated",
+                    "code and how it",
+                    "benefits you."
                 },
             },
             undiscovered_tag={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Use this tag in",
-                    "an unseeded run to",
-                    "learn what it does",
+                    "To see how this works,",
+                    "use this tab during a",
+                    "transaction without",
+                    "adding a balance."
                 },
             },
             undiscovered_tarot={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Purchase or use",
-                    "this card in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Buy this card or use",
+                    "it as an unrated",
+                    "code and how it",
+                    "benefits you."
                 },
             },
             undiscovered_voucher={
-                name="Not Discovered",
+                name="Not published",
                 text={
-                    "Redeem this",
-                    "voucher in an",
-                    "unseeded run to",
-                    "learn what it does",
+                    "Try using this",
+                    "cheat in non-root",
+                    "mode to see",
+                    "how it works.",
                 },
             },
             white_sticker={
-                name="White Sticker",
+                name="Like white label",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}White",
-                    "{C:attention}Stake{} difficulty",
+                    "Who beat {C:attention}Khushi",
+                    "{C:attention}White{} to use",
+                    "this flash?"
                 },
             },
             wip_locked={
@@ -3620,7 +3619,7 @@ return {
             k_none="None",
             k_nope_ex="Nope!",
             k_not_allowed_ex="Not Allowed!",
-            k_not_discovered="Not Discovered",
+            k_not_discovered="Not published",
             k_numbered_cards="Numbered Cards",
             k_or="or",
             k_other="Other",
@@ -3830,14 +3829,14 @@ return {
             legendary="Legendary",
             locked="Forbidden",
             negative="these are negative numbers",
-            perishable="Perishable",
-            pinned_left="Pinned",
+            perishable="fresh food",
+            pinned_left="Change it",
             planet="Planet",
             pluto_planet="Dwarf Planet",
             polychrome="How about colorful?",
-            purple_seal="Purple Seal",
+            purple_seal="Same as purple brand",
             rare="Rare",
-            red_seal="Red Seal",
+            red_seal="like a red seal",
             rental="Rental",
             tarot="Tarot",
             uncommon="Uncommon",
