@@ -2722,70 +2722,70 @@ return {
                     "Generate a random",
                     "number for a {C:red}rare",
                     "{C:attention}joker{} and set the",
-                    "amount to {C:money}$0"
+                    "amount to {C:money}$0{}."
                 },
             },
         },
         Stake={
             stake_black={
-                name="Black Stake",
+                name="Looks like a black mountain",
                 text={
-                    "Shop can have {C:attention}Eternal{} Jokers",
-                    "{C:inactive,s:0.8}(Can't be sold or destroyed)",
-                    "{s:0.8}Applies all previous Stakes",
+                    "The {C:attention}Eternal{} Joker can be purchased",
+                    "{C:inactive,s:0.8}(but not sold or destroyed){} in this shop",
+                    "{s:0.8}All previous payments apply as follows:"
                 },
             },
             stake_blue={
-                name="Blue Stake",
+                name="This is Colonel Blue.",
                 text={
-                    "{C:red}-1{} Discard",
-                    "{s:0.8}Applies all previous Stakes",
+                    "Remove {C:red}-1{}",
+                    "{s:0.8}All previous rates apply",
                 },
             },
             stake_gold={
-                name="Gold Stake",
+                name="as part of this money",
                 text={
-                    "Shop can have {C:attention}Rental{} Jokers",
-                    "{C:inactive,s:0.8}(Costs {C:money,s:0.8}$3{C:inactive,s:0.8} per round)",
-                    "{s:0.8}Applies all previous Stakes",
+                    "You can {C:attention}rent{} jokes from this shop",
+                    "{C:inactive,s:0.8}({C:money,s:0.8}$3{C:inactive,s:0.8} per round)",
+                    "{s:0.8}Apply all previous values ​​as follows:", --invisible characters lol
                 },
             },
             stake_green={
-                name="Green Stake",
+                name="The green part is approx.",
                 text={
-                    "Required score scales",
-                    "faster for each {C:attention}Ante",
-                    "{s:0.8}Applies all previous Stakes",
+                    "The points required for",
+                    "each {C:attention}bet{} are calculated faster",
+                    "{s:0.8}All previous rates apply",
                 },
             },
             stake_orange={
-                name="Orange Stake",
+                name="Because oranges are like steak",
                 text={
-                    "Shop can have {C:attention}Perishable{} Jokers",
-                    "{C:inactive,s:0.8}(Debuffed after 5 Rounds)",
-                    "{s:0.8}Applies all previous Stakes",
+                    "This shop has a {C:attention}degradable{} joke",
+                    "{C:inactive,s:0.8}(can be avoided after 5 turns)",
+                    "{s:0.8}All bets used in the past:",
                 },
             },
             stake_purple={
-                name="Purple Stake",
+                name="The purple wedge looks like this",
                 text={
-                    "Required score scales",
-                    "faster for each {C:attention}Ante",
-                    "{s:0.8}Applies all previous Stakes",
+                    "The points required for each",
+                    "first {C:attention}bet{} will increase faster",
+                    "{s:0.8}All previous prices are listed below.",
                 },
             },
             stake_red={
-                name="Red Stake",
+                name="red nails",
                 text={
-                    "{C:attention}Small Blind{} gives",
-                    "no reward money",
-                    "{s:0.8}Applies all previous Stakes",
+                    "o No prices will be",
+                    "paid to the {C:attention}Small Blind",
+                    "{s:0.8}All previous rates apply."
                 },
             },
             stake_white={
-                name="White Stake",
+                name="stack white wood",
                 text={
-                    "Base Difficulty",
+                    "This is the main difficulty",
                 },
             },
         },
