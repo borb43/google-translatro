@@ -2291,6 +2291,74 @@ return {
                     "progress",
                 },
             },
+            load_success = {
+                text = {
+                    "The module has been",
+                    "downloaded {C:green}successfully{}.",
+                    "how"
+                }
+            },
+            load_failure_d = {
+                text = {
+                    'I miss {C:attention}addiction!{} how',
+                    '#1#',
+                }
+            },
+            load_failure_c = {
+                text = {
+                    'Because the {C:attention}conflict{}',
+                    "has not been resolved. how",
+                    '#1#'
+                }
+            },
+            load_failure_d_c = {
+                text = {
+                    'I miss {C:attention}addiction!{} how',
+                    '#1#',
+                    'Because the {C:attention}conflict',
+                    "has not been resolved. how",
+                    '#2#'
+                }
+            },
+            load_failure_o = {
+                text = {
+                    "This is {C:attention}outdated!{} Steam",
+                    "versions prior to {C:money}0.9.8",
+                    "are no longer supported.",
+                    "how"
+                }
+            },
+            load_failure_i = {
+                text = {
+                    "{C:attention}Not worth it!{} Version #1#",
+                    "requires Steam modification,",
+                    "but installation is similar",
+                    "to #2#"
+                }
+            },
+            load_failure_p = {
+                text = {
+                    "{C:attention}This prefix is controversial.",
+                    "The prefix for this change is",
+                    "the same as the prefix for",
+                    "other changes. What he likes",
+                    '({C:attention}#1#{})',
+                }
+            },
+            load_failure_m = {
+                text = {
+                    '{C:attention}Main file Not Found.{}',
+                    'The main file for this',
+                    'example was not found. how',
+                    '({C:attention}#1#{})'
+                }
+            },
+            load_disabled = {
+                text = {
+                    'This mode is {C:attention}disabled.{}',
+                    'how'
+                }
+            },
         },
         Planet={
             c_ceres={
