@@ -2430,6 +2430,53 @@ return {
                     "card {C:attention}#1#{} #2#.",
                 },
             },
+            artist = {
+                text = {
+                    "{C:inactive}This is what an artist looks like",
+                },
+            },
+            artist_credit = {
+                name = "This is what an artist looks like",
+                text = {
+                    "{E:1}#1#{}"
+                },
+            },
+            generic_card_limit = {
+                name = "The spending limit of this card",
+                text = {
+                    '{C:dark_edition}#1#{} is a regional slot'
+                }
+            },
+            generic_card_limit_plural = {
+                name = "The spending limit of this card",
+                text = {
+                    '{C:dark_edition}#1#{} is a regional slot'
+                }
+            },
+            generic_card_limit_pc = {
+                name = "hand size",
+                text = {
+                    'hand size {C:dark_edition}#1#{}'
+                }
+            },
+            generic_card_limit_pc_plural = {
+                name = "hand size",
+                text = {
+                    'hand size {C:dark_edition}#1#{}'
+                }
+            },
+            generic_extra_slots = {
+                name = "Use a broom",
+                text = {
+                    'Fill {C:dark_edition}#1#{} holes'
+                }
+            },
+            generic_extra_slots_pc = {
+                name = "Because the distance between the hands is the same",
+                text = {
+                    'Answer to hand {C:dark_edition}#1#{}D Hand K'
+                }
+            }
         },
         Planet={
             c_ceres={
