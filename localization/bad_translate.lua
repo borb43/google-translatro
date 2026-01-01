@@ -2195,7 +2195,7 @@ return {
             remove_negative={
                 name="n",
                 text={
-                    "{C:inactive,s:0.9}(Remove {C:dark_edition,s:0.9}negative numbers{C:inactive,s:0.9} from copy)",
+                    "{C:inactive,s:0.9}(Remove {C:dark_edition,s:0.9}negative {C:inactive,s:0.9}numbers from copy)",
                 },
             },
             rental={
@@ -2576,151 +2576,153 @@ return {
         },
         Spectral={
             c_ankh={
-                name="Ankh",
+                name="Like Hank",
                 text={
-                    "Create a copy of a",
-                    "random {C:attention}Joker{}, destroy",
-                    "all other Jokers",
+                    "Create clones of",
+                    "random {C:attention}clowns{}, and",
+                    "destroy all other",
+                    "clowns."
                 },
             },
             c_aura={
-                name="Aura",
+                name="Because I love Hal",
                 text={
-                    "Add {C:dark_edition}Foil{}, {C:dark_edition}Holographic{},",
-                    "or {C:dark_edition}Polychrome{} effect to",
-                    "{C:attention}1{} selected card in hand",
+                    "Add {C:dark_edition}foil{}, {C:dark_edition}holographic{},",
+                    "and {C:dark_edition}color{} effects to",
+                    "selected cards in your hand."
                 },
             },
             c_black_hole={
-                name="Black Hole",
+                name="it's like a black hole",
                 text={
-                    "Upgrade every",
-                    "{C:legendary,E:1}poker hand",
-                    "by {C:attention}1{} level",
+                    "Update all",
+                    "{C:legendary,E:1}game cards{}.",
                 },
             },
             c_cryptid={
-                name="Cryptid",
+                name="unknown creature",
                 text={
-                    "Create {C:attention}#1#{} copies of",
-                    "{C:attention}1{} selected card",
-                    "in your hand",
+                    "Add {C:attention}#1#{} tagret cards",
+                    "to your hand.",
                 },
             },
             c_deja_vu={
-                name="Deja Vu",
+                name="Because it's like déjà vu",
                 text={
-                    "Add a {C:red}Red Seal{}",
-                    "to {C:attention}1{} selected",
-                    "card in your hand",
+                    "Place the {C:red}red sticker{}",
+                    "on {C:attention}the{} chosen",
+                    "card in your hand.",
                 },
             },
             c_ectoplasm={
-                name="Ectoplasm",
+                name="For example, ectoplasm",
                 text={
-                    "Add {C:dark_edition}Negative{} to",
-                    "a random {C:attention}Joker,",
-                    "{C:red}-#1#{} hand size",
+                    "Add a {C:dark_edition}negative{} number",
+                    "for the random {C:attention}clown",
+                    "and {C:red}-#1#{} for the hand size."
                 },
             },
             c_familiar={
-                name="Familiar",
+                name="Named",
                 text={
-                    "Destroy {C:attention}1{} random",
-                    "card in your hand, add",
-                    "{C:attention}#1#{} random {C:attention}Enhanced face",
-                    "{C:attention}cards{} to your hand",
+                    "If you accidentally destroy",
+                    "a card in your hand, {C:attention}#1#{} random",
+                    "{C:attention}face-up{} cards will be added",
+                    "to your hand."
                 },
             },
             c_grim={
-                name="Grim",
+                name="so tight",
                 text={
-                    "Destroy {C:attention}1{} random",
-                    "card in your hand,",
-                    "add {C:attention}#1#{} random {C:attention}Enhanced",
-                    "{C:attention}Aces{} to your hand",
+                    "If you destroy a random",
+                    "card in your hand, add",
+                    "{C:attention}#1# Skilled Famine{} randomly",
+                    "to your hand."
                 },
             },
             c_hex={
-                name="Hex",
+                name="How to connect hexagons",
                 text={
-                    "Add {C:dark_edition}Polychrome{} to a",
-                    "random {C:attention}Joker{}, destroy",
-                    "all other Jokers",
+                    "Add {C:dark_edition}some flowers{} to two",
+                    "random {C:attention}clowns{} and destroy",
+                    "all the other clowns"
                 },
             },
             c_immolate={
-                name="Immolate",
+                name="You also have to sacrifice",
                 text={
-                    "Destroys {C:attention}#1#{} random",
-                    "cards in hand,",
-                    "gain {C:money}$#2#",
+                    "Destroy {C:attention}#1#{} random",
+                    "cards in your hand",
+                    "to win {C:money}$#2#{}.",
                 },
             },
             c_incantation={
-                name="Incantation",
+                name="What is advertising?",
                 text={
-                    "Destroy {C:attention}1{} random",
-                    "card in your hand, add {C:attention}#1#",
-                    "random {C:attention}Enhanced numbered",
-                    "{C:attention}cards{} to your hand",
+                    "Destroy the random",
+                    "cards in your hand and",
+                    "add {C:attention}4 advanced number",
+                    "{C:attention}cards{} to your hand."
                 },
             },
             c_medium={
-                name="Medium",
+                name="as a remedy",
                 text={
-                    "Add a {C:purple}Purple Seal{}",
+                    "Add 1 {C:purple}purple sticker{}",
                     "to {C:attention}1{} selected",
-                    "card in your hand",
+                    "card from your hand",
                 },
             },
             c_ouija={
-                name="Ouija",
+                name="Like a Ouija board",
                 text={
-                    "Converts all cards",
-                    "in hand to a single",
-                    "random {C:attention}rank",
-                    "{C:red}-1{} hand size",
+                    "Changes all cards in",
+                    "your hand to a single",
+                    "random {C:attention}level",
+                    "and reduces your",
+                    "hand size by {C:red}1{}.",
                 },
             },
             c_sigil={
-                name="Sigil",
+                name="this sign",
                 text={
-                    "Converts all cards",
-                    "in hand to a single",
-                    "random {C:attention}suit",
+                    "Shuffle all the cards",
+                    "in your hand to create a",
+                    "combination as shown below."
                 },
             },
             c_soul={
-                name="The Soul",
+                name="this spirit",
                 text={
-                    "Creates a",
-                    "{C:legendary,E:1}Legendary{} Joker",
-                    "{C:inactive}(Must have room)",
+                    "The {C:legendary,E:1}legendary{} Joker",
+                    "{C:inactive}(main locations)",
+                    "will appear."
                 },
             },
             c_talisman={
-                name="Talisman",
+                name="this amulet",
                 text={
-                    "Add a {C:attention}Gold Seal{}",
-                    "to {C:attention}1{} selected",
-                    "card in your hand",
+                    "It takes approximately",
+                    "{C:attention}one week{} for the {C:attention}Gold Seal",
+                    "to be added to the",
+                    "selected card."
                 },
             },
             c_trance={
-                name="Trance",
+                name="The adapter looks like this",
                 text={
-                    "Add a {C:blue}Blue Seal{}",
-                    "to {C:attention}1{} selected",
-                    "card in your hand",
+                    "Adds {C:blue}blue stickers{}",
+                    "to selected cards",
+                    "in your hand.",
                 },
             },
             c_wraith={
-                name="Wraith",
+                name="It seems like a nightmare",
                 text={
-                    "Creates a random",
-                    "{C:red}Rare{C:attention} Joker{},",
-                    "sets money to {C:money}$0",
+                    "Generate a random",
+                    "number for a {C:red}rare",
+                    "{C:attention}joker{} and set the",
+                    "amount to {C:money}$0"
                 },
             },
         },
