@@ -2791,182 +2791,182 @@ return {
         },
         Tag={
             tag_boss={
-                name="Boss Tag",
+                name="Boss loves signs",
                 text={
-                    "Rerolls the",
-                    "{C:attention}Boss Blind",
+                    "What would a",
+                    "{C:attention}blind Boss{} reboot",
+                    "look like?"
                 },
             },
             tag_buffoon={
-                name="Buffoon Tag",
+                name="It is a symbol of Buffon.",
                 text={
-                    "Gives a free",
-                    "{C:attention}Mega Buffoon Pack",
+                    "Something like a",
+                    "{C:attention}super buffon gift bag{}.",
                 },
             },
             tag_charm={
-                name="Charm Tag",
+                name="this is a magical sign",
                 text={
-                    "Gives a free",
-                    "{C:tarot}Mega Arcana Pack",
+                    "The {C:tarot}Mega Arcana pack",
+                    "is almost free.",
                 },
             },
             tag_coupon={
-                name="Coupon Tag",
+                name="I love this coupon!",
                 text={
-                    "Initial cards and",
-                    "booster packs in next",
-                    "shop are free",
+                    "Starter cards and",
+                    "bonus packs are free",
+                    "at your local store."
                 },
             },
             tag_d_six={
-                name="D6 Tag",
+                name="D6 mark etc.",
                 text={
-                    "Rerolls in next shop",
-                    "start at {C:money}$0",
+                    "The next store relaunch",
+                    "will start at {C:money}$0{} as follows:"
                 },
             },
             tag_double={
-                name="Double Tag",
+                name="This is a double label",
                 text={
-                    "Gives a copy of the",
-                    "next selected {C:attention}Tag{}",
-                    "{s:0.8,C:attention}Double Tag{s:0.8} excluded",
+                    "You will then recieve",
+                    "a copy of the designated",
+                    "{C:attention}label{}. {C:attention,s:0.8}There are no",
+                    "{C:attention,s:0.8}duplicate tags in the title."
                 },
             },
             tag_economy={
-                name="Economy Tag",
+                name="As an economic sign",
                 text={
-                    "Doubles your money",
-                    "{C:inactive}(Max of {C:money}$#1#{C:inactive})",
+                    "Double your money now",
+                    "{C:inactive}(up to {C:money}$#1#{C:inactive})",
                 },
             },
             tag_ethereal={
-                name="Ethereal Tag",
+                name="This sign is just as ambiguous",
                 text={
-                    "Gives a free",
-                    "{C:spectral}Spectral Pack",
+                    "Available as a free",
+                    "{C:spectral}spectrum package{}.",
                 },
             },
             tag_foil={
-                name="Foil Tag",
+                name="Aluminum foil label",
                 text={
-                    "Next base edition shop",
-                    "Joker is free and",
-                    "becomes {C:dark_edition}Foil",
+                    "Next Basic Store Joker",
+                    "is free, as is {C:dark_edition}Elephant{}.",
                 },
             },
             tag_garbage={
-                name="Garbage Tag",
+                name="this is a trash sign",
                 text={
-                    "Gives {C:money}$#1#{} per unused",
-                    "{C:red}discard{} this run",
-                    "{C:inactive}(Will give {C:money}$#2#{C:inactive})",
+                    "The game pays {C:money}$#1#{} for each",
+                    "unclaimed {C:red}spin {C:inactive}({C:money}#2#{C:inactive} points){}."
                 },
             },
             tag_handy={
-                name="Handy Tag",
+                name="This is useful science",
                 text={
-                    "Gives {C:money}$#1#{} per played",
-                    "{C:blue}hand{} this run",
-                    "{C:inactive}(Will give {C:money}$#2#{C:inactive})",
+                    "Each {C:blue}play{} this round",
+                    "pays {C:money}$#1# {C:inactive}(you pay {C:money}$#2#{C:inactive}){}:"
                 },
             },
             tag_holo={
-                name="Holographic Tag",
+                name="3D symbol",
                 text={
-                    "Next base edition shop",
-                    "Joker is free and",
-                    "becomes {C:dark_edition}Holographic",
+                    "Next big brand store,",
+                    "Joker, is free and",
+                    "{C:dark_edition}holographic{}.",
                 },
             },
             tag_investment={
-                name="Investment Tag",
+                name="This contribution has been accepted",
                 text={
-                    "After defeating",
-                    "the Boss Blind,",
-                    "gain {C:money}$#1#",
+                    "Win {C:money}$#1#",
+                    "by defeating the",
+                    "boss blind."
                 },
             },
             tag_juggle={
-                name="Juggle Tag",
+                name="It's like juggling a wand.",
                 text={
-                    "{C:attention}+#1#{} hand size",
-                    "next round",
+                    "Next round",
+                    "hand size {C:attention}+#1#"
                 },
             },
             tag_meteor={
-                name="Meteor Tag",
+                name="Because that's the name of the meteorite",
                 text={
-                    "Gives a free",
-                    "{C:planet}Mega Celestial Pack",
+                    "The {C:planet}Giant Sky Object Pack",
+                    "is available for free."
                 },
             },
             tag_negative={
-                name="Negative Tag",
+                name="same negative label",
                 text={
-                    "Next base edition shop",
-                    "Joker is free and",
-                    "becomes {C:dark_edition}Negative",
+                    "The next big version of",
+                    "Joker Shop will be free",
+                    "and {C:dark_edition}passive"
                 },
             },
             tag_orbital={
-                name="Orbital Tag",
+                name="It's like a road sign.",
                 text={
                     "Upgrade {C:attention}#1#",
-                    "by {C:attention}#2# levels",
+                    "to {C:attention}level 3",
                 },
             },
             tag_polychrome={
-                name="Polychrome Tag",
+                name="colorful labels",
                 text={
-                    "Next base edition shop",
-                    "Joker is free and",
-                    "becomes {C:dark_edition}Polychrome",
+                    "Get the Joker Next Base Edition",
+                    "for free and it's available",
+                    "in a {C:dark_edition}variety of colors{}."
                 },
             },
             tag_rare={
-                name="Rare Tag",
+                name="classified as rare",
                 text={
-                    "Shop has a free",
-                    "{C:red}Rare Joker",
+                    "This store has free",
+                    "{C:red}rare clowns{}, so",
                 },
             },
             tag_skip={
-                name="Speed Tag",
+                name="This is a speed sign...",
                 text={
-                    "Gives {C:money}$#1#{} per skipped",
-                    "Blind this run",
-                    "{C:inactive}(Will give {C:money}$#2#{C:inactive})",
+                    "This game pays {C:money}$#1#{}",
+                    "per blind bet",
+                    "{C:inactive}({C:money}$#2#{C:inactive} prize){}.",
                 },
             },
             tag_standard={
-                name="Standard Tag",
+                name="name the standard",
                 text={
-                    "Gives a free",
-                    "{C:attention}Mega Standard Pack",
+                    "Create {C:attention}great templates",
+                    "for free",
                 },
             },
             tag_top_up={
-                name="Top-up Tag",
+                name="return label",
                 text={
-                    "Create up to {C:attention}#1#",
-                    "{C:blue}Common{} Jokers",
-                    "{C:inactive}(Must have room)",
+                    "This will cause {C:attention}#1#",
+                    "clowns to appear",
+                    "{C:inactive}(you'll have to make room for them)"
                 },
             },
             tag_uncommon={
-                name="Uncommon Tag",
+                name="This is an unusual sign",
                 text={
-                    "Shop has a free",
-                    "{C:green}Uncommon Joker",
+                    "There is a free",
+                    "{C:green}Rare Clown{} in",
+                    "the store."
                 },
             },
             tag_voucher={
-                name="Voucher Tag",
+                name="The coupon sticker looks like this...",
                 text={
-                    "Adds one {C:voucher}Voucher",
-                    "to the next shop",
+                    "Add the {C:voucher}coupon",
+                    "to your next store",
                 },
             },
         },
