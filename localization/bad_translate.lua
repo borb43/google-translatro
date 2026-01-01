@@ -2830,7 +2830,7 @@ return {
             tag_double={
                 name="This is a double label",
                 text={
-                    "You will then recieve",
+                    "You will then receive",
                     "a copy of the designated",
                     "{C:attention}label{}. {C:attention,s:0.8}There are no",
                     "{C:attention,s:0.8}duplicate tags in the title."
@@ -3150,329 +3150,318 @@ return {
         },
         Voucher={
             v_antimatter={
-                name="Antimatter",
+                name="Because it's like a substance",
                 text={
-                    "{C:dark_edition}+1{} Joker Slot",
+                    "Same as Slot {C:dark_edition}+1{} Joker",
                 },
                 unlock={
-                    "Redeem {C:voucher}Blank{}",
-                    "{C:attention}#1#{} total times",
-                    "{C:inactive}(#2#)",
+                    "{C:attention}#1#{} returns null",
+                    "{C:inactive}(#2#){}.",
                 },
             },
             v_blank={
-                name="Blank",
+                name="What's Bran like?",
                 text={
-                    "{C:inactive}Does nothing?",
+                    "{C:inactive}Isn't this useful?",
                 },
             },
             v_clearance_sale={
-                name="Clearance Sale",
+                name="about. Sell ​​after cancellation", --invisible characters lol
                 text={
-                    "All cards and packs in",
-                    "shop are {C:attention}#1#%{} off",
+                    "Enjoy {C:attention}#1#%{} off all tickets",
+                    "and packages in-store."
                 },
             },
             v_crystal_ball={
-                name="Crystal Ball",
+                name="it's like a crystal ball",
                 text={
-                    "{C:attention}+1{} consumable slot",
+                    "This slot is consumable.",
                 },
             },
             v_directors_cut={
-                name="Director's Cut",
+                name="Director cut",
                 text={
-                    "Reroll Boss Blind",
-                    "{C:attention}1{} time per Ante,",
-                    "{C:money}$#1#{} per roll",
+                    "The leader repeats",
+                    "{C:attention}once{} at a rate of",
+                    "{C:money}$#1#{} per spin.",
                 },
             },
             v_glow_up={
-                name="Glow Up",
+                name="I like to shine",
                 text={
-                    "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, and",
-                    "{C:dark_edition}Polychrome{} cards",
-                    "appear {C:attention}#1#X{} more often",
+                    "{C:dark_edition}Paper{} cards, {C:dark_edition}holographic{} cards,",
+                    "and {C:dark_edition}colored{} cards appear",
+                    "{C:attention}#1#x{} more often"
                 },
                 unlock={
-                    "Have at least {C:attention}#1#",
-                    "{C:attention}Joker{} cards with",
-                    "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, or",
-                    "{C:dark_edition}Polychrome{} edition",
+                    "Contains at least {C:attention}#1#",
+                    "{C:attention}strip{} cards in",
+                    "{C:dark_edition}foil{}, {C:dark_edition}3D{}, or",
+                    "{C:dark_edition}multi-color{} versions.",
                 },
             },
             v_grabber={
-                name="Grabber",
+                name="That's the mantra",
                 text={
-                    "Permanently",
-                    "gain {C:blue}+#1#{} hand",
-                    "per round",
+                    "Continuously",
+                    "get {C:blue}+#1#{} hand",
+                    "each round",
                 },
             },
             v_hieroglyph={
-                name="Hieroglyph",
+                name="Because hieroglyph c",
                 text={
-                    "{C:attention}-#1#{} Ante,",
-                    "{C:blue}-#1#{} hand",
-                    "each round",
+                    "For example {C:attention}-#1#{} ante,",
+                    "{C:blue}-#1#{} hand each round.",
                 },
             },
             v_hone={
-                name="Hone",
+                name="It's like an honor",
                 text={
-                    "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, and",
-                    "{C:dark_edition}Polychrome{} cards",
-                    "appear {C:attention}#1#X{} more often",
+                    "{C:dark_edition}foil{} cards, {C:dark_edition}holographic{} cards, and",
+                    "{C:dark_edition}colored{} cards",
+                    "appear {C:attention}#1#{} times as often.",
                 },
             },
             v_illusion={
-                name="Illusion",
+                name="This is also an illusion",
                 text={
-                    "{C:attention}Playing cards{} in shop",
-                    "may have an {C:enhanced}Enhancement{},",
-                    "{C:dark_edition}Edition{}, and/or a {C:attention}Seal{}",
+                    "This includes {C:attention}card games{},",
+                    "{C:dark_edition}publications{}, {C:attention}stamps{}, etc. that can",
+                    "be updated as stores.",
                 },
                 unlock={
-                    "Buy a total of",
-                    "{C:attention}#1#{} playing cards",
-                    "from the shop",
-                    "{C:inactive}(#2#)",
+                    "I bought {C:attention}#1#{} playing cards",
+                    "from a store called {C:inactive}(#2#){}."
                 },
             },
             v_liquidation={
-                name="Liquidation",
+                name="That's what parting is like",
                 text={
-                    "All cards and packs in",
-                    "shop are {C:attention}#1#%{} off",
+                    "{C:attention}#1#%{} off all tickets",
+                    "and packages in-store."
                 },
                 unlock={
-                    "Redeem at least",
-                    "{C:attention}#1#{C:voucher} Voucher{} cards",
-                    "in one run",
+                    "who returns at least",
+                    "{C:attention}#1#{C:voucher} debit{} cards",
+                    "in one round",
                 },
             },
             v_magic_trick={
-                name="Magic Trick",
+                name="I like this charm",
                 text={
                     "{C:attention}Playing cards{} can",
                     "be purchased",
-                    "from the {C:attention}shop",
+                    "at the {C:attention}store{}.",
                 },
             },
             v_money_tree={
-                name="Money Tree",
+                name="It's like a money tree",
                 text={
-                    "Raise the cap on",
-                    "interest earned in",
-                    "each round to {C:money}$#1#{}",
+                    "The maximum interest",
+                    "received in one round",
+                    "has been increased to {C:money}$#1#{}."
                 },
                 unlock={
-                    "Max out the interest",
-                    "per round earnings for",
-                    "{C:attention}#1#{} consecutive rounds",
-                    "{C:inactive}(#2#)",
+                    "The maximum amount that",
+                    "can be spent is a percentage",
+                    "of the round's winnings",
+                    "in {C:attention}#1#{} rounds {C:inactive}(#2#){}."
                 },
             },
             v_nacho_tong={
-                name="Nacho Tong",
+                name="How about nacho topping?",
                 text={
-                    "Permanently",
-                    "gain {C:blue}+#1#{} hand",
-                    "per round",
+                    "Keep getting",
+                    "{C:blue}+#1#{} combo",
+                    "every round.",
                 },
                 unlock={
-                    "Play a total",
-                    "of {C:attention}#1#{} cards",
-                    "{C:inactive}(#2#)",
+                    "A total of {C:attention}#1#",
+                    "cards were played",
+                    "{C:inactive}(#2#){}.",
                 },
             },
             v_observatory={
-                name="Observatory",
+                name="There is also such a display area",
                 text={
-                    "{C:planet}Planet{} cards in your",
-                    "{C:attention}consumable{} area give",
-                    "{X:red,C:white} X#1# {} Mult for their",
-                    "specified {C:attention}poker hand",
+                    "In this {C:attention}Payfield Poker{} pack,",
+                    "you will get {X:red,C:white}X#1#{} multi in",
+                    "the form of a {C:planet}planet{} card."
                 },
                 unlock={
-                    "Use a total of {C:attention}#1#",
-                    "{C:planet}Planet{} cards from any",
-                    "{C:planet}Celestial Pack",
-                    "{C:inactive}(#2#)",
+                    "A total of approximately",
+                    "{C:attention}#1# {C:planet}planet{} cards {C:inactive}(#2#)",
+                    "are used in each {C:planet}Skypack{}."
                 },
             },
             v_omen_globe={
-                name="Omen Globe",
+                name="Because of the jungle sign",
                 text={
-                    "{C:spectral}Spectral{} cards may",
-                    "appear in any of",
-                    "the {C:attention}Arcana Packs",
+                    "{C:spectral}Ghost{} cards",
+                    "appear in the {C:attention}Arcana",
+                    "{C:attention}deck{} as follows:",
                 },
                 unlock={
-                    "Use a total of {C:attention}#1#",
-                    "{C:tarot}Tarot{} cards from any",
-                    "{C:tarot}Arcana Pack",
-                    "{C:inactive}(#2#)",
+                    "Use a total of {C:attention}#1#{C:inactive} (#2#)",
+                    "{C:tarot}Tarot{} cards from the",
+                    "{C:tarot}Arcana deck{}."
                 },
             },
             v_overstock_norm={
-                name="Overstock",
+                name="what is the result",
                 text={
-                    "{C:attention}+1{} card slot",
-                    "available in shop",
+                    "The shop has a",
+                    "{C:attention}+1{} card slot."
                 },
             },
             v_overstock_plus={
-                name="Overstock Plus",
+                name="What is overstock?",
                 text={
-                    "{C:attention}+1{} card slot",
-                    "available in shop",
+                    "The store has a",
+                    "{C:attention}+1{} card slot"
                 },
                 unlock={
-                    "Spend a total of",
-                    "{C:money}$#1#{} at the shop",
-                    "{C:inactive}($#2#)",
+                    "People only spend",
+                    "{C:money}$#1# {C:inactive}($#2#){} in stores.",
+                    "Here's why:"
                 },
             },
             v_paint_brush={
-                name="Paint Brush",
+                name="make it look like a brush",
                 text={
-                    "{C:attention}+#1#{} hand size",
+                    "{C:attention}+#1#{} on this measure",
                 },
             },
             v_palette={
-                name="Palette",
+                name="i like this painting",
                 text={
-                    "{C:attention}+#1#{} hand size",
+                    "Hand size {C:attention}+#1#{}",
                 },
                 unlock={
-                    "Reduce hand size",
-                    "down to {C:attention}#1#{} cards",
+                    "Reduce your hand size",
+                    "to {C:attention}#1#{} cards",
                 },
             },
             v_petroglyph={
-                name="Petroglyph",
+                name="I like stone carvings.",
                 text={
-                    "{C:attention}-#1#{} Ante,",
-                    "{C:red}-#1#{} discard",
-                    "each round",
+                    "Rating: {C:attention}#1#{},",
+                    "once per round"
                 },
                 unlock={
-                    "Reach Ante",
-                    "level {E:1,C:attention}#1#",
+                    "Because it reaches,",
+                    "for example, the",
+                    "age of {C:attention}#1#{} years."
                 },
             },
             v_planet_merchant={
-                name="Planet Merchant",
+                name="An entrepreneur on this earth",
                 text={
                     "{C:planet}Planet{} cards appear",
-                    "{C:attention}#1#X{} more frequently",
-                    "in the shop",
+                    "{C:attention}#1#{} times in the shop.",
                 },
             },
             v_planet_tycoon={
-                name="Planet Tycoon",
+                name="For example, these are the poles of the Earth.",
                 text={
-                    "{C:planet}Planet{} cards appear",
-                    "{C:attention}#1#X{} more frequently",
-                    "in the shop",
+                    "Because {C:planet}planet{} cards",
+                    "appear in the shop",
+                    "{C:attention}#1#{} times more often."
                 },
                 unlock={
-                    "Buy a total of",
-                    "{C:attention}#1#{C:planet} Planet{} cards",
-                    "from the shop",
-                    "{C:inactive}(#2#)",
+                    "Purchase a total",
+                    "of {C:attention}#1# {C:planet}Star{} Cards",
+                    "{C:inactive}(#2#){} from the shop",
+                    "as follows:"
                 },
             },
             v_recyclomancy={
-                name="Recyclomancy",
+                name="he cares",
                 text={
-                    "Permanently",
-                    "gain {C:red}+#1#{} discard",
-                    "each round",
+                    "Anyone who gets",
+                    "a {C:red}+1{} every round",
+                    "is permanently reset."
                 },
                 unlock={
-                    "Discard a total",
-                    "of {C:attention}#1#{} cards",
-                    "{C:inactive}(#2#)",
+                    "Remove a total",
+                    "of {C:attention}#1#{C:inactive}(#2#){} cards.",
                 },
             },
             v_reroll_glut={
-                name="Reroll Glut",
+                name="Change in saturation",
                 text={
-                    "Rerolls cost",
-                    "{C:money}$#1#{} less",
+                    "The recycling",
+                    "fee is {C:money}$#1#{}.",
                 },
                 unlock={
-                    "Reroll the shop a",
-                    "total of {C:attention}#1#{} times",
-                    "{C:inactive}(#2#)",
+                    "This will rotate the",
+                    "record a total of",
+                    "{C:attention}#1#{} times {C:inactive}(#2#){}."
                 },
             },
             v_reroll_surplus={
-                name="Reroll Surplus",
+                name="Re-wrap the insert like this",
                 text={
-                    "Rerolls cost",
-                    "{C:money}$#1#{} less",
+                    "Because reinvestments",
+                    "are cheap and cost {C:money}$#1#"
                 },
             },
             v_retcon={
-                name="Retcon",
+                name="Ratcon does it.",
                 text={
-                    "Reroll Boss Blind",
-                    "{C:attention}unlimited{} times,",
-                    "{C:money}$#1#{} per roll",
+                    "{C:attention}Unlimited{} repeat",
+                    "rerolls, approximately",
+                    "{C:money}$#1#{} per roll.",
                 },
                 unlock={
-                    "Discover",
-                    "{C:attention}#1#{} Blinds",
+                    "Found",
+                    "{C:attention}#1#{} Curtains",
                 },
             },
             v_seed_money={
-                name="Seed Money",
+                name="This is the initial capital",
                 text={
-                    "Raise the cap on",
-                    "interest earned in",
-                    "each round to {C:money}$#1#{}",
+                    "This increases the",
+                    "maximum interest",
+                    "earned per round",
+                    "to {C:money}$#1#{}."
                 },
             },
             v_tarot_merchant={
-                name="Tarot Merchant",
+                name="This is a tarot card reader",
                 text={
                     "{C:tarot}Tarot{} cards appear",
-                    "{C:attention}#1#X{} more frequently",
-                    "in the shop",
+                    "in the store {C:attention}#1#{} times.",
                 },
             },
             v_tarot_tycoon={
-                name="Tarot Tycoon",
+                name="Things like tarot cards",
                 text={
-                    "{C:tarot}Tarot{} cards appear",
-                    "{C:attention}#1#X{} more frequently",
-                    "in the shop",
+                    "The number of {C:tarot}Tarot",
+                    "decks on store shelves",
+                    "has multiplied by {C:attention}#1#{}."
                 },
                 unlock={
-                    "Buy a total of",
-                    "{C:attention}#1#{C:tarot} Tarot{} cards",
-                    "from the shop",
+                    "Buy {C:attention}#1#{C:tarot} Tarot{} cards",
                     "{C:inactive}(#2#)",
+                    "from the store.",
                 },
             },
             v_telescope={
-                name="Telescope",
+                name="This telescope",
                 text={
-                    "{C:attention}Celestial Packs{} always",
-                    "contain the {C:planet}Planet{}",
-                    "card for your most",
-                    "played {C:attention}poker hand",
+                    "{C:attention}Sky cards{} always contain",
+                    "{C:planet}star{} cards of the most",
+                    "popular {C:attention}playing cards{}."
                 },
             },
             v_wasteful={
-                name="Wasteful",
+                name="this is a waste",
                 text={
-                    "Permanently",
-                    "gain {C:red}+#1#{} discard",
-                    "each round",
+                    "Constantly",
+                    "get {C:red}+#1#{} rejection",
+                    "per round",
                 },
             },
         },
