@@ -2024,120 +2024,123 @@ return {
                 },
             },
             p_arcana_jumbo={
-                name="Jumbo Arcana Pack",
+                name="The Jumbo Arcana package looks like this:",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of the",
+                    "{C:attention}#2#{C:tarot} tarot{} cards and",
+                    "use it immediately.",
                 },
             },
             p_arcana_mega={
-                name="Mega Arcana Pack",
+                name="The super secret package",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of the",
+                    "{C:attention}#2#{C:tarot} tarot{} cards and",
+                    "use it immediately.",
                 },
             },
             p_arcana_normal={
-                name="Arcana Pack",
+                name="It is similar to the Arcana pack.",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:tarot} Tarot{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of the",
+                    "{C:attention}#2#{C:tarot} tarot{} cards and",
+                    "use it immediately.",
                 },
             },
             p_buffoon_jumbo={
-                name="Jumbo Buffoon Pack",
+                name="Like this giant clown bag",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "It's like choosing",
+                    "between {C:attention}#2#{} wildcards."
                 },
             },
             p_buffoon_mega={
-                name="Mega Buffoon Pack",
+                name="This giant clown bag",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "It's like choosing",
+                    "between {C:attention}#2#{} wildcards."
                 },
             },
             p_buffoon_normal={
-                name="Buffoon Pack",
+                name="For example, this clown bag",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:joker} Joker{} cards",
+                    "It's like choosing",
+                    "between {C:attention}#2#{} wildcards."
                 },
             },
             p_celestial_jumbo={
-                name="Jumbo Celestial Pack",
+                name="It looks like a giant hollow horn",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#{}",
+                    "{C:planet}planetary{} charts and",
+                    "instantly use it",
+                    "as your map."
                 },
             },
             p_celestial_mega={
-                name="Mega Celestial Pack",
+                name="like the vast sky",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#{}",
+                    "{C:planet}planetary{} charts and",
+                    "instantly use it",
+                    "as your map."
                 },
             },
             p_celestial_normal={
-                name="Celestial Pack",
+                name="This heavenly package looks like this",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:planet} Planet{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#{}",
+                    "{C:planet}planetary{} charts and",
+                    "instantly use it",
+                    "as your map."
                 },
             },
             p_spectral_jumbo={
-                name="Jumbo Spectral Pack",
+                name="Something like the Spectrum Jumbo Pack.",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#",
+                    "{C:spectral}spectrum{} cards",
+                    "to get started.",
                 },
             },
             p_spectral_mega={
-                name="Mega Spectral Pack",
+                name="This is a hyperspectral package.",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#",
+                    "{C:spectral}spectrum{} cards",
+                    "to get started.",
                 },
             },
             p_spectral_normal={
-                name="Spectral Pack",
+                name="For spectral bands:",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:spectral} Spectral{} cards to",
-                    "be used immediately",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#",
+                    "{C:spectral}spectrum{} cards",
+                    "to get started.",
                 },
             },
             p_standard_jumbo={
-                name="Jumbo Standard Pack",
+                name="Standard bulk packaging",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Choose {C:attention}#1#{} of the {C:attention}#2#",
+                    "{C:attention}Playing{} cards and",
+                    "add it to your deck.",
                 },
             },
             p_standard_mega={
-                name="Mega Standard Pack",
+                name="Standard Bulk Packing",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Choose {C:attention}#1#{} of the {C:attention}#2#",
+                    "{C:attention}Playing{} cards and",
+                    "add it to your deck.",
                 },
             },
             p_standard_normal={
-                name="Standard Pack",
+                name="This set is a standard set",
                 text={
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:attention} Playing{} cards to",
-                    "add to your deck",
+                    "Choose {C:attention}#1#{} of the {C:attention}#2#",
+                    "{C:attention}Playing{} cards and",
+                    "add it to your deck.",
                 },
             },
             perishable={
