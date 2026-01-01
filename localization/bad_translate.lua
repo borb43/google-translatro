@@ -394,7 +394,7 @@ return {
             m_glass={
                 name="It looks like a glass card",
                 text={
-                    "this is a{X:mult,C:white}#1#x{} multiplier",
+                    "this is a {X:mult,C:white}#1#x{} multiplier",
                     "and a {C:green}#2# in #3#{} chance of",
                     "destroying the card",
                 },
@@ -1868,103 +1868,104 @@ return {
                 text={
                     "If you have {C:attention}3 identical",
                     "{C:attention}cards{} in your hand, the",
-                    "multiplier is {C:red}+#1#"
+                    "multiplier is {C:red}+#1#{}."
                 },
             },
         },
         Other={
             black_sticker={
-                name="Black Sticker",
+                name="This is a black sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Black",
-                    "{C:attention}Stake{} difficulty",
+                    "Who Used this",
+                    "prank to win the",
+                    "{C:attention}Black Stakes{}?",
                 },
             },
             blue_seal={
-                name="Blue Seal",
+                name="This blue sticker",
                 text={
-                    "Creates the {C:planet}Planet{} card",
-                    "for final played {C:attention}poker hand{}",
-                    "of round if {C:attention}held{} in hand",
-                    "{C:inactive}(Must have room)",
+                    "If you {C:attention}have{} it in your hand",
+                    "{C:inactive}(it should be a space){},",
+                    "draw a {C:planet}planet{} card from the",
+                    "last {C:attention}game card{} played that round."
                 },
             },
             blue_sticker={
-                name="Blue Sticker",
+                name="and this blue sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Blue",
-                    "{C:attention}Stake{} difficulty",
+                    "It's hard to beat",
+                    "the {C:attention}blue bet{} with",
+                    "this wildcard."
                 },
             },
             card_chips={
                 text={
-                    "{C:chips}+#1#{} chips",
+                    "This is {C:chips}+#1#{} tokens",
                 },
             },
             card_extra_chips={
                 text={
-                    "{C:chips}+#1#{} extra chips",
+                    "{C:chips}#1#{} bonus tokens",
                 },
             },
             challenge_locked={
-                name="Locked",
+                name="Forbidden",
                 text={
-                    "Win a run with at least",
-                    "#1# different decks to unlock",
-                    "Challenge mode",
-                    "{C:attention,s:2}#2#/#1#",
+                    "Win a round with at least",
+                    "#1# different combinations to",
+                    "unlock the challenge mode",
+                    "{C:attention,s:2}#2#/#1#{}.",
                 },
             },
             debuffed_default={
-                name="Debuffed",
+                name="it's autumn",
                 text={
-                    "All abilities",
-                    "are disabled",
+                    "All abilities will",
+                    "also be disabled.",
                 },
             },
             debuffed_playing_card={
-                name="Debuffed",
+                name="it's autumn",
                 text={
-                    "Scores no chips",
-                    "and all abilities",
-                    "are disabled",
+                    "This does not",
+                    "require a token",
+                    "and disables all",
+                    "abilities."
                 },
             },
             deck_locked_discover={
-                name="Locked",
+                name="Forbidden",
                 text={
-                    "Discover at least",
+                    "Find at least",
                     "{C:attention}#1#{} items from",
-                    "your collection",
+                    "your collection.",
                 },
             },
             deck_locked_stake={
-                name="Locked",
+                name="Forbidden",
                 text={
-                    "Win a run with any",
-                    "deck on at least",
-                    "{V:1}#1#{} difficulty",
+                    "Win a round using any",
+                    "card on {V:1}#1#{}",
+                    "difficulty and above",
                 },
             },
             deck_locked_win={
-                name="Locked",
+                name="Forbidden",
                 text={
-                    "Win a run with",
-                    "{C:attention}#1#{}",
-                    "on any difficulty",
+                    "Complete races on",
+                    "any difficulty with",
+                    "{C:attention}#1#{} and more.",
                 },
             },
-            demo_locked={
-                name="Locked",
+            demo_locked={ --Demo text isnt visible ingame anyway, skip
+                name="Forbidden",
                 text={
                     "Not available",
                     "in this demo",
                 },
             },
             demo_shop_locked={
-                name="Locked",
+                name="Forbidden",
                 text={
                     "Card from {C:attention}Jimbo's",
                     "personal collection,",
@@ -1973,54 +1974,53 @@ return {
                 },
             },
             eternal={
-                name="Eternal",
+                name="like forever",
                 text={
-                    "Can't be sold",
-                    "or destroyed",
+                    "IT cannot be sold",
+                    "or destroyed.",
                 },
             },
             gold_seal={
-                name="Gold Seal",
+                name="This is a golden seal",
                 text={
-                    "Earn {C:money}$3{} when this",
-                    "card is played",
-                    "and scores",
+                    "Earn {C:money}$3{}",
+                    "with this card",
                 },
             },
             gold_sticker={
-                name="Gold Sticker",
+                name="looks like gold sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Gold",
-                    "{C:attention}Stake{} difficulty",
+                    "Who won the {C:attention}Golden",
+                    "{C:attention}Bet{} Challenge using",
+                    "this wild card:"
                 },
             },
             green_sticker={
-                name="Green Sticker",
+                name="Like a green sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Green",
-                    "{C:attention}Stake{} difficulty",
+                    "I won the {C:attention}Green",
+                    "{C:attention}Stakes{} Challenge",
+                    "with this Joker."
                 },
             },
             joker_locked_legendary={
-                name="Locked",
+                name="Forbidden",
                 text={
-                    "Find this Joker",
-                    "from the {C:spectral}Soul{} card",
+                    "How to find this",
+                    "clown on the {C:spectral}soul{} map"
                 },
             },
             locked={
-                name="Locked",
+                name="Forbidden",
                 text={
                 },
             },
             orange_sticker={
-                name="Orange Sticker",
+                name="It's an orange sticker",
                 text={
-                    "Used this Joker",
-                    "to win on {C:attention}Orange",
-                    "{C:attention}Stake{} difficulty",
+                    "I won the {C:attention}Orange",
+                    "{C:attention}Championship{} with",
+                    "this Joker."
                 },
             },
             p_arcana_jumbo={
@@ -2283,7 +2283,7 @@ return {
                 },
             },
             wip_locked={
-                name="Locked",
+                name="Forbidden",
                 text={
                     "Work in",
                     "progress",
@@ -3573,7 +3573,7 @@ return {
             k_copied_ex="Copied!",
             k_custom_rules="Custom Rules",
             k_daily_run="Daily Run",
-            k_debuffed="Debuffed",
+            k_debuffed="it's autumn",
             k_deck="Deck",
             k_deck_stake_wins="Deck Stake Wins",
             k_defeated_by="Defeated By",
@@ -3604,7 +3604,7 @@ return {
             k_legendary="Legendary",
             k_level_prefix="lvl.",
             k_level_up_ex="Level Up!",
-            k_locked="Locked",
+            k_locked="Forbidden",
             k_lower_score="score",
             k_lvl="lvl.",
             k_melted_ex="Melted!",
@@ -3704,7 +3704,7 @@ return {
                 "Enhancement, Edition, and Seal",
             },
             ml_eternal={
-                "Eternal",
+                "like forever",
                 "Can't be sold",
                 "or destroyed",
             },
@@ -3820,12 +3820,12 @@ return {
         labels={
             blue_seal="Blue Seal",
             common="Common",
-            eternal="Eternal",
+            eternal="like forever",
             foil="Immediately",
             gold_seal="Gold Seal",
             holographic="It's very three-dimensional",
             legendary="Legendary",
-            locked="Locked",
+            locked="Forbidden",
             negative="these are negative numbers",
             perishable="Perishable",
             pinned_left="Pinned",
