@@ -2359,6 +2359,77 @@ return {
                     'how'
                 }
             },
+            card_x_chips = {
+                text = {
+                    "{X:chips,C:white}X#1#{} as a chip"
+                }
+            },
+            card_extra_x_chips = {
+                text = {
+                    "{X:chips,C:white}X#1#{} additional cover"
+                }
+            },
+            card_extra_mult = {
+                text = {
+                    "Shopping center {C:mult}#1#{}"
+                }
+            },
+            card_x_mult = {
+                text = {
+                    "{X:mult,C:white}X#1#{} is a product"
+                }
+            },
+            card_extra_x_mult = {
+                text = {
+                    "This is an {X:mult,C:white}X#1#{} plugin like Mult."
+                }
+            },
+            card_extra_p_dollars = {
+                text = {
+                    "Shoulder bag for {C:money}#1#{}.",
+                }
+            },
+            card_extra_h_chips = {
+                text = {
+                    "{C:chips}#1#{} tokens when saving",
+                }
+            },
+            card_h_x_chips = {
+                text = {
+                    "Save as chip {X:chips,C:white}x#1#{}",
+                }
+            },
+            card_extra_h_x_chips = {
+                text = {
+                    "These are stored as additional {X:chips,C:white}X#1#{} chips.",
+                }
+            },
+            card_extra_h_mult = {
+                text = {
+                    "Catching it will give you an additional {C:mult}#1#{} multiplier.",
+                }
+            },
+            card_h_x_mult = {
+                text = {
+                    "Save as {X:mult,C:white}x#1#{} multi",
+                }
+            },
+            card_extra_h_x_mult = {
+                text = {
+                    "Saving this extra Mul {X:mult,C:white}X#1#{} as:",
+                }
+            },
+            card_extra_h_dollars = {
+                text = {
+                    "{C:money}#1#{} if caught at end of round",
+                },
+            },
+            card_extra_repetitions = {
+                text = {
+                    "Play this",
+                    "card {C:attention}#1#{} #2#.",
+                },
+            },
         },
         Planet={
             c_ceres={
