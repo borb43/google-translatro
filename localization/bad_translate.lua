@@ -2480,111 +2480,97 @@ return {
         },
         Planet={
             c_ceres={
-                name="Ceres",
+                name="like a hook",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "This ({V:1}level #1#{}) increases",
+                    "{C:attention}Flash House{} level by",
+                    "{C:mult}+#3#{} Molt and {C:chips}+#4#{} Slice:"
                 },
             },
             c_earth={
-                name="Earth",
+                name="How is this country?",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "({V:1}Level #1#{}) Get a {C:attention}full house{}",
+                    "{C:mult}+#3#{} multi, {C:chips}+#4#{} chips."
                 },
             },
             c_eris={
-                name="Eris",
+                name="I love sweets",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "Upgrade ({V:1}level #1#{}) {C:attention}Traffic 5{}",
+                    "{C:mult}+#3#{} upgrades, {C:chips}+50{} chips."
                 },
             },
             c_jupiter={
-                name="Jupiter",
+                name="What does justice look like?",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "({V:1}Level #1#{}) {C:attention}Flash{} Upgrade",
+                    "{C:mult}+#3#{} Multi, {C:chips}+#4#{} Chips"
                 },
             },
             c_mars={
-                name="Mars",
+                name="looks like mars",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "This level ({V:1}level #1#{})",
+                    "is like {C:attention}four units",
+                    "{C:mult}+#3#{} multi, {C:chips}+#4#{} tokens."
                 },
             },
             c_mercury={
-                name="Mercury",
+                name="like mercury",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "Ki upgrades ({V:1}level #1#{})",
+                    "such as {C:attention}double chips",
+                    "{C:mult}+#3#{} multi, {C:chips}+#4#{} etc."
                 },
             },
             c_neptune={
-                name="Neptune",
+                name="Because I love Neptune",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "({V:1}Level #1#{}) {C:attention}DC{} increases",
+                    "with levels such as",
+                    "{C:mult}+#3#{} Multi, {C:chips}+#4#{} Cut."
                 },
             },
             c_planet_x={
-                name="Planet X",
+                name="For example, this star",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "({V:1}Level #1#{}) {C:attention}5 upgrades",
+                    "{C:mult}+#3#{} multiplayer and",
+                    "{C:chips}+#4#{} tokens"
                 },
             },
             c_pluto={
-                name="Pluto",
+                name="What does Pluto look like?",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "This is a {C:attention}significant",
+                    "increase in card level",
+                    "({V:1}level #1#{}), such as {C:mult}+#3#",
+                    "multi or {C:chips}+#4#{} chips."
                 },
             },
             c_saturn={
-                name="Saturn",
+                name="This is Saturn",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "Upgrade ({V:1}Level #1#{}),",
+                    "{C:mult}+#3#{} times, {C:chips}+#4#{}",
+                    "tokens each"
                 },
             },
             c_uranus={
-                name="Uranus",
+                name="What does Uranus look like?",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "({V:1}Level #1#{}) Upgrade {C:attention}2 pairs",
+                    "{C:mult}+#3#{} multilayer, {C:chips}+#4#{} layer."
                 },
             },
             c_venus={
-                name="Venus",
+                name="this is Venus",
                 text={
-                    "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
-                    "{C:attention}#2#",
-                    "{C:mult}+#3#{} Mult and",
-                    "{C:chips}+#4#{} chips",
+                    "The Q level ({V:1}level #1#{})",
+                    "can be adjusted to",
+                    "{C:attention}3 types{}: {C:mult}+#3#{} multislice",
+                    "and {C:chips}+#4#{}."
                 },
             },
         },
