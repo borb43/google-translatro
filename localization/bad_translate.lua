@@ -2972,119 +2972,119 @@ return {
         },
         Tarot={
             c_chariot={
-                name="The Chariot",
+                name="like a tank",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
-                    "card into a",
-                    "{C:attention}#2#",
+                    "Updates the selected",
+                    "map to approx.",
+                    "{C:attention}steel card{}.",
                 },
             },
             c_death={
-                name="Death",
+                name="it is death",
                 text={
-                    "Select {C:attention}#1#{} cards,",
-                    "convert the {C:attention}left{} card",
-                    "into the {C:attention}right{} card",
-                    "{C:inactive}(Drag to rearrange)",
+                    "Flip the {C:attention}left{} card",
+                    "to the {C:attention}right{} and",
+                    "select {C:attention}both{} cards",
+                    "{C:inactive}(drag to change order){}."
                 },
             },
             c_devil={
-                name="The Devil",
+                name="What about the devil?",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
-                    "card into a",
-                    "{C:attention}#2#",
+                    "Upgrade selected",
+                    "cards to",
+                    "{C:attention}gold level{}.",
                 },
             },
             c_emperor={
-                name="The Emperor",
+                name="Like the emperor",
                 text={
-                    "Creates up to {C:attention}#1#",
-                    "random {C:tarot}Tarot{} cards",
-                    "{C:inactive}(Must have room)",
+                    "{C:attention}#1#{C:tarot} tarot{} cards",
+                    "are randomly drawn",
+                    "{C:inactive}(there must be spaces){}.",
                 },
             },
             c_empress={
-                name="The Empress",
+                name="Looks like Caesar",
                 text={
-                    "Enhances {C:attention}#1#",
-                    "selected cards to",
-                    "{C:attention}#2#s",
+                    "Turn {C:attention}#1#",
+                    "selected cards into",
+                    "{C:attention}multiple cards{}.",
                 },
             },
             c_fool={
-                name="The Fool",
+                name="What a fool",
                 text={
-                    "Creates the last",
-                    "{C:tarot}Tarot{} or {C:planet}Planet{} card",
-                    "used during this run",
-                    "{s:0.8,C:tarot}The Fool{s:0.8} excluded",
+                    "This will create the last",
+                    "{C:tarot}Tarot{} card or {C:planet}planet{}",
+                    "used during the run",
+                    "{s:0.8}except {s:0.8,C:tarot}the Fool{s:0.8}.",
                 },
             },
             c_hanged_man={
-                name="The Hanged Man",
+                name="It hangs people",
                 text={
-                    "Destroys up to",
-                    "{C:attention}#1#{} selected cards",
+                    "Destroy the",
+                    "{C:attention}#1#{} selected cards.",
                 },
             },
             c_heirophant={
-                name="The Hierophant",
+                name="How sacred is that?",
                 text={
-                    "Enhances {C:attention}#1#",
-                    "selected cards to",
-                    "{C:attention}#2#s",
+                    "Convert {C:attention}#1#",
+                    "special cards into",
+                    "{C:attention}additional cards{}.",
+                    "example:"
                 },
             },
             c_hermit={
-                name="The Hermit",
+                name="He is a monk",
                 text={
-                    "Doubles money",
-                    "{C:inactive}(Max of {C:money}$#1#{C:inactive})",
+                    "Double your funds",
+                    "{C:inactive}(up to {C:money}$#1#{C:inactive})",
                 },
             },
             c_high_priestess={
-                name="The High Priestess",
+                name="as high priest",
                 text={
-                    "Creates up to {C:attention}#1#",
-                    "random {C:planet}Planet{} cards",
-                    "{C:inactive}(Must have room)",
+                    "Generate {C:attention}#1#{} random",
+                    "maps of the {C:planet}planet",
+                    "{C:inactive}(requires space){}."
                 },
             },
             c_judgement={
-                name="Judgement",
+                name="This is the ruling",
                 text={
-                    "Creates a random",
-                    "{C:attention}Joker{} card",
-                    "{C:inactive}(Must have room)",
+                    "Generate a random",
+                    "{C:attention}wildcard{}",
+                    "{C:inactive}(space rquired){}.",
                 },
             },
             c_justice={
-                name="Justice",
+                name="act honestly",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
-                    "card into a",
-                    "{C:attention}#2#",
+                    "Special {C:attention}glass",
+                    "{C:attention}card{} upgrade."
                 },
             },
             c_lovers={
-                name="The Lovers",
+                name="What is a \"favorite\"?",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
+                    "Turn a certain",
                     "card into a",
-                    "{C:attention}#2#",
+                    "{C:attention}Joker card{}.",
                 },
             },
             c_magician={
-                name="The Magician",
+                name="like a magician",
                 text={
-                    "Enhances {C:attention}#1#{}",
-                    "selected cards to",
-                    "{C:attention}#2#s",
+                    "For example, {C:attention}#1#{}",
+                    "special cards become",
+                    "{C:attention}successful{},",
                 },
             },
             c_moon={
-                name="The Moon",
+                name="Like the moon",
                 text={
                     "Converts up to",
                     "{C:attention}#1#{} selected cards",
@@ -3094,59 +3094,57 @@ return {
             c_star={
                 name="The Star",
                 text={
-                    "Converts up to",
+                    "Convert up to",
                     "{C:attention}#1#{} selected cards",
-                    "to {V:1}#2#{}",
+                    "into {V:1}clubs{}.",
                 },
             },
             c_strength={
-                name="Strength",
+                name="something like power",
                 text={
-                    "Increases rank of",
-                    "up to {C:attention}#1#{} selected",
-                    "cards by {C:attention}1",
+                    "This increases the",
+                    "rating of the {C:attention}#1#{} selected",
+                    "cards by {C:attention}1{}.",
                 },
             },
             c_sun={
-                name="The Sun",
+                name="This was reported by the newspaper No",
                 text={
-                    "Converts up to",
+                    "Turn up to",
                     "{C:attention}#1#{} selected cards",
-                    "to {V:1}#2#{}",
+                    "into {V:1}hearts{}",
                 },
             },
             c_temperance={
-                name="Temperance",
+                name="Very light.",
                 text={
-                    "Gives the total sell",
-                    "value of all current",
-                    "Jokers {C:inactive}(Max of {C:money}$#1#{C:inactive})",
-                    "{C:inactive}(Currently {C:money}$#2#{C:inactive})",
+                    "Current total selling",
+                    "price for all wildlife",
+                    "{C:inactive}(up to {C:money}$#1#{C:inactive}) (currently {C:money}$#2#{C:inactive}){}:"
                 },
             },
             c_tower={
-                name="The Tower",
+                name="this is a castle",
                 text={
-                    "Enhances {C:attention}#1#{} selected",
-                    "card into a",
-                    "{C:attention}#2#",
+                    "Set a certain",
+                    "card as the",
+                    "{C:attention}corresponding card",
                 },
             },
             c_wheel_of_fortune={
-                name="The Wheel of Fortune",
+                name="It's a wheel of fortune",
                 text={
-                    "{C:green}#1# in #2#{} chance to add",
-                    "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, or",
-                    "{C:dark_edition}Polychrome{} edition",
-                    "to a random {C:attention}Joker",
+                    "There is a {C:green}#1# in #2#{} chance that",
+                    "a random {C:dark_edition}Foil{}, {C:dark_edition}3D{}, or {C:dark_edition}cartoon",
+                    "version of the {C:attention}Joker{} will be added."
                 },
             },
             c_world={
-                name="The World",
+                name="how is the world going",
                 text={
-                    "Converts up to",
+                    "Transform up to",
                     "{C:attention}#1#{} selected cards",
-                    "to {V:1}#2#{}",
+                    "into {V:1}gods{}",
                 },
             },
         },
