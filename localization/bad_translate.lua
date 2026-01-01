@@ -1799,77 +1799,76 @@ return {
                 },
             },
             j_vagabond={
-                name="Vagabond",
+                name="this tramp",
                 text={
-                    "Create a {C:purple}Tarot{} card",
-                    "if hand is played",
-                    "with {C:money}$#1#{} or less",
+                    "If your hand is",
+                    "{C:money}$#1#{} or less, draw",
+                    "a {C:tarot}tarot{} card."
                 },
             },
             j_vampire={
-                name="Vampire",
+                name="he is a vampire",
                 text={
-                    "This Joker gains {X:mult,C:white} X#1# {} Mult",
-                    "per scoring {C:attention}Enhanced card{} played,",
-                    "removes card {C:attention}Enhancement",
-                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    "For each {C:attention}upgrade card{} played,",
+                    "the joker receives a multiplier",
+                    "of {X:mult,C:white}X#1#{} and removes the {C:attention}upgrade{} card",
+                    "{C:inactive}(currently a multiplier of {X:mult,C:white} X#2# {C:inactive}){}.",
                 },
             },
             j_walkie_talkie={
-                name="Walkie Talkie",
+                name="This transmitter looks like this",
                 text={
-                    "Each played {C:attention}10{} or {C:attention}4",
-                    "gives {C:chips}+#1#{} Chips and",
-                    "{C:mult}+#2#{} Mult when scored",
+                    "Every {C:attention}10{} or {C:attention}4{} games",
+                    "gives {C:chips}+#1#{} chips and",
+                    "a multiplier of {C:mult}+#2#{}.",
                 },
             },
             j_wee={
-                name="Wee Joker",
+                name="This little clown",
                 text={
-                    "This Joker gains",
-                    "{C:chips}+#2#{} Chips when each",
-                    "played {C:attention}2{} is scored",
-                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                    "The Joker gains",
+                    "{C:chips}+#2#{} tokens",
+                    "every {C:attention}2{} games",
+                    "{C:inactive}(currently {C:chips}+#1#{C:inactive} tokens){}.",
                 },
                 unlock={
-                    "Win a run in {E:1,C:attention}#1#",
-                    "or fewer rounds",
+                    "Win {E:1,C:attention}#1#{} rounds",
                 },
             },
             j_wily={
-                name="Wily Joker",
+                name="It's Willie the Clown.",
                 text={
-                    "{C:chips}+#1#{} Chips if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "{C:chips}+#1#{} points if you",
+                    "have {C:attention}3 of",
+                    "{C:attention}the same{} card",
                 },
             },
             j_wrathful_joker={
-                name="Wrathful Joker",
+                name="That evil clown",
                 text={
-                    "Played cards with",
-                    "{C:spades}#2#{} suit give",
-                    "{C:mult}+#1#{} Mult when scored",
+                    "The bonus multiplier is {C:mult}+#1#",
+                    "if the {C:spades}spade{} cards played",
+                    "are calculated as follows:"
                 },
             },
             j_yorick={
-                name="Yorick",
+                name="What does Ulrich like?",
                 text={
-                    "This Joker gains",
-                    "{X:mult,C:white} X#1# {} Mult every {C:attention}#2#{C:inactive} [#3#]{}",
-                    "cards discarded",
-                    "{C:inactive}(Currently {X:mult,C:white} X#4# {C:inactive} Mult)",
+                    "Each time the Joker discards",
+                    "a card from {C:attention}#2#{} cards {C:inactive}[#3#]",
+                    "{C:inactive}(currently {X:mult,C:white}X1{C:inactive} tons){},",
+                    "he gains {X:mult,C:white}X1{} tons during his turn."
                 },
                 unlock={
                     "{E:1,s:1.3}What? ? ? ? ? How",
                 },
             },
             j_zany={
-                name="Zany Joker",
+                name="This is an adulterous clown",
                 text={
-                    "{C:red}+#1#{} Mult if played",
-                    "hand contains",
-                    "a {C:attention}#2#",
+                    "If you have {C:attention}3 identical",
+                    "{C:attention}cards{} in your hand, the",
+                    "multiplier is {C:red}+#1#"
                 },
             },
         },
