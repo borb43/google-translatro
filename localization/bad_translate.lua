@@ -4220,7 +4220,7 @@ return {
             Hearts="Such a heart",
             Spades="This shovel",
         },
-        tutorial={
+        tutorial={ --tutorial wont be changed since iirc you cant see it unless you completely delete all your balatro data
             bb_1={
                 "Selecting the {C:attention}Big Blind",
                 "will earn some cash",
