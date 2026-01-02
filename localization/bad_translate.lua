@@ -284,6 +284,85 @@ return {
                     "All {C:clubs}club{} cards are {C:spades}thousands",
                     "and all {C:diamonds}diamond{} cards are {C:hearts}hearts{}."
                 }
+            },
+            sleeve_casl_zodiac = {
+                name = "Why I love zodiac arms",
+                text = {
+                    "Start with",
+                    "{C:tarot,T:v_tarot_merchant}Tarot Trader{},",
+                    "{C:planet,T:v_planet_merchant}Planet Trader{},",
+                    "and {C:attention,T:v_overstock_norm}Overstock{}."
+                }
+            },
+            sleeve_casl_zodiac_alt = {
+                name = "Why I love zodiac arms",
+                text = {
+                    "Both the {C:tarot}Arcana{} and",
+                    "{C:planet}Celestial{} packages have",
+                    "{C:attention}#1#{} additional options",
+                    "to choose from."
+                }
+            },
+            sleeve_casl_painted = {
+                name = "Draw next weapon",
+                text = {
+                    "Now {C:attention}+#1#{} hand size,",
+                    "{C:red}#2#{} wildcard slot"
+                }
+            },
+            sleeve_casl_painted_alt = {
+                name = "Draw next weapon",
+                text = {
+                    "{C:attention}+#1#{} card selection limit,",
+                    "{C:red}#2#{} joker slot",
+                }
+            },
+            sleeve_casl_anaglyph = {
+                name = "The hands are similar in this style.",
+                text = {
+                    "Defeating all {C:attention}blind bosses",
+                    "will earn you {C:attention,T:tag_double}2 tokens{}."
+                }
+            },
+            sleeve_casl_anaglyph_alt = {
+                name = "The hands are similar in this style.",
+                text = {
+                    "If you win a {C:attention}small{} or {C:attention}large bet{},",
+                    "you will get almost {C:attention,T:tag_double}double points{}."
+                }
+            },
+            sleeve_casl_plasma = {
+                name = "What does a plasma hand look like?",
+                text = {
+                    "When calculating the outcome",
+                    "of this hand, the {C:chips}chips{} are",
+                    "balanced and the main blind",
+                    "is multiplied by {C:red}x2{}."
+                }
+            },
+            sleeve_casl_plasma_alt = {
+                name = "What does a plasma hand look like?",
+                text = {
+                    "The remaining {C:money}price{} of",
+                    "all goods in the {C:attention}store{}:"
+                }
+            },
+            sleeve_casl_erratic = {
+                name = "This is what the prosthetic arm looks like",
+                text = {
+                    "All {C:attention}sets{} and {C:attention}costumes",
+                    "are randomly selected"
+                }
+            },
+            sleeve_casl_erratic_alt = {
+                name = "This is what the prosthetic arm looks like",
+                text = {
+                    "The starting {C:blue}card{} number,",
+                    "the {C:red}bin{} number, the {C:money}dollar",
+                    "number, and the {C:attention}joker slot",
+                    "number are randomly",
+                    "assigned from {C:attention}#1#{} to {C:attention}#2#{}."
+                }
             }
         },
         Blind={
