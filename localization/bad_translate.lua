@@ -4452,76 +4452,76 @@ return {
         },
         v_text={
             ch_c_all_eternal={
-                "All Jokers are {C:eternal}Eternal{}",
+                "All clowns are {C:eternal}forever{}",
             },
             ch_c_chips_dollar_cap={
-                "{C:blue}Chips{} cannot exceed the current {C:money}$",
+                "{C:blue}Tips{} cannot exceed the current {C:money}amount{}.",
             },
             ch_c_daily={
-                "{E:1,s:1.2,C:red}Daily Challenge!",
+                "{E:1,s:1.2,C:red}Challenge yourself every day! he loves",
             },
             ch_c_debuff_played_cards={
-                "All {C:attention}Played{} cards become {C:attention}debuffed{} after scoring",
+                "After a goal is {C:attention}scored{}, all cards played are {C:attention}discarded{}.",
             },
             ch_c_discard_cost={
-                "Discards each cost {C:money}$#1#{}",
+                "There is a {C:money}$#1#{} free per reset.",
             },
             ch_c_flipped_cards={
-                "{C:green}1 in #1#{} cards are drawn face down",
+                "Question: {C:green}1 of the #1#{} cards is face down.",
             },
             ch_c_inflation={
-                "Permanently raise prices by {C:money}$1{} on every purchase",
+                "Each purchase permanently increases the price by {C:money}$1{}.",
             },
             ch_c_minus_hand_size_per_X_dollar={
-                "Hold {C:red}-1{} cards in hand for every {C:money}$#1#{} you have",
+                "For every {C:money}$#1#{} you have, you receive {C:red}-1{} card.",
             },
             ch_c_no_extra_hand_money={
-                "Extra {C:blue}Hands{} no longer earn money",
+                "Extra {C:blue}Hand{} doesn't make much money anymore.",
             },
             ch_c_no_interest={
-                "Earn no {C:attention}Interest{} at end of round",
+                "Yes, the end of the journey is not fun.",
             },
             ch_c_no_reward={
-                "All {C:attention}Blinds{} give no reward money",
+                "Not all {C:attention}blind{} bets will receive a bonus",
             },
             ch_c_no_reward_specific={
-                "{C:attention}#1# Blinds{} give no reward money",
+                "Because there is no reward for {C:attention}#1#-blind{}.",
             },
             ch_c_no_shop_jokers={
-                "Jokers no longer appear in the {C:attention}shop",
+                "The clown no longer appears in the {C:attention}store",
             },
             ch_c_none={
-                "{C:inactive}None",
+                "{C:inactive}there is nothing",
             },
             ch_c_set_eternal_ante={
-                "When ante {C:attention}#1#{} boss is defeated, all Jokers become {C:attention}eternal",
+                "Defeating the boss in Ant {C:attention}#1#{} will make all the clowns {C:attention}immortal{}.",
             },
             ch_c_set_joker_slots_ante={
-                "When ante {C:attention}#1#{} boss is defeated, set Joker slots to {C:attention}0",
+                "Pre Note {C:attention}#1#{} When you defeat a boss, set the Joker Gauge to {C:attention}0{}.",
             },
             ch_c_set_seed={
-                "1 attempt with set Seed: {C:inactive}{Hidden}",
+                "Here is an attempt using Seed:as {C:inactive}{Hidden}",
             },
             ch_m_consumable_slots={
-                "{C:attention}#1#{} Consumable Slots",
+                "{C:attention}#1#{} consumable slots:",
             },
             ch_m_discards={
-                "{C:red}#1#{} discards per round",
+                "Each round has {C:red}#1#{} shots.",
             },
             ch_m_dollars={
-                "Start with {C:money}$#1#",
+                "From {C:money}$#1#",
             },
             ch_m_hand_size={
-                "{C:attention}#1#{} hand size",
+                "His hand size is also {C:attention}#1#{}.",
             },
             ch_m_hands={
-                "{C:blue}#1#{} hands per round",
+                "This means there are {C:blue}#1#{} hands per round.",
             },
             ch_m_joker_slots={
-                "{C:attention}#1#{} Joker Slots",
+                "slot machine {C:attention}#1#{} clown",
             },
             ch_m_none={
-                "{C:inactive}None",
+                "{C:inactive}there is nothing",
             },
         },
     },
