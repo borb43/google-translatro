@@ -363,6 +363,20 @@ return {
                     "number are randomly",
                     "assigned from {C:attention}#1#{} to {C:attention}#2#{}."
                 }
+            },
+            sleeve_casl_none = {
+                name = "Like sleeveless",
+                text = {
+                    "There are no status changes."
+                }
+            },
+            sleeve_locked = {
+                name = "Forbidden",
+                text = {
+                    "{V:1}#2#{} Use the {C:attention}#1#",
+                    "or beat sequences",
+                    "on higher difficulties"
+                }
             }
         },
         Blind={
@@ -4250,6 +4264,11 @@ return {
             b_limit = 'Until then ',
             b_retrigger_single = 'time',
             b_retrigger_plural = 'times',
+            k_sleeve = "This amount",
+            k_sleeves = "i love my hands",
+            gald_sleeves = "how many to choose",
+            gald_random_sleeve = "Random target",
+            sleeve_unique_effect_desc = "Some have unique effects on certain surfaces (such as hands).",
         },
         high_scores={
             boss_streak="Most leaders change",
