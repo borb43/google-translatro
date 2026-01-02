@@ -4269,6 +4269,17 @@ return {
             gald_sleeves = "how many to choose",
             gald_random_sleeve = "Random target",
             sleeve_unique_effect_desc = "Some have unique effects on certain surfaces (such as hands).",
+            ["gald_select_deck"] = "Select by floor order",
+            ["gald_select_stake"] = "Mark it as general",
+	        ["gald_random_deck"] = "random surface",
+	        ["gald_random_stake"] = "partially random",
+            ["gald_play"] = "What a role",
+            ["gald_selected"] = "Please select a waiting list",
+            ["gald_locked"] = "Forbidden",
+            ["gald_unlock_1"] = "This team had such a win ",
+            ["gald_unlock_and"] = " this and so on. ",
+            ["gald_new_page_error"] = "An error occurred while adding the specified page.",
+            ["gald_quick_start"] = "Just like my last run"
         },
         high_scores={
             boss_streak="Most leaders change",
