@@ -115,7 +115,7 @@ return {
                 name="This is what the yellow surface looks like",
                 text={
                     "Additional fees",
-                    "start at{C:money}$#1#.00{}.",
+                    "start at {C:money}$#1#.00{}.",
                 },
             },
             b_zodiac={
