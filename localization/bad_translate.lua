@@ -3536,12 +3536,12 @@ return {
             hidden_achievement = "this? ? ? How",
         },
         blind_states={
-            Current="Current",
-            Defeated="Defeated",
-            Select="Select",
-            Selected="Selected",
-            Skipped="Skipped",
-            Upcoming="Upcoming",
+            Current="now",
+            Defeated="strike",
+            Select="Please select this",
+            Selected="He was chosen",
+            Skipped="There are also errors",
+            Upcoming="to a large extent",
         },
         challenge_names={
             c_blast_off_1="Blast Off",
