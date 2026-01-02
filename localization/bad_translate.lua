@@ -255,6 +255,35 @@ return {
                     "so the {C:spectral}Spectrum Cards pack",
                     "offers {C:attention}#1#{} additional options."
                 }
+            },
+            sleeve_casl_abandoned = {
+                name = "That's what autumn is for",
+                text = {
+                    "It's like someone starting",
+                    "a race without a deck of cards."
+                }
+            },
+            sleeve_casl_abandoned_alt = {
+                name = "That's what autumn is for",
+                text = {
+                    "There is no need to present",
+                    "a {C:attention}photo card{} during the procedure."
+                }
+            },
+            sleeve_casl_checkered = {
+                name = "What is the difference",
+                text = {
+                    "Start your career with",
+                    "{C:attention}26{C:spades} cards{} and {C:attention}26{C:hearts} hearts",
+                    "in your deck."
+                }
+            },
+            sleeve_casl_checkered_alt = {
+                name = "What is the difference",
+                text = {
+                    "All {C:clubs}club{} cards are {C:spades}thousands",
+                    "and all {C:diamonds}diamond{} cards are {C:hearts}hearts{}."
+                }
             }
         },
         Blind={
@@ -3215,17 +3244,17 @@ return {
             c_moon={
                 name="Like the moon",
                 text={
-                    "Converts up to",
-                    "{C:attention}#1#{} selected cards",
-                    "to {V:1}#2#{}",
-                },
-            },
-            c_star={
-                name="The Star",
-                text={
                     "Convert up to",
                     "{C:attention}#1#{} selected cards",
                     "into {V:1}clubs{}.",
+                },
+            },
+            c_star={
+                name="And the stars?",
+                text={
+                    "You can exchange up to",
+                    "{C:attention}#1#{} special cards",
+                    "for {V:1}diamonds{}.",
                 },
             },
             c_strength={
