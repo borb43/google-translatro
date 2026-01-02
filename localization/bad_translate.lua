@@ -1976,7 +1976,7 @@ return {
             eternal={
                 name="like forever",
                 text={
-                    "IT cannot be sold",
+                    "It cannot be sold",
                     "or destroyed.",
                 },
             },
@@ -3832,21 +3832,21 @@ return {
             k_wins="Get likes",
             k_x_base="This is rule X",
             ml_bloom_opt={
-                "Off",
-                "On",
+                "When will it close?",
+                "So what do you get?",
             },
             ml_buy_and_use_target={
-                "Buy",
-                "and Use",
+                "I'll buy it and try",
+                "using it like this",
             },
             ml_buy_target={
-                "Buy",
+                "What to buy and how to buy",
             },
             ml_card_stats={
-                "Card",
-                "Stats",
+                "The status of",
+                "this card is:",
             },
-            ml_controller_required={
+            ml_controller_required={ --console only so idc
                 "A game controller is required to play.",
                 "Please connect a controller to continue.",
             },
@@ -3861,68 +3861,68 @@ return {
                 "the newsletter at playbalatro.com",
             },
             ml_disabled_seed={
-                "All Unlocks and",
-                "Discoveries disabled",
+                "All unlocking and",
+                "discovery will be disabled.",
             },
             ml_edition_seal_enhancement_explanation={
-                "Playing cards may each have one",
-                "Enhancement, Edition, and Seal",
+                "Each card can have an",
+                "upgrade, version, and stamp.",
             },
             ml_eternal={
                 "like forever",
-                "Can't be sold",
-                "or destroyed",
+                "It cannot be sold",
+                "or destroyed.",
             },
             ml_gold_seal_desc={ --unused
                 "Gold Seal",
                 "returns to hand",
                 "when played",
             },
-            ml_offline_message={
+            ml_offline_message={ --mobile only so idc
                 "This device is offline.",
                 "The current save may be out of date.",
             },
             ml_open_target={
-                "Open",
+                "open by name",
             },
             ml_paste_seed={
-                "Paste",
-                "Seed",
+                "They stick together",
+                "like seeds",
             },
             ml_play_discard_pos_opt={
-                "Discard/Play",
-                "Play/Discard",
+                "This is a playground/game",
+                "Fuel/zero",
             },
             ml_redeem_target={
-                "Redeem",
+                "bought for",
             },
             ml_sell_target={
-                "Sell",
+                "Almost sold out",
             },
             ml_shadow_opt={
-                "On",
-                "Off",
+                "When will it close?",
+                "So what do you get?",
             },
             ml_smoothing_opt={
-                "Off",
-                "On",
+                "When will it close?",
+                "So what do you get?",
             },
             ml_unlock_all_explanation={
-                "WARNING! Unlocking the complete Collection",
-                "will disable achievements for this profile!",
+                "This is a warning! Unlocking the full set",
+                "will disable achievements for that profile. How",
             },
-            ml_unlock_all_trophies={
+            ml_unlock_all_trophies={ --console only so idc
                 "WARNING! Unlocking the complete Collection",
                 "will disable trophies for this profile!",
             },
             ml_vsync_opt={
-                "VSync On",
-                "VSync Off",
+                "This vertical sync is enabled",
+                "Because vertical sync is disabled",
             },
             ml_windowmode_opt={
-                "Windowed",
-                "Fullscreen",
-                "Borderless",
+                "This is what the window looks like",
+                "in full screen mode",
+                "It is also unlimited",
             },
             ph_1_level="+1 Level",
             ph_4_7_of_clubs="four 7 clubs",
