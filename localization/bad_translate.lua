@@ -4111,85 +4111,86 @@ return {
             ["Two Pair"]="The two worked side by side.",
         },
         quips={
-            dq_1={
-                "Yikes! I hope you",
-                "have a few tricks",
-                "up your sleeve for",
-                "this final challenge!",
+            dq_1={ --unused in vanilla but partner mod uses it
+                "This is impossible!",
+                "I hope you've got some",
+                "tips on how to tackle",
+                "your latest challenge.",
+                "The one he loves"
             },
             lq_1={
-                "Maybe Go Fish",
-                "is more our",
-                "speed...",
+                "Go Fish might",
+                "be faster...",
+                "or something.",
             },
             lq_10={
-                "What a flop!",
+                "What a huge failure!",
             },
             lq_2={
-                "We folded like",
-                "a cheap suit!",
+                "Folds like a",
+                "cheap suit!",
+                "what he loves"
             },
             lq_3={
-                "Time for us",
-                "to shuffle off",
-                "and try again!",
+                "Let's start",
+                "again! how"
             },
             lq_4={
-                "You know what",
-                "they say, the",
-                "house always wins!",
+                "As they say, the",
+                "country always wins.",
+                "like"
             },
             lq_5={
-                "Looks like we",
-                "found out who",
-                "the real Joker is!",
+                "Looks like the",
+                "Joker's true",
+                "identity has",
+                "been revealed! how"
             },
             lq_6={
-                "Oh no, were you",
-                "bluffing too?",
+                "Are you a",
+                "carrot? like",
             },
             lq_7={
-                "Looks like the",
-                "joke's on us!",
+                "Aydindil ki, b",
+                "zarafatdil! he loves"
             },
             lq_8={
-                "If I had hands",
-                "I would have",
-                "covered my eyes!",
+                "If I had hands,",
+                "I would close",
+                "my eyes! like",
             },
             lq_9={
-                "I'm literally",
-                "a fool, what's",
-                "your excuse?",
+                "I'm so stupid,",
+                "what else? like",
             },
             wq_1={
-                "You Aced it!",
+                "This is a must! like",
             },
             wq_2={
-                "You dealt with",
-                "that pretty well!",
+                "You did a great",
+                "job! how",
             },
             wq_3={
-                "Looks like you",
-                "weren't bluffing!",
+                "Be badass!"
             },
             wq_4={
-                "Too bad these",
-                "chips are all",
-                "virtual...",
+                "Unfortunately,",
+                "all these chips",
+                "are virtual... like",
             },
             wq_5={
-                "Looks like I've",
-                "taught you well!",
+                "Looks like your",
+                "studies are progressing",
+                "smoothly! that he loves"
             },
             wq_6={
-                "You made some",
-                "heads up plays!",
+                "I also participated",
+                "in several individual",
+                "competitions! how"
             },
             wq_7={
-                "Good thing",
-                "I didn't bet",
-                "against you!",
+                "Luckily, I don't",
+                "bet on you!",
             },
         },
         ranks={
