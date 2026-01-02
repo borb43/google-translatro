@@ -4449,6 +4449,19 @@ return {
             remaining_discard_money="The remaining portions ($#1# each) are distributed as follows:",
             remaining_hand_money="Same as other hands ($#1# per hand)",
             unlocked="#1#.#2# Break",
+            c_types = 'I like #1# types',
+			cashout_hidden = 'That\'s...#1# more to go',
+            a_xchips = "With the X#1# chip:",
+            a_xchips_minus = "-SIM X#1#",
+            smods_version_mismatch = {
+                "The version of Steamodded has changed",
+                "since I started running it. If you",
+                "continue to do so, you may experience",
+                "unexpected behaviour or the game may crash.",
+                "Original version: #1#",
+                "current version: #2#",
+                "Yes"
+            }
         },
         v_text={
             ch_c_all_eternal={
