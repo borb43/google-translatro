@@ -128,6 +128,135 @@ return {
                 },
             },
         },
+        Sleeve = {
+            sleeve_casl_red = {
+                name = "looks like red sleeves",
+                text = {
+                    "{C:red}+#1#{} per round"
+                }
+            },
+            sleeve_casl_red_alt = {
+                name = "looks like red sleeves",
+                text = {
+                    "{C:red}+#1#{} per turn",
+                    "",
+                    "{C:blue}#1#{} hand per turn"
+                }
+            },
+            sleeve_casl_blue = {
+                name = "These are blue sleeves",
+                text = {
+                    "{C:blue}+#1#{} hand per turn"
+                }
+            },
+            sleeve_casl_blue_alt = {
+                name = "These are blue sleeves",
+                text = {
+                    "Increase your hand",
+                    "by {C:blue}one{} card each round,",
+                    "and discard {C:red}one card",
+                    "each round."
+                }
+            },
+            sleeve_casl_yellow = {
+                name = "Like those yellow arms",
+                text = {
+                    "Start with an extra {C:money}$#1#{}."
+                }
+            },
+            sleeve_casl_yellow_alt = {
+                name = "Like those yellow arms",
+                text = {
+                    "A person who starts",
+                    "a business using initial",
+                    "capital as coupons."
+                }
+            },
+            sleeve_casl_green = {
+                name = "those green sleeves",
+                text = {
+                    "At the end of each round,",
+                    "the remaining {C:blue}hand{} is worth {C:money}$#1#{},",
+                    "and the remaining {C:red}discard{} is",
+                    "worth {C:money}$#2#{}, {C:attention}interest{}-free."
+                }
+            },
+            sleeve_casl_green_alt = {
+                name = "those green sleeves",
+                text = {
+                    "- You can borrow up to",
+                    "{C:red}#1# USD{} and fold manually",
+                    "{C:inactive}(Currently {C:red}0 USD{C:inactive}){}."
+                }
+            },
+            sleeve_casl_black = {
+                name = "Those black sleeves",
+                text = {
+                    "Jester slot {C:attention}+#1#",
+                    "",
+                    "hand {C:blue}#2#{} each round"
+                }
+            },
+            sleeve_casl_black_alt = {
+                name = "Those black sleeves",
+                text = {
+                    "Clown gauge {C:attention}+#1#{}",
+                    "and",
+                    "{C:red}-#2#{} are ignored",
+                    "each round."
+                }
+            },
+            sleeve_casl_magic = {
+                name = "Such magical hands",
+                text = {
+                    "Start with a",
+                    "{T:v_crystal_ball,C:tarot}crystal ball{} coupon",
+                    "and a copy of {T:c_fool,C:tarot}The Fool{}."
+                }
+            },
+            sleeve_casl_magic_alt = {
+                name = "Such magical hands",
+                text = { --???????
+                    "They started selling gloves",
+                    "with those letters on them",
+                    "as shopping coupons."
+                }
+            },
+            sleeve_casl_nebula = {
+                name = "The nebula's arms are similar.",
+                text = {
+                    "Start with a",
+                    "{T:v_telescope,C:planet}telescope{} coupon",
+                    "",
+                    "{C:red}-#2#{} consumables slot."
+                }
+            },
+            sleeve_casl_nebula_alt = {
+                name = "The nebula's arms are similar.",
+                text = {
+                    "Start with an",
+                    "{C:planet,T:v_observatory}observatory{} voucher",
+                }
+            },
+            sleeve_casl_ghost = {
+                name = "that ghost arm",
+                text = {
+                    "{C:spectral}Spectrograms{} can be",
+                    "found in the store,",
+                    "so start with",
+                    "a {C:spectral,T:c_hex}hex{} chart."
+                }
+            },
+            sleeve_casl_ghost_alt = {
+                name = "that ghost arm",
+                text = {
+                    "{C:spectral}Spectrum{} cards appear in",
+                    "the store twice as fast,",
+                    "so the {C:spectral}Spectrum Cards pack",
+                    "offers {C:attention}#1#{} additional options."
+                }
+            }
+        },
         Blind={
             bl_arm={
                 name="rhis hand",
