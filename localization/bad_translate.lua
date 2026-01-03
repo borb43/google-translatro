@@ -1861,7 +1861,7 @@ return {
                 text={
                     "If he has exactly",
                     "{C:attention}4{} cards in his hand",
-                    "{C:inactive}(the current number of chips is {C:chips}0{C:inactive}){},",
+                    "{C:inactive}(the current number of chips is {C:chips}#1#{C:inactive}){},",
                     "the jester gets {C:chips}+#2#{} chips."
                 },
             },
