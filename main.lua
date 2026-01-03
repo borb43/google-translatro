@@ -8,11 +8,17 @@ BTR_config = SMODS.current_mod.config
 local function config()
     local nodes = {}
     nodes[#nodes+1] = create_toggle{
-            label = localize("k_bad_alt_shop_sign"),
-            active_colour = HEX("c74040"),
-            ref_table = BTR_config,
-            ref_value = "alt_shop_sign"
-        }
+        label = localize("k_bad_alt_shop_sign"),
+        active_colour = HEX("c74040"),
+        ref_table = BTR_config,
+        ref_value = "alt_shop_sign"
+    }
+    nodes[#nodes+1] = create_toggle{
+        label = localize("k_bad_gameplay_changes"),
+        active_colour = HEX("c74040"),
+        ref_table = BTR_config,
+        ref_value = "gameplay_changes"
+    }
     return {
 		n = G.UIT.ROOT,
 		config = {
@@ -40,5 +46,9 @@ if BTR_config.alt_shop_sign then
         raw_key = true,
         frames = 4,
         prefix_config = { key = false }
-}
+    }
+end
+
+if BTR_config.gameplay_changes then
+    --file loading here, files for gameplay changes should all be in one folder (excl. patches obv)
 end
