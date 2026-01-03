@@ -2727,6 +2727,24 @@ return {
                 text = {
                     'Answer to hand {C:dark_edition}#1#{}D Hand K'
                 }
+            },
+
+
+            -- this is where all the "real" effects of the jokers are stored
+            -- because anything involving ui is hell
+            -- feel free to change this in the future if you want to face the spagetti
+
+            j_joker = {
+                name = "Effect",
+                text = {
+                    "{C:attention}Sets{} mult to {C:red}#1#"
+                }
+            },
+            j_greedy_joker = {
+                name = "Effect",
+                text = {
+                    "Unchanged"
+                }
             }
         },
         Planet={
@@ -2745,6 +2763,7 @@ return {
                     "{C:mult}+#3#{} multi, {C:chips}+#4#{} chips."
                 },
             },
+            -- no way its the mod creator
             c_eris={
                 name="I love sweets",
                 text={

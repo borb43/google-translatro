@@ -51,4 +51,5 @@ end
 
 if BTR_config.gameplay_changes then
     --file loading here, files for gameplay changes should all be in one folder (excl. patches obv)
+   assert(SMODS.load_file("effect/joker.lua"))()
 end
