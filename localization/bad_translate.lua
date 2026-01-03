@@ -194,7 +194,7 @@ return {
                 text = {
                     "Jester slot {C:attention}+#1#",
                     "",
-                    "hand {C:blue}#2#{} each round"
+                    "hand {C:blue}-#2#{} each round"
                 }
             },
             sleeve_casl_black_alt = {
