@@ -1627,7 +1627,7 @@ return {
                 name="like ramen",
                 text={
                     "So for every {C:attention}card{} discarded,",
-                    "{X:mult,C:white}X2{} Mult {X:mult,C:white}X#2#{} Mult is lost."
+                    "{X:mult,C:white}X#1#{} Mult {X:mult,C:white}X#2#{} Mult is lost."
                 },
             },
             j_red_card={
@@ -1644,7 +1644,7 @@ return {
                 text={
                     "Each {C:attention}card{} you hold",
                     "has a {C:green}#2# in #3#{} chance",
-                    "to win{C:money}$#1#{}.",
+                    "to win {C:money}$#1#{}.",
                 },
             },
             j_ride_the_bus={
@@ -1713,7 +1713,7 @@ return {
                     "As shown below, for each",
                     "unique {C:planet}Star{} Card used in",
                     "the round, the winner of",
-                    "the round earns {C:money$#1#",
+                    "the round earns {C:money}$#1#",
                     "{C:inactive}(currently {C:money}$#2#{C:inactive}){}."
                 },
                 unlock={
@@ -1861,7 +1861,7 @@ return {
                 text={
                     "If he has exactly",
                     "{C:attention}4{} cards in his hand",
-                    "{C:inactive}(the current number of chips is {C:chips}0{C:inactive}){},",
+                    "{C:inactive}(the current number of chips is {C:chips}#1#{C:inactive}){},",
                     "the jester gets {C:chips}+#2#{} chips."
                 },
             },
