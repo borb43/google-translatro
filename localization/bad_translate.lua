@@ -2734,6 +2734,20 @@ return {
             -- because anything involving ui is hell
             -- feel free to change this in the future if you want to face the spagetti
 
+            gt_unchanged = {
+                name = "Effect",
+                text = {
+                    "Vanilla"
+                }
+            },
+
+            gt_nop = {
+                name = "Effect",
+                text = {
+                    "{C:inactive}Does nothing"
+                }
+            },
+
             j_joker = {
                 name = "Effect",
                 text = {
@@ -2744,6 +2758,13 @@ return {
                 name = "Effect",
                 text = {
                     "Unchanged"
+                }
+            },
+            j_lusty_joker = {
+                name = "Effect",
+                text = {
+                    "Does nothing",
+                    "{s:0.8}worm"
                 }
             }
         },
