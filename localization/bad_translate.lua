@@ -2766,6 +2766,50 @@ return {
                     "Does nothing",
                     "{s:0.8}worm"
                 }
+            },
+            j_wrathful_joker = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if played hand",
+                    "contains a {C:spades}spade"
+                }
+            },
+            j_jolly = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if played hand",
+                    "is an {C:attention}even{} number of cards"
+                }
+            },
+            j_zany = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if a",
+                    "{C:attention}Three of a Kind{} is held"
+                }
+            },
+            j_mad = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if",
+                    "2 {C:attention}Two Pairs{} were",
+                    "played this round"
+                }
+            },
+            j_crazy = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if {C:attention}no{}",
+                    "cards have {C:dark_edition}pronouns",
+                    "{C:inactive}(Does nothing)"
+                }
+            },
+            j_sly = {
+                name = "Effect",
+                text = {
+                    "{C:chips}+#1#{} chips if all {C:attention}scored{} cards",
+                    "are the same {C:attention}suit"
+                }
             }
         },
         Planet={
