@@ -1881,7 +1881,7 @@ return {
                     "Each empty {C:attention}clown{} slot",
                     "will be cut into a",
                     "multi-clown balloon",
-                    "with {X:mult,C:white}x1{C:inactive} (currently {X:mult,C:whitex#1#{C:inactive}){}."
+                    "with {X:mult,C:white}x1{C:inactive} (currently {X:mult,C:white}x#1#{C:inactive}){}."
                 },
             },
             j_stone={
@@ -2809,6 +2809,35 @@ return {
                 text = {
                     "{C:chips}+#1#{} chips if all {C:attention}scored{} cards",
                     "are the same {C:attention}suit"
+                }
+            },
+            j_wily = {
+                name = "Effect",
+                text = {
+                    "{C:chips}+#1#{} chips if there is a",
+                    "{C:attention}Three of a Kind{} in the deck"
+                }
+            },
+            j_devious = {
+                name = "Effect",
+                text = {
+                    "Aces give {C:chips}+#1# chips"
+                }
+            },
+            j_crafty = {
+                name = "Effect",
+                text = {
+                    "{C:chips}+#1#{} chips on the last hand",
+                    "and creates an {C:attention}Ace"
+                }
+            },
+            j_stencil = {
+                name = "Effect",
+                text = {
+                    "{C:white,X:mult}X#1#{} Mult",
+                    "When Blind is selected, create copies",
+                    "with an extra {C:white,X:mult}+X1{} Mult",
+                    "for each {C:attention}remaining{} Joker slot"
                 }
             }
         },

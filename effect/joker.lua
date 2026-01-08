@@ -177,7 +177,125 @@ local towns = {
                 return { chips = card.ability.t_chips }
             end
         end
-    }
+    },
+
+    {
+        key = "wily",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.t_chips}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.joker_main then
+                local _, _, _parts = G.FUNCS.get_poker_hand_info(G.deck.cards)
+                if next(_parts["Three of a Kind"]) then
+                    return { chips = card.ability.t_chips }
+                end
+            end
+
+            return 0
+        end
+    },
+
+    {
+        key = "clever",
+        effect_key = "gt_unchanged",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.t_chips,}
+            return {vars = vars}
+        end
+    },
+
+    {
+        key = "devious",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.t_chips,}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.play and context.other_card:get_id() == 14 then
+                return { chips = card.ability.t_chips }
+            end
+
+            return 0
+        end
+    },
+
+    {
+        key = "crafty",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.t_chips,}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.joker_main and G.GAME.current_round.hands_left == 0 then
+                SMODS.add_card{ set = "Playing Card", rank = "A" }
+                return { chips = card.ability.t_chips }
+            end
+
+            return 0
+        end
+    },
+
+    {
+        key = "half",
+        effect_key = "gt_unchanged",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra.mult, card.ability.extra.size}
+            return {vars = vars}
+        end
+    },
+
+    {
+        key = "stencil",
+
+        loc_vars = function(self, info_queue, card)
+            card.ability.bonusmult = card.ability.bonusmult or 1
+            local vars = {card.ability.bonusmult}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            -- wtf is entropy doing?
+            if context.get_consumable_type then return end
+
+            if context.setting_blind then
+                local open_slots = G.jokers.config.card_limit - (#G.jokers.cards + G.GAME.joker_buffer)
+                if open_slots < 1 then return 0 end
+                G.GAME.joker_buffer = G.GAME.joker_buffer + open_slots
+
+                G.E_MANAGER:add_event(Event({
+                    func = function()
+                        for bonus = 1, open_slots do
+                            local child = SMODS.add_card { key = card.config.center.key, key_append = "gt_stencil"}
+                            child.ability.bonusmult = (card.ability.bonusmult or 1) + bonus
+
+                            G.GAME.joker_buffer = 0
+                        end
+
+                        return true
+                    end
+                }))
+
+                return { message = localize("k_plus_joker"), colour = G.C.BLUE }
+            end
+
+            if context.joker_main then
+                return { xmult = card.ability.bonusmult }
+            end
+
+            return 0
+        end
+    },
+
 }
 
 for _, t in ipairs(towns) do
