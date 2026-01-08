@@ -2839,6 +2839,15 @@ return {
                     "with an extra {C:white,X:mult}+X1{} Mult",
                     "for each {C:attention}remaining{} Joker slot"
                 }
+            },
+            j_four_fingers = {
+                name = "Effect",
+                text = {
+                    "If less than {C:attention}4{} cards are",
+                    "{C:red}destroyed{} at once, destroy",
+                    "up to {C:attention}3{} random cards in hand or deck",
+                    "{C:attention}Straights{} can be made with 4 cards"
+                }
             }
         },
         Planet={

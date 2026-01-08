@@ -11,8 +11,6 @@ local towns = {
             if context.joker_main then
                 return { mult_mod = card.ability.mult - mult, message = localize("k_active_ex") }
             end
-
-            return 0
         end
     },
 
@@ -34,7 +32,7 @@ local towns = {
             local vars = {card.ability.extra.s_mult,}
             return { vars = vars }
         end,
-        calculate = function(self, card, context) return 0 end
+        calculate = function(self, card, context) return end
     },
 
     {
@@ -54,8 +52,7 @@ local towns = {
                 end
             end
 
-            -- take ownership runs the original code if null is returned...
-            return 0
+            return
         end
     },
 
@@ -85,8 +82,6 @@ local towns = {
                     return { mult = card.ability.t_mult }
                 end
             end
-
-            return 0
         end
     },
 
@@ -105,8 +100,6 @@ local towns = {
                     return { mult = card.ability.t_mult }
                 end
             end
-
-            return 0
         end
     },
 
@@ -124,8 +117,6 @@ local towns = {
                     return { mult = card.ability.t_mult }
                 end
             end
-
-            return 0
         end
     },
 
@@ -137,7 +128,7 @@ local towns = {
             return {vars = vars}
         end,
 
-        calculate = function(self, card, context) return 0 end
+        calculate = function(self, card, context) return end
     },
 
     {
@@ -163,12 +154,12 @@ local towns = {
                 local t_suit = nil
 
                 for _, playing_card in ipairs(context.scoring_hand) do
-                    if SMODS.has_no_suit(playing_card) then return 0 end
+                    if SMODS.has_no_suit(playing_card) then return end
                     
                     -- why is there no continue :(
                     if not SMODS.has_any_suit(playing_card) then
                         if not t_suit then t_suit = playing_card.base.suit end
-                        if not playing_card:is_suit(t_suit) then return 0 end
+                        if not playing_card:is_suit(t_suit) then return end
                     end
 
 
@@ -194,8 +185,6 @@ local towns = {
                     return { chips = card.ability.t_chips }
                 end
             end
-
-            return 0
         end
     },
 
@@ -221,8 +210,6 @@ local towns = {
             if context.individual and context.cardarea == G.play and context.other_card:get_id() == 14 then
                 return { chips = card.ability.t_chips }
             end
-
-            return 0
         end
     },
 
@@ -239,8 +226,6 @@ local towns = {
                 SMODS.add_card{ set = "Playing Card", rank = "A" }
                 return { chips = card.ability.t_chips }
             end
-
-            return 0
         end
     },
 
@@ -264,8 +249,6 @@ local towns = {
         end,
 
         calculate = function(self, card, context)
-            -- wtf is entropy doing?
-            if context.get_consumable_type then return end
 
             if context.setting_blind then
                 local open_slots = G.jokers.config.card_limit - (#G.jokers.cards + G.GAME.joker_buffer)
@@ -291,8 +274,6 @@ local towns = {
             if context.joker_main then
                 return { xmult = card.ability.bonusmult }
             end
-
-            return 0
         end
     },
 
@@ -300,6 +281,8 @@ local towns = {
 
 for _, t in ipairs(towns) do
     SMODS.Joker:take_ownership(t.key, {
+        name = t.key,    -- vanilla calcs check the name for some reason lol
+
         loc_vars = function(self, info_queue, card)
             if not t.loc_vars then return 0 end
             local vars = t.loc_vars(self, info_queue, card)
