@@ -2748,6 +2748,13 @@ return {
                 }
             },
 
+            gt_self = {
+                name = "Effect",
+                text = {
+                    "Self-Explanitory"
+                }
+            },
+
             j_joker = {
                 name = "Effect",
                 text = {
@@ -2845,8 +2852,54 @@ return {
                 text = {
                     "If less than {C:attention}4{} cards are",
                     "{C:red}destroyed{} at once, destroy",
-                    "up to {C:attention}3{} random cards in hand or deck",
+                    "up to {C:attention}3{} random cards in deck",
                     "{C:attention}Straights{} can be made with 4 cards"
+                }
+            },
+            j_mime = {
+                name = "Effect",
+                text = {
+                    "{C:attention}Read{} all cards in hand",
+                    "{C:inactive}Does nothing"
+                }
+            },
+            j_banner = {
+                name = "Effect",
+                text = {
+                    "Gain {C:attention}1{} random tag",
+                    "when a {C:attention}non Boss Blind{} is defeated",
+                    "{C:inactive}im not adding #1# tags..."
+                }
+            },
+            j_loyalty_card = {
+                name = "Effect",
+                text = {
+                    "Every {C:attention}#2#{} hands",
+                    "Gain {C:attention}#1#{C:blue} hands",
+                    "{C:inactive}#4# hands remaining"
+                }
+            },
+            j_8_ball = {
+                name = "Effect",
+                text = {
+                    "Every {C:attention}8{C:inactive} (#3#){} cards played and drawn",
+                    "have a {C:green}#1# in #2#{} chance to",
+                    "create a {C:tarot}Tarot card",
+                    "{C:inactive}(Must have room)",
+                }
+            },
+            j_dusk = {
+                name = "Effect",
+                text = {
+                    "Play {C:attention}all cards in hand",
+                    "on the {C:attention}final hand{} of round"
+                }
+            },
+            j_chaos = {
+                name = "Effect",
+                text = {
+                    "The first sold card each {C:attention}shop",
+                    "gives double its {C:money}money"
                 }
             }
         },

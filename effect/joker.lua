@@ -277,24 +277,267 @@ local towns = {
         end
     },
 
-}
+    {
+        key = "four_fingers",
 
-for _, t in ipairs(towns) do
-    SMODS.Joker:take_ownership(t.key, {
-        name = t.key,    -- vanilla calcs check the name for some reason lol
+        calculate = function(self, card, context)
+            if context.remove_playing_cards and not G.GAME.gt_ff_firing then
+                local bloodlust = 4 - #context.removed
+                if bloodlust < 1 then return end
+
+                -- theres no way to set a calc context for destroy_cards
+                -- so heres how we prevent an inf loop
+                G.GAME.gt_ff_firing = true
+                for i = 1, bloodlust do
+                    local sac = pseudorandom_element(G.deck.cards, "gt_four_fingers")
+                    if not sac.destroyed and not sac.getting_sliced then SMODS.destroy_cards(sac) end
+                end
+                G.GAME.gt_ff_firing = false
+
+                return { message = localize("k_extinct_ex") }
+            end
+
+            if context.end_of_round then G.GAME.gt_ff_firing = false end
+        end
+    },
+
+    {
+        key = "mime",
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.hand and not context.end_of_round then
+                if SMODS.has_no_rank(context.other_card) then return end
+                return { message = localize(context.other_card.base.value, "ranks") }
+            end
+        end
+    },
+
+    {
+        key = "credit_card",
+        effect_key = "gt_unchanged",
 
         loc_vars = function(self, info_queue, card)
-            if not t.loc_vars then return 0 end
-            local vars = t.loc_vars(self, info_queue, card)
-            if not vars or not vars.vars then return 0 end
+            local vars = {card.ability.extra}
+            return {vars = vars}
+        end
+    },
+
+    {
+        key = "ceremonial",
+        effect_key = "gt_nop",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra,}
+            return { vars = vars }
+        end,
+        calculate = function(self, card, context) return end
+    },
+
+    {
+        key = "banner",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra,}
+            return { vars = vars }
+        end,
+
+        calculate = function(self, card, context)
+            if context.end_of_round and context.main_eval and not context.beat_boss and not context.game_over then
+                local newtag = "UNAVAILABLE"
+                local it = 1
+
+                while newtag == "UNAVAILABLE" do
+                    newtag = pseudorandom_element(get_current_pool("Tag"), "gt_banner"..it)
+                    it = it + 1
+                end
+
+                add_tag(Tag(newtag, false, "Small"))
+                return { message = localize("k_active_ex") }
+            end
+        end
+    },
+
+    {
+        key = "mystic_summit",
+        effect_key = "gt_nop",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra.mult,}
+            return { vars = vars }
+        end,
+
+        calculate = function(self, card, context) return end
+    },
+
+    {
+        key = "marble",
+        effect_key = "gt_unchanged"
+    },
+
+    {
+        key = "loyalty_card",
+        set_ability = function(self, card) card.ability.loyalty_remaining = card.ability.extra.every end,
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {
+                card.ability.extra.Xmult,
+                card.ability.extra.every + 1,
+                localize{ type = "variable", key = "loyalty_inactive", vars = {card.ability.loyalty_remaining} },
+                card.ability.loyalty_remaining
+            }
+            return { vars = vars }
+        end,
+
+        calculate = function(self, card, context)
+            if context.before then
+                -- idk what this really means (copied from the source code)
+                card.ability.loyalty_remaining = (card.ability.extra.every - 1 - (G.GAME.hands_played - card.ability.hands_played_at_create)) % (card.ability.extra.every + 1)
+
+                if card.ability.loyalty_remaining == card.ability.extra.every then
+                    ease_hands_played(3)
+                    return { message = localize("k_active_ex"), colour = G.C.BLUE }
+                end
+            end
+        end
+    },
+
+    {
+        key = "8_ball",
+        set_ability = function(self, card) card.ability.gt_remaining = 8 end,
+
+        loc_vars = function(self, info_queue, card)
+            local num, den = SMODS.get_probability_vars(self, 1, card.ability.extra, "gt_8_ball")
+            local vars = { num, den, card.ability.gt_remaining }
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            local newsum = 0
+            if context.hand_drawn then newsum = newsum + #context.hand_drawn end
+            if context.other_drawn then newsum = newsum + #context.other_drawn end
+            if context.before then newsum = newsum + #context.full_hand end
+
+            card.ability.gt_remaining = card.ability.gt_remaining - newsum
+            if card.ability.gt_remaining < 1 then
+                card.ability.gt_remaining = 8
+                if not SMODS.pseudorandom_probability(card, "gt_8_ball", 1, card.ability.extra) then print("failed"); return end
+
+                G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
+                return {
+                    message = localize("k_plus_tarot"),
+                    func = function()
+                        SMODS.add_card{ set = "Tarot", key_append = "gt_8_ball" }
+                        G.GAME.consumeable_buffer = 0
+
+                        return true
+                    end
+                }
+            end
+        end
+    },
+
+    {
+        key = "misprint",
+        effect_key = "gt_unchanged",
+        vanilla_code = true,     -- i am NOT touching dynatext
+    },
+
+    {
+        key = "dusk",
+        -- this is all handled in the play_cards_from_highlighted hook below
+    },
+
+    -- placeholder for raised_fist
+
+    {
+        key = "chaos",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra,}
+            return {vars = vars}
+        end
+
+        calculate = function(self, card, context)
+            if context.starting_shop then 
+                card.ability.gt_valueget = true
+                local eval = function(card) return card.ability.gt_valueget and not G.RESET_JIGGLES end
+                juice_card_until(card, eval, true)
+            end
+
+            if context.ending_shop then card.ability.gt_valueget = false end
+
+            if context.selling_card and card.ability.gt_valueget then
+                local value = context.card.sell_cost
+                if value < 1 then return end
+                ease_dollars(value)
+                card.ability.gt_valueget = false
+            end
+        end
+    }
+}
+
+
+-- patch for four_fingers
+-- so it doesnt do anything for flush
+-- also its broken under cryptid because they dont know
+-- what the call sig for four_fingers is supposed to be
+local ff_ref = SMODS.four_fingers
+function SMODS.four_fingers(hand_type)
+    if hand_type == "flush" then return 5 end
+    return ff_ref(hand_type)
+end
+
+-- hook for dusk
+-- modifying the cards that are played is VERY tricky
+local pch_ref = G.FUNCS.play_cards_from_highlighted
+G.FUNCS.play_cards_from_highlighted = function(e)
+    if not next(SMODS.find_card("j_dusk")) then return pch_ref(e) end
+    -- because this is BEFORE the hand is played...
+    if G.GAME.current_round.hands_left > 1 then return pch_ref(e) end
+    SMODS.change_play_limit(999)
+
+    for _, playing_card in ipairs(G.hand.cards) do
+        G.E_MANAGER:add_event(Event({
+            trigger = "after", delay = 0.03,
+            func = function()
+                if playing_card.highlighted then return true end
+                G.hand:add_to_highlighted(playing_card)
+                return true
+            end
+        }))
+    end
+
+    G.E_MANAGER:add_event(Event({
+        func = function()
+            SMODS.change_play_limit(-999)
+            pch_ref(e)
+            return true
+        end
+    }))
+end
+
+
+
+for _, t in ipairs(towns) do
+    local key = t.key
+    if t.vanilla_code then key = nil end
+
+    SMODS.Joker:take_ownership(t.key, {
+        name = key,    -- vanilla calcs check the name for some reason lol
+        set_ability = t.set_ability,
+        calculate = t.calculate,
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {}
+            if t.loc_vars then
+                vars = t.loc_vars(self, info_queue, card)
+            end
 
             info_queue[#info_queue + 1] = {
                 set = "Other", key = t.effect_key or "j_" .. t.key, specific_vars = vars.vars
             }
 
             return vars
-        end,
-
-        calculate = t.calculate
+        end
     })
 end
