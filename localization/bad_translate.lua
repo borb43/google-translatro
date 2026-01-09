@@ -2901,6 +2901,13 @@ return {
                     "The first sold card each {C:attention}shop",
                     "gives double its {C:money}money"
                 }
+            },
+            j_steel_joker = {
+                name = "Effect",
+                text = {
+                    "Gives {C:white,X:mult}X#1#{} for each card in the {C:attention}deck",
+                    "{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)"
+                }
             }
         },
         Planet={

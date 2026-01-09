@@ -455,7 +455,7 @@ local towns = {
         loc_vars = function(self, info_queue, card)
             local vars = {card.ability.extra,}
             return {vars = vars}
-        end
+        end,
 
         calculate = function(self, card, context)
             if context.starting_shop then 
@@ -471,6 +471,32 @@ local towns = {
                 if value < 1 then return end
                 ease_dollars(value)
                 card.ability.gt_valueget = false
+            end
+        end
+    },
+
+    {
+        key = "fibonacci",
+        effect_key = "gt_unchanged",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra}
+            return {vars = vars}
+        end,
+    },
+
+    {
+        key = "steel_joker",
+
+        loc_vars = function(self, info_queue, card)
+            local decksize = (G.deck and G.deck.cards) and #G.deck.cards or 52
+            local vars = {card.ability.extra, card.ability.extra * decksize}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.joker_main then
+                return { xmult = card.ability.extra * #G.deck.cards }
             end
         end
     }
