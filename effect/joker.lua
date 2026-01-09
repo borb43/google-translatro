@@ -504,6 +504,248 @@ local towns = {
                 return { xmult = card.ability.extra * #G.deck.cards }
             end
         end
+    },
+
+    {
+        key = "scary_face",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra,}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.play then
+                if
+                    next(SMODS.get_enhancements(context.other_card))
+                    or context.other_card.edition
+                    or context.other_card.seal
+                    or context.other_card.ability.rental    -- idk if playing cards can get rental but...
+                then
+                    return { dollars = card.ability.extra }
+                end
+            end
+        end
+    },
+
+    {
+        key = "abstract",
+
+        loc_vars = function(self, info_queue, card)
+            local jokercount = G.jokers and G.jokers.cards and #G.jokers.cards or 0
+            local vars = {card.ability.extra, jokercount * card.ability.extra}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.play
+                and SMODS.has_enhancement(context.other_card, "m_wild") then
+
+                return { mult = card.ability.extra }
+            end
+        end
+    },
+
+    {
+        key = "delayed_grat",
+
+        loc_vars = function(self, info_queue, card)
+            local active_text = "inactive"
+            local active_color = G.C.UI.TEXT_INACTIVE
+
+            if card.ability.gt_active then
+                active_text = "active"
+                active_color = G.C.RED
+            end
+
+            local vars = {card.ability.extra, active_text, colours = {active_color,}}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.end_of_round then
+                card.ability.gt_active = G.GAME.current_round.discards_used <= 0
+            end
+
+            if context.discard and card.ability.gt_active then
+                local newvalue = context.other_card.ability.perma_p_dollars or 0
+                context.other_card.ability.perma_p_dollars = newvalue + card.ability.extra
+                return { message = localize("k_upgrade_ex") }
+            end
+        end
+    },
+
+    {
+        key = "hack",
+        effect_key = "gt_nop",
+
+        calculate = function(self, card, context) end
+    },
+
+    {
+        key = "pareidolia",
+
+        add_to_deck = function(self, card, from_debuff)
+            G.E_MANAGER:add_event(Event({
+                func = function()
+                    for k, v in pairs(G.I.CARD) do
+                        if v.set_cost then v:set_cost() end
+                    end
+
+                    return true
+                end
+            }))
+        end,
+
+        remove_from_deck = function(self, card, from_debuff)
+            G.E_MANAGER:add_event(Event({
+                func = function()
+                    for k, v in pairs(G.I.CARD) do
+                        if v.set_cost then v:set_cost() end
+                    end
+
+                    return true
+                end
+            }))
+        end
+    },
+
+    {
+        key = "gros_michel",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra.mult}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.mod_probability and not context.blueprint then
+                return { numerator = context.numerator + card.ability.extra.mult }
+            end
+
+            if context.joker_main then
+                SMODS.destroy_cards(card, nil, nil, true)
+                G.GAME.pool_flags.gros_michel_extinct = true
+                return { message = localize("k_extinct_ex") }
+            end
+        end
+    },
+
+    {
+        key = "even_steven",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.discard then
+                local rank = context.other_card:get_id()
+                if rank <= 10 and rank >= 0 and rank % 2 == 0 then
+                    return { mult = card.ability.extra }
+                end
+            end
+        end
+    },
+
+    {
+        key = "odd_todd",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.play and #context.full_hand < 2 then
+                return { chips = card.ability.extra }
+            end
+        end
+    },
+
+    {
+        key = "scholar",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {
+                card.ability.extra.mult, card.ability.extra.chips,
+                card.ability.extra.mult + card.ability.extra.chips }
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.individual and context.cardarea == G.play and context.other_card:get_id() == 14 then
+                return { chips = card.ability.extra.mult + card.ability.extra.chips }
+            end
+        end
+    },
+
+    {
+        key = "business",
+        effect_key = "gt_unchanged",
+
+        loc_vars = function(self, info_queue, card)
+            local num, den = SMODS.get_probability_vars(card, 1, card.ability.extra, "gt_business")
+            local vars = {num, den}
+            return {vars = vars}
+        end
+    },
+
+    {
+        key = "supernova",
+
+        calculate = function(self, card, context)
+            if context.joker_main then
+                return { message = tostring(G.GAME.hands_played + 1) }
+            end
+        end
+    },
+
+    {
+        key = "ride_the_bus",
+
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra, card.ability.mult}
+            return {vars = vars}
+        end,
+
+        calculate = function(self, card, context)
+            if context.before then
+                if #G.hand.cards == 0 then card.ability.gt_active = true end
+                if card.ability.gt_active then card.ability.mult = card.ability.mult + card.ability.extra end
+                return { message = localize("k_upgrade_ex") }
+            end
+
+            if context.joker_main then
+                return { mult = card.ability.mult }
+            end
+
+            if context.end_of_round and context.beat_boss then
+                card.ability.gt_active = false
+            end
+        end
+    },
+
+    {
+        key = "space",
+        effect_key = "gt_unchanged",
+
+        loc_vars = function(self, info_queue, card)
+            local num, den = SMODS.get_probability_vars(card, 1, card.ability.extra, "gt_business")
+            local vars = {num, den}
+            return {vars = vars}
+        end
+    },
+
+    {
+        key = "egg",
+        vanilla_code = true,    -- essentially vanilla, all the extra effects are through ext hooks
+        
+        loc_vars = function(self, info_queue, card)
+            local vars = {card.ability.extra}
+            return {vars = vars}
+        end,
     }
 }
 
@@ -517,6 +759,7 @@ function SMODS.four_fingers(hand_type)
     if hand_type == "flush" then return 5 end
     return ff_ref(hand_type)
 end
+
 
 -- hook for dusk
 -- modifying the cards that are played is VERY tricky
@@ -547,6 +790,25 @@ G.FUNCS.play_cards_from_highlighted = function(e)
     }))
 end
 
+-- patch for paredolia
+-- sets all vouchers to free, similar to astronomoer
+-- patch for egg
+-- discount of $3 for all items
+local sc_ref = Card.set_cost
+Card.set_cost = function(self)
+    sc_ref(self)
+
+    if next(SMODS.find_card("j_pareidolia")) and self.ability.set == "Voucher" then
+        self.cost = 0 
+        -- you cant sell vouchers so no need to set sell cost
+    end
+
+    -- yea its a bit jank but hey it works
+    for _, egg in ipairs(SMODS.find_card("j_egg")) do
+        self.cost = math.max(self.cost - egg.ability.extra, 0)
+    end
+end
+
 
 
 for _, t in ipairs(towns) do
@@ -557,6 +819,8 @@ for _, t in ipairs(towns) do
         name = key,    -- vanilla calcs check the name for some reason lol
         set_ability = t.set_ability,
         calculate = t.calculate,
+        add_to_deck = t.add_to_deck,
+        remove_from_deck = t.remove_from_deck,
 
         loc_vars = function(self, info_queue, card)
             local vars = {}

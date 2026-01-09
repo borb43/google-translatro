@@ -2908,6 +2908,83 @@ return {
                     "Gives {C:white,X:mult}X#1#{} for each card in the {C:attention}deck",
                     "{C:inactive}(Currently {C:white,X:mult}X#2#{C:inactive} Mult)"
                 }
+            },
+            j_scary_face = {
+                name = "Effect",
+                text = {
+                    "Earn {C:money}$#1#{} for each played card",
+                    "with a {C:attention}modifier"
+                }
+            },
+            j_abstract = {
+                name = "Effect",
+                text = {
+                    "{C:attention}Wild Cards{} give {C:attention}+#1#{} mult"
+                }
+            },
+            j_delayed_grat = {
+                name = "Effect",
+                text = {
+                    "If {C:attention}no discards{} were used {C:attention}last round",
+                    "Discarded cards gain {C:money}$#1#{} permanently",
+                    "{C:inactive}(Currently {V:1}#2#{C:inactive})"
+                }
+            },
+            j_pareidolia = {
+                name = "Effect",
+                text = {
+                    "All vouchers in the shop are {C:attention}free"
+                }
+            },
+            j_gros_michel = {
+                name = "Effect",
+                text = {
+                    "{C:green}+15{} to probabilities",
+                    "{C:red,E:2}self destructs"
+                }
+            },
+            j_even_steven = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult when a even card is discarded",
+                    "{C:inactive}(Effectively does nothing)"
+                }
+            },
+            j_odd_todd = {
+                name = "Effect",
+                text = {
+                    "If played hand contains {C:attention}1{} card",
+                    "Scored cards give {C:chips}+#1#{} chips"
+                }
+            },
+            j_scholar = {
+                name = "Effect",
+                text = {
+                    "Played {C:attention}Aces{} give {C:chips}+#3#{} chips"
+                }
+            },
+            j_supernova = {
+                name = "Effect",
+                text = {
+                    "Displays the {C:attention}total number{} of",
+                    "hands played this game",
+                    "{C:inactive}(Does nothing)"
+                }
+            },
+            j_ride_the_bus = {
+                name = "Effect",
+                text = {
+                    "{C:mult}+#1#{} mult if a hand was played",
+                    "with {C:attention}no{} cards in hand this ante",
+                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} mult)"
+                }
+            },
+            j_egg = {
+                name = "Effect",
+                text = {
+                    "Gains {C:money}$#1#{} of {C:attention}sell value{} at end of round",
+                    "All shop items are discounted {C:money}$#1#"
+                }
             }
         },
         Planet={
