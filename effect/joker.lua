@@ -447,7 +447,12 @@ local towns = {
         -- this is all handled in the play_cards_from_highlighted hook below
     },
 
-    -- placeholder for raised_fist
+    {
+        key = "raised_fist",
+        effect_key = "gt_nop",
+
+        calculate = function(self, card, context) return end
+    },
 
     {
         key = "chaos",
