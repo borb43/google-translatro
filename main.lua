@@ -13,12 +13,13 @@ local function config()
         ref_table = BTR_config,
         ref_value = "alt_shop_sign"
     }
+    --[[
     nodes[#nodes+1] = create_toggle{
         label = localize("k_bad_gameplay_changes"),
         active_colour = HEX("c74040"),
         ref_table = BTR_config,
         ref_value = "gameplay_changes"
-    }
+    }]]
     return {
 		n = G.UIT.ROOT,
 		config = {
@@ -48,8 +49,9 @@ if BTR_config.alt_shop_sign then
         prefix_config = { key = false }
     }
 end
-
+--[[
 if BTR_config.gameplay_changes then
     --file loading here, files for gameplay changes should all be in one folder (excl. patches obv)
    assert(SMODS.load_file("effect/joker.lua"))()
 end
+]]
