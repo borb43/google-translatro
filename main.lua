@@ -49,6 +49,9 @@ if BTR_config.alt_shop_sign then
         prefix_config = { key = false }
     }
 end
+
+--TODO: Config option to change title screen to "Because he looks like Bartlow"
+
 --[[
 if BTR_config.gameplay_changes then
     --file loading here, files for gameplay changes should all be in one folder (excl. patches obv)
