@@ -14,7 +14,7 @@ local function config()
         ref_value = "alt_shop_sign"
     }
     nodes[#nodes+1] = create_toggle{
-        label = localize("k_bad_alt_main_menu"),
+        label = localize("k_bad_alt_menu"),
         active_colour = HEX("c74040"),
         ref_table = BTR_config,
         ref_value = "alt_main_menu"
