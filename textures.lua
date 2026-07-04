@@ -4,7 +4,20 @@ AltTexture {
     path = "consumables.png",
     loc_txt = {
         name = "Badly Translated Tarots"
-    }
+    },
+    original_sheet = true,
+    keys = { "c_high_priestess", "c_empress", "c_heirophant", "c_lovers", "c_chariot", "c_justice", "c_hermit", "c_strength", "c_hanged_man", "c_temperance", "c_tower", "c_star", "c_sun", "c_judgement", }
+}
+
+AltTexture {
+    key = "planets",
+    set = "Planet",
+    path = "consumables.png",
+    loc_txt = {
+        name = "Badly Translated Planets"
+    },
+    original_sheet = true,
+    keys = { "c_eris", "c_ceres", "c_planet_x", "c_earth", "c_jupiter", }
 }
 
 AltTexture {
@@ -34,7 +47,6 @@ AltTexture {
     key = "blinds",
     keys = { "bl_small", "bl_big", },
     original_sheet = true,
-    display_pos = { x = 0, y = 0, },
     loc_txt = {
         name = "Badly Translated Blinds"
     },
@@ -43,7 +55,7 @@ AltTexture {
 
 TexturePack {
     key = "badly_translated",
-    textures = { "bad_tarots", "bad_coupons", "bad_blinds", "bad_jokers", },
+    textures = { "bad_tarots", "bad_planets", "bad_coupons", "bad_blinds", "bad_jokers", },
     loc_txt = {
         name = "Badly Translated",
         text = {
