@@ -21,6 +21,17 @@ AltTexture {
 }
 
 AltTexture {
+    key = "spectrals",
+    set = "Spectral",
+    path = "consumables.png",
+    loc_txt = {
+        name = "Badly Translated Spectrals"
+    },
+    original_sheet = true,
+    keys = { "c_soul", "c_familiar", "c_grim", "c_incantation", "c_talisman", "c_aura", "c_wraith", "c_sigil", "c_immolate", "c_ankh", "c_hex", "c_trance", "c_medium", "c_cryptid", }
+}
+
+AltTexture {
     key = "coupons",
     set = "Voucher",
     path = "coupons.png",
