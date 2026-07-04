@@ -87,11 +87,13 @@ if BTR_config.alt_main_menu then
     end
 end
 
---TODO: Config option to change title screen to "Because he looks like Bartlow"
-
 --[[
 if BTR_config.gameplay_changes then
     --file loading here, files for gameplay changes should all be in one folder (excl. patches obv)
    assert(SMODS.load_file("effect/joker.lua"))()
 end
 ]]
+
+if next(SMODS.find_mod("malverk")) then
+    assert(SMODS.load_file("textures.lua"))()
+end

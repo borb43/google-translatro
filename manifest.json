@@ -6,7 +6,7 @@
 	"description": "Adds language where everything is badly google translated",
 	"prefix": "bad",
 	"main_file": "main.lua",
-	"priority": 0,
+	"priority": -100000,
 	"version": "1.0.0",
 	"dependencies": []
 }
