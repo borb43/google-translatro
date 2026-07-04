@@ -1,6 +1,8 @@
 # Google Translatro
 This mod adds a new "Google Translated" language option, in which **every** string in the game is badly google translated. (excluding the dollar sign because it makes the game unplayable)
 
+Comes with a [Malverk](https://github.com/Eremel/Malverk) texture pack to change the text on Consumables, Blinds, Vouchers and legendary Jokers to their translated names.
+
 Features support for CardSleeves and Galdur (excluding config page text)
 
 NOTE: any instances of duplicate text in the files were all translated once and replaced with the same text. This means that booster packs of the same kind still have the same description, all locked items still have the same "Locked" name text,
