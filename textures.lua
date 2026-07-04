@@ -66,7 +66,7 @@ AltTexture {
 
 TexturePack {
     key = "badly_translated",
-    textures = { "bad_tarots", "bad_planets", "bad_coupons", "bad_blinds", "bad_jokers", },
+    textures = { "bad_tarots", "bad_planets", "bad_spectrals", "bad_coupons", "bad_blinds", "bad_jokers", },
     loc_txt = {
         name = "Badly Translated",
         text = {
