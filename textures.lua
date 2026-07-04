@@ -1,4 +1,13 @@
 AltTexture {
+    key = "tarots",
+    set = "Tarot",
+    path = "consumables.png",
+    loc_txt = {
+        name = "Badly Translated Tarots"
+    }
+}
+
+AltTexture {
     key = "coupons",
     set = "Voucher",
     path = "coupons.png",
@@ -34,7 +43,7 @@ AltTexture {
 
 TexturePack {
     key = "badly_translated",
-    textures = { "bad_coupons", "bad_blinds", "bad_jokers", },
+    textures = { "bad_tarots", "bad_coupons", "bad_blinds", "bad_jokers", },
     loc_txt = {
         name = "Badly Translated",
         text = {
