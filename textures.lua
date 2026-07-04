@@ -1,4 +1,16 @@
 AltTexture {
+    set = "Joker",
+    path = "jokers.png",
+    key = "jokers",
+    keys = { "j_caino", "j_triboulet", "j_yorick", "j_chicot", "j_perkeo", },
+    soul_keys = { "j_caino", "j_triboulet", "j_yorick", "j_chicot", "j_perkeo", },
+    display_pos = { x = 0, y = 0, },
+    loc_txt = {
+        name = "Badly Translated Legendaries"
+    },
+}
+
+AltTexture {
     set = 'Blind',
     path = "blinds.png",
     key = "blinds",
@@ -13,7 +25,7 @@ AltTexture {
 
 TexturePack {
     key = "badly_translated",
-    textures = { "bad_blinds" },
+    textures = { "bad_blinds", "bad_jokers", },
     loc_txt = {
         name = "Badly Translated",
         text = {
