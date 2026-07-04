@@ -11,7 +11,7 @@ local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*S
 '''
 position = "after"
 payload = '''
-if G.ASSET_ATLAS["bad_splash_screen"] then
+if G.ASSET_ATLAS["bad_splash_screen"] and BTR_config and BTR_config.alt_main_menu then
     G.BADTR_SPLASH_LOGO = Sprite(0, 0, 
         13*SC_scale, 
         13*SC_scale*(G.ASSET_ATLAS["bad_splash_screen"].py/G.ASSET_ATLAS["bad_splash_screen"].px),
