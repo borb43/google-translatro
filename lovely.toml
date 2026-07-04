@@ -1,0 +1,129 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS.S_A, G.P_CENTERS.c_base)
+'''
+position = "after"
+payload = '''
+if G.ASSET_ATLAS["bad_splash_screen"] then
+    G.BADTR_SPLASH_LOGO = Sprite(0, 0, 
+        13*SC_scale, 
+        13*SC_scale*(G.ASSET_ATLAS["bad_splash_screen"].py/G.ASSET_ATLAS["bad_splash_screen"].px),
+        G.ASSET_ATLAS["bad_splash_screen"], {x=0,y=0})
+
+    G.BADTR_SPLASH_LOGO:set_alignment({
+        major = G.title_top,
+        instance_type = "NODE",
+        type = 'cm',
+        bond = 'Strong',
+        offset = {x=0,y=-3}
+    })
+    G.BADTR_SPLASH_LOGO:define_draw_steps({{
+            shader = 'dissolve',
+        }})
+
+    G.BADTR_SPLASH_LOGO.dissolve_colours = {G.C.WHITE, G.C.WHITE}
+    G.BADTR_SPLASH_LOGO.dissolve = 1
+end
+'''
+match_indent = true
+overwrite = false
+
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+ease_value(G.SPLASH_LOGO, 'dissolve', -1, nil, nil, nil, change_context == 'splash' and 2.3 or 0.9)
+'''
+position = "before"
+payload = '''
+if G.BADTR_SPLASH_LOGO then
+    ease_value(G.BADTR_SPLASH_LOGO, 'dissolve', -1, nil, nil, nil, change_context == 'splash' and 2.3 or 0.9)
+end
+'''
+match_indent = true
+overwrite = false
+
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+if G.SPLASH_LOGO then
+    love.graphics.push()
+    G.SPLASH_LOGO:translate_container()
+    G.SPLASH_LOGO:draw()
+    love.graphics.pop()
+end
+'''
+position = "after"
+payload = '''
+if G.BADTR_SPLASH_LOGO then
+    love.graphics.push()
+    G.BADTR_SPLASH_LOGO:translate_container()
+    G.BADTR_SPLASH_LOGO:draw()
+    love.graphics.pop()
+end
+'''
+match_indent = true
+overwrite = false
+
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''
+if G.SPLASH_LOGO then 
+    G.SPLASH_LOGO.states.visible = true
+    if G.title_top and G.title_top.cards[1] then G.title_top.cards[1].states.visible = true end
+end
+'''
+position = "before"
+payload = '''
+if G.BADTR_SPLASH_LOGO then
+    G.BADTR_SPLASH_LOGO.states.visible = true
+end
+'''
+match_indent = true
+overwrite = false
+
+
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''
+if G.SPLASH_LOGO then 
+    G.SPLASH_LOGO.states.visible = false
+    if G.title_top and G.title_top.cards[1] then G.title_top.cards[1].states.visible = false end
+end
+'''
+position = "before"
+payload = '''
+if G.BADTR_SPLASH_LOGO then
+    G.BADTR_SPLASH_LOGO.states.visible = false
+end
+'''
+match_indent = true
+overwrite = false
+
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+if self.SPLASH_LOGO then self.SPLASH_LOGO:remove(); self.SPLASH_LOGO = nil end
+'''
+position = "before"
+payload = '''
+if self.BADTR_SPLASH_LOGO then self.BADTR_SPLASH_LOGO:remove(); self.BADTR_SPLASH_LOGO = nil end
+'''
+match_indent = true
+overwrite = false

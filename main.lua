@@ -70,6 +70,12 @@ if BTR_config.alt_main_menu then
         py = 216,
         prefix_config = { key = false }
     }
+    SMODS.Atlas {
+        key = "splash_screen",
+        path = "looks_like.png",
+        px = 333,
+        py = 55,
+    }
     SMODS.current_mod.menu_cards = function ()
         for _, c in ipairs(G.title_top.cards) do
             if (c.ability.set == "Default" or c.ability.set == "Enhanced") and c.children.front then
