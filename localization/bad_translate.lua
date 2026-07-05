@@ -1971,7 +1971,7 @@ return {
                 name="The to-do list is approximate, then",
                 text={ --you get to guess what hand it is :)
                     "If this hand is the {C:attention}highest,",
-                    "who will win [C:money}$#1#{}? The poker",
+                    "who will win {C:money}$#1#{}? The poker",
                     "hand changes at the end",
                     "of the round",
                 },
