@@ -8,5 +8,6 @@
 	"main_file": "main.lua",
 	"priority": -1,
 	"version": "1.1.0a",
-	"dependencies": []
+	"dependencies": [],
+	"icon_path": "modicon.png"
 }
