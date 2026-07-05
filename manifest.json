@@ -7,6 +7,6 @@
 	"prefix": "bad",
 	"main_file": "main.lua",
 	"priority": -1,
-	"version": "1.1.0",
+	"version": "1.1.0a",
 	"dependencies": []
 }
