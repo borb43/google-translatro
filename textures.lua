@@ -68,10 +68,9 @@ TexturePack {
     key = "badly_translated",
     textures = { "bad_tarots", "bad_planets", "bad_spectrals", "bad_coupons", "bad_blinds", "bad_jokers", },
     loc_txt = {
-        name = "Badly Translated",
+        name = "What is the default value",
         text = {
-            "Replaces certain sprites for",
-            "their google translated names",
+            "Basic game textures"
         }
     }
 }

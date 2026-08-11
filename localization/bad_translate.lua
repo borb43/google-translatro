@@ -3975,6 +3975,13 @@ return {
                 },
             },
         },
+        malverk = {
+			config = {
+				text = {
+					'Set #1# as follows.' --doesnt work but the idea is there
+				}
+			}
+		},
     },
     misc={
         achievement_descriptions={
@@ -4551,6 +4558,14 @@ return {
             run_select_stake_choice = "Mark it as general",
             run_select_deck_choice_random = "random surface",
             run_select_stake_choice_random = "partially random",
+            ["b_textures"] = 'its texture',
+			["b_deck_skins"] = 'customize your deck',
+			b_apply = 'used as',
+			b_applied = 'about.',
+			b_remove = 'almost wiped out',
+			b_change = 'When will that change?',
+			malverk_low = 'Like the worst',
+			malverk_high = 'how tall are you',
         },
         high_scores={
             boss_streak="Most leaders change",
