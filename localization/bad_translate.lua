@@ -727,10 +727,10 @@ return {
             j_ancient={
                 name="He looks like an old clown",
                 text={
-                    "Each card played by",
-                    "{V:1}Spice{} gets a",
-                    "multiplier of {X:mult,C:white} X#1# {} and",
-                    "{s:0.8}changes color at the end of round.",
+                    "{V:1}#2#{} If you win,",
+                    "each suit card will",
+                    "have a {X:mult,C:white}#1#x{} mutliplier.",
+                    "{s:0.8}The suit changes at the end of the round."
                 },
             },
             j_arrowhead={
@@ -922,9 +922,9 @@ return {
             j_castle={
                 name="There is also such a castle.",
                 text={
-                    "This Joker gains {C:chips}+#1#{} tokens",
-                    "for each {V:1}speed{} card discarded",
-                    "and changes color every turn",
+                    "The Joker gains {C:chips}+#1#{} tokens",
+                    "for each {V:1}#1#{} card discarded",
+                    "and changes color each turn",
                     "{C:inactive}(currently {C:chips}+#3#{C:inactive} tokens){}.",
                 },
             },
@@ -1350,9 +1350,9 @@ return {
             j_idol={
                 name="She looks like an idol",
                 text={
-                    "Play X#1# Multi Jackpot",
-                    "to win any {C:attention}#2#{} of {V:1}#3#",
-                    "{s:0.8}and the cards change every round.",
+                    "Each {C:attention}#2#{V:1}#3#{} recieves a",
+                    "{X:mult,C:white}#1#x{} multiplier upon registration.",
+                    "{s:0.8}Map changes every round"
                 },
                 unlock={
                     "Get at least",
@@ -1446,9 +1446,9 @@ return {
             j_mail={
                 name="It's like a postage discount.",
                 text={
-                    "You win {C:money}$#1#{} for each",
-                    "{C:attention}#2#{} rolled and the",
-                    "rate changes each round.",
+                    "Earn {C:money}$#1#{} for every",
+                    "{C:attention}#2#{} you cancel.",
+                    "Ratings change every round.",
                 },
             },
             j_marble={
@@ -1969,11 +1969,11 @@ return {
             },
             j_todo_list={
                 name="The to-do list is approximate, then",
-                text={ --you get to guess what hand it is :)
-                    "If this hand is the {C:attention}highest,",
-                    "who will win {C:money}$#1#{}? The poker",
-                    "hand changes at the end",
-                    "of the round",
+                text={
+                    "If your {C:attention}playing card{} is",
+                    "{C:attention}#2#{}, you win {C:money}$#1#{}. At the",
+                    "end of the round, the poker",
+                    "hands change as follows",
                 },
             },
             j_trading={
@@ -2729,11 +2729,11 @@ return {
                 }
             },
 
-
+            --#region does nothing rn
             -- this is where all the "real" effects of the jokers are stored
             -- because anything involving ui is hell
             -- feel free to change this in the future if you want to face the spagetti
-
+            --[[
             gt_unchanged = {
                 name = "Effect",
                 text = {
@@ -2986,6 +2986,8 @@ return {
                     "All shop items are discounted {C:money}$#1#"
                 }
             }
+            ]]
+            --#endregion
         },
         Planet={
             c_ceres={
