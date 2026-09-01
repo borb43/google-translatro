@@ -5032,7 +5032,7 @@ return {
                 "After a goal is {C:attention}scored{}, all cards played are {C:attention}discarded{}.",
             },
             ch_c_discard_cost={
-                "There is a {C:money}$#1#{} free per reset.",
+                "There is a {C:money}$#1#{} fee per reset.",
             },
             ch_c_flipped_cards={
                 "Question: {C:green}1 of the #1#{} cards is face down.",
