@@ -7,7 +7,7 @@
 	"prefix": "bad",
 	"main_file": "main.lua",
 	"priority": -1,
-	"version": "1.1.0b",
+	"version": "1.1.1",
 	"dependencies": [],
 	"icon_path": "modicon.png"
 }

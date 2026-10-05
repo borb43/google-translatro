@@ -1,0 +1,7 @@
+{
+    "name": "Google_Translatro",
+    "version_number": "1.1.1",
+    "website_url": "https://github.com/borb43/google-translatro",
+    "description": "Adds a language option where most text in the game is google translated",
+    "dependencies": ["Steamodded-Steamodded-26.1002.0"]
+}
