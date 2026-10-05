@@ -4568,6 +4568,10 @@ return {
 			b_change = 'When will that change?',
 			malverk_low = 'Like the worst',
 			malverk_high = 'how tall are you',
+            --This text has no vanilla loc key and is normally hardcoded. TRANSLATE THIS LATER
+            ph_voucher_restock_1 = "DEFEAT",
+            ph_voucher_restock_2 = "BOSS BLIND",
+            ph_voucher_restock_3 = "TO RESTOCK",
         },
         high_scores={
             boss_streak="Most leaders change",

@@ -127,3 +127,39 @@ if self.BADTR_SPLASH_LOGO then self.BADTR_SPLASH_LOGO:remove(); self.BADTR_SPLAS
 '''
 match_indent = true
 overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/state_events.lua"
+pattern = '''
+play_area_status_text("Not Allowed!")--localize('k_not_allowed_ex'), true)
+'''
+position = "at"
+payload = '''
+play_area_status_text(localize("k_not_allowed_ex"))
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = "{n=G.UIT.T, config={text = 'DEFEAT', scale = 0.6, colour = G.C.WHITE}}"
+position = "at"
+payload = "{n=G.UIT.T, config={text = localize('ph_voucher_restock_1'), scale = 0.6, colour = G.C.WHITE}}"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = "{n=G.UIT.T, config={text = 'BOSS BLIND', scale = 0.4, colour = G.C.WHITE}}"
+position = "at"
+payload = "{n=G.UIT.T, config={text = localize('ph_voucher_restock_2'), scale = 0.4, colour = G.C.WHITE}}"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = "{n=G.UIT.T, config={text = 'TO RESTOCK', scale = 0.4, colour = G.C.WHITE}}"
+position = "at"
+payload = "{n=G.UIT.T, config={text = localize('ph_voucher_restock_3'), scale = 0.4, colour = G.C.WHITE}}"
+match_indent = true
